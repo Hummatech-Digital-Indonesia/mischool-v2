@@ -1,10 +1,33 @@
+<script setup lang="ts">
+interface Data {
+  school: number
+  teacher: number
+  student: number
+}
+
+interface Meta {
+  code: number
+  message: string | null
+  status: 'success' | 'error'
+}
+
+interface FetchResponse {
+  meta: Meta
+  data: Data
+}
+
+//@ts-ignore
+// eslint-disable-next-line prettier-vue/prettier
+const { data: response } = useFetch<FetchResponse>(`${useApiUrl()}/landing-page`)
+</script>
+
 <template>
   <div class="dark:bg-muted-900 bg-white py-24">
     <div class="mx-auto w-full max-w-7xl px-4">
       <div class="mb-10 max-w-2xl">
         <BaseText
           class="text-primary-500 mb-2 text-[0.65rem] uppercase tracking-wider"
-          >Made for developers</BaseText
+          >PENGGUNA</BaseText
         >
         <BaseHeading
           as="h2"
@@ -13,49 +36,55 @@
           lead="tight"
           class="text-muted-800 mx-auto mb-4 dark:text-white"
         >
-          A layered experience
+          Pengguna Mischool
         </BaseHeading>
         <BaseParagraph
           size="lg"
           class="text-muted-500 dark:text-muted-100 mx-auto mb-4"
         >
-          Tairo is built on top on the Nuxt Layers concept. Layers can be seen
-          as groups of components and composables that are related to each
-          other. They help create a consistent experience and a maintainable
-          codebase.
+          Jumlah pengguna Mischool terus meningkat setiap tahunnya, menunjukkan
+          bahwa Mischool merupakan sebuah solusi yang tepat untuk pengelolaan
+          sekolah. Mischool dapat membantu sekolah untuk meningkatkan efisiensi
+          dan efektivitas pengelolaan sekolah, meningkatkan kualitas
+          pembelajaran, dan meningkatkan keterjangkauan pendidikan.
         </BaseParagraph>
       </div>
       <div class="ptablet:grid-cols-2 grid gap-6 sm:grid-cols-3">
         <LandingLayersBox
-          title="Starter App"
-          icon="ph:rocket-duotone"
+          title="Sekolah"
+          icon="ic:baseline-business"
           to="/documentation/setup"
           color="indigo"
+          :count="response?.data.school ? response.data.school : 0"
         >
-          Tairo ships with a clean starter project where you can start writing
-          your own code and content, also making it easier by providing app
-          configuration files.
+          Mischool telah dipilih
+          {{ response?.data.school ? response.data.school : 0 }} sekolah ,
+          menjadi mitra terpercaya dalam mendorong efisiensi dan inovasi dalam
+          manajemen sekolah.
         </LandingLayersBox>
         <LandingLayersBox
-          title="Customization"
-          icon="ph:sparkle-duotone"
+          title="Guru"
+          icon="ic:sharp-person"
           to="/documentation/tailwindcss"
           color="purple"
+          :count="response?.data.teacher ? response.data.teacher : 0"
         >
-          Tairo is built with Tailwind CSS and Shuriken UI. You can customize
-          every single component to fit with your branding styles, shapes and
-          colors.
+          {{ response?.data.teacher ? response.data.teacher : 0 }} guru telah
+          bergabung dengan Mischool untuk mendukung proses pengajaran dan
+          meningkatkan kualitas pembelajaran.
         </LandingLayersBox>
         <LandingLayersBox
-          title="Component reference"
-          icon="ph:notification-duotone"
+          title="Siswa"
+          icon="bi:mortarboard-fill"
           to="/documentation/reference"
+          :count="response?.data.student ? response.data.student : 0"
         >
-          Tairo ships with a lot of UI components, from the smallest parts
-          required to build a web application to more complex organisms with
-          their own logic.
+          {{ response?.data.student ? response.data.student : 0 }} siswa telah
+          merasakan manfaat pendekatan terintegrasi MiSchool, mendapatkan
+          pengalaman pendidikan yang lebih baik dan terfokus.
         </LandingLayersBox>
       </div>
     </div>
   </div>
 </template>
+

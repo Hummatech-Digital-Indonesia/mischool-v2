@@ -1,10 +1,10 @@
 <script setup lang="ts">
 definePageMeta({
-  title: 'The Nuxt & Tailwind CSS dashboard system',
+  title: 'System Manajemen Sekolah',
   description:
-    'Nuxt & Tailwind CSS dashboard system template that comes with 100+ prebuilt pages and 40+ custom UI components.',
+    'Mischool adalah platform manajemen sekolah yang memberikan solusi terbaik untuk administrasi dan komunikasi antara sekolah, siswa, dan orang tua.',
   breadcrumb: {
-    label: 'Tairo',
+    label: 'Mischool',
   },
   layout: 'landing',
 })
@@ -13,12 +13,13 @@ definePageMeta({
 <template>
   <div>
     <LandingHero />
-    <LandingCustomizer />
+    <!-- <LandingPackages /> -->
+    <!-- <LandingCustomizer /> -->
+    <LandingFeatures />
+    <LandingPackages />
     <LandingDemos :limit="12" />
     <LandingLayers />
     <LandingLayouts />
-    <LandingFeatures />
-    <LandingBenefits />
     <LandingCta />
     <LandingContent />
     <LandingFooter />

@@ -47,4 +47,15 @@ export default defineNuxtConfig({
       // Here you can customize the generated tsconfig.json file
     },
   },
+  runtimeConfig: {
+
+    // Public keys that are exposed to the client
+    public: {
+      apiBase: process.env.NUXT_PUBLIC_API_BASE || 'https://dev.mischool.id/api'
+    }
+  },
+  colorMode: {
+    preference: 'light', 
+    fallback: 'light', 
+  }
 })

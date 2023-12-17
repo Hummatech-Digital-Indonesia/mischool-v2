@@ -47,7 +47,15 @@ const demoPages = computed(() => {
     return 0
   })
 })
-
+const selectedFeature = ref<string>('')
+const features = ref<string[]>([
+  'Absensi',
+  'E-Learning',
+  'Rapor',
+  'Ujian',
+  'Buku Tamu',
+  'Pelanggaran',
+])
 const categories = computed(() => {
   const categories = new Set<string>()
 
@@ -120,7 +128,7 @@ const filteredDemos = computed(() => {
       <div class="mb-16 max-w-2xl">
         <BaseText
           class="text-primary-500 mb-2 text-[0.65rem] uppercase tracking-wider"
-          >Prebuilt pages</BaseText
+          >Demo Halaman</BaseText
         >
         <BaseHeading
           as="h2"
@@ -129,16 +137,15 @@ const filteredDemos = computed(() => {
           lead="tight"
           class="text-muted-800 mx-auto mb-4 dark:text-white"
         >
-          {{ demoPages.length }}+ Amazing demos
+          {{ features.length }} Fitur Luar Biasa
         </BaseHeading>
         <BaseParagraph
           size="lg"
           class="text-muted-500 dark:text-muted-100 mx-auto mb-4"
         >
-          Tairo ships with {{ demoPages.length }}+ prebuilt pages, including
-          dashboard and app examples, as well as collections like lists, grids,
-          profile and personal pages and many other authentication and utility
-          pages.
+          platform pendidikan yang membawa {{ features.length }} fitur andalan
+          untuk memperkaya pengalaman belajar. Di dalamnya, Anda akan menemukan
+          solusi lengkap untuk mendukung keberhasilan proses pendidikan
         </BaseParagraph>
       </div>
 
@@ -150,22 +157,18 @@ const filteredDemos = computed(() => {
           <ul class="space-y-3 lg:sticky lg:top-28">
             <li class="capitalize">
               <BaseRadio
-                v-model="selectedCategory"
+                v-model="selectedFeature"
                 value=""
                 color="primary"
-                label="All"
+                label="Semua"
               />
             </li>
-            <li
-              v-for="category in categories"
-              :key="category"
-              class="capitalize"
-            >
+            <li v-for="feature in features" :key="feature" class="capitalize">
               <BaseRadio
-                v-model="selectedCategory"
-                :value="category"
+                v-model="selectedFeature"
+                :value="feature"
                 color="primary"
-                :label="category"
+                :label="feature"
               />
             </li>
           </ul>

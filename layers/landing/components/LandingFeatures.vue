@@ -4,7 +4,7 @@
       <div class="mb-12 max-w-2xl">
         <BaseText
           class="text-primary-500 mb-2 text-[0.65rem] uppercase tracking-wider"
-          >There's more</BaseText
+          >Fitur</BaseText
         >
         <BaseHeading
           as="h2"
@@ -13,68 +13,65 @@
           lead="tight"
           class="text-muted-800 mx-auto mb-4 dark:text-white"
         >
-          Developer friendly
+          Fitur Fitur Mischool
         </BaseHeading>
         <BaseParagraph
           size="lg"
           class="text-muted-500 dark:text-muted-100 mx-auto mb-4"
         >
-          Tairo is a cutting edge dashboard system that uses the latest
-          javascript and technologies and remains truthfull to the best coding
-          practices, making it and ideal choice for your next headless
-          application.
+          Mischool menghadirkan 6 fitur penting yang dirancang untuk
+          meningkatkan pengalaman pendidikan Anda.
         </BaseParagraph>
       </div>
       <div class="ltablet:grid-cols-3 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        <LandingFeaturesTile title="Nuxt" icon="simple-icons:nuxtdotjs">
-          Nuxt is the latest version of the Nuxt.js framework, a powerful SSR
-          vue framework.
+        <LandingFeaturesTile
+          title="E-Learning"
+          icon="mdi:book-open-page-variant"
+        >
+          Kegiatan belajar mengajar di sekolah jadi lebih efektif dan efisien
+          melalui fitur e-learning. Siswa dapat membaca materi dan mengumpulkan
+          tugas berupa gambar, link atau file dimanapun kapanpun.
         </LandingFeaturesTile>
         <LandingFeaturesTile
-          title="Tailwind CSS"
-          icon="simple-icons:tailwindcss"
+          title="Ujian"
+          icon="material-symbols:contract-edit-outline"
         >
-          Tailwind CSS is a utility-first CSS framework for rapidly building
-          custom user interfaces.
+          Dengan fitur ini, guru dapat membuat soal ujian. Untuk soal pilihan
+          ganda akan ternilai secara otomatis. Dan siswa dapat melaksanakan
+          ujian dimanapun kapanpun sesuai kebijakan sekolah. sekolah juga dapat
+          mendeteksi siswa yang curang saat ujian.
         </LandingFeaturesTile>
-        <LandingFeaturesTile title="Typescript" icon="file-icons:typescript">
-          Typescript is a typed superset of javascript that compiles to plain
-          JS.
+        <LandingFeaturesTile title="Absensi" icon="bi:person-check-fill">
+          Catat kehadiran siswa dengan kartu pelajar berbasis RFID. Guru, siswa,
+          dan wali murid dapat memantau kehadiran siswa secara real-time melalui
+          web dan aplikasi mobile. termasuk dengan Catatan Kehadiran guru dan
+          karyawan dengan RFID
         </LandingFeaturesTile>
-        <LandingFeaturesTile title="Vite" icon="simple-icons:vite">
-          Vite is a next generation frontend tooling that significantly improves
-          frontend development.
+        <LandingFeaturesTile title="Pelanggaran" icon="mdi:flag-variant">
+          Setiap pelanggaran tata tertib siswa seperti keterlambatan,
+          ketidakhadiran, merokok, dan pelanggaran lain, semuanya tercatat
+          secara real-time dan akan terlaporkan pada rapor. Informasi
+          pelanggaran ini memudahkan sekolah dalam membina dan menindaktegas
+          siswa.
         </LandingFeaturesTile>
-        <LandingFeaturesTile title="Node LTS" icon="teenyicons:nodejs-solid">
-          Node 18 is one of the latest versions of Node.js, a powerful
-          javascript server engine.
-        </LandingFeaturesTile>
-        <LandingFeaturesTile title="Pnpm" icon="file-icons:pnpm">
-          Pnpm is a fast, disk space efficient package manager for the npm and
-          Yarn registries.
-        </LandingFeaturesTile>
-        <LandingFeaturesTile title="Eslint" icon="file-icons:eslint">
-          Eslint is a tool for identifying and reporting on patterns found in
-          JavaScript code.
-        </LandingFeaturesTile>
-        <LandingFeaturesTile title="Prettier" icon="simple-icons:prettier">
-          Prettier is an opinionated code formatter. It enforces a consistent
-          code style.
-        </LandingFeaturesTile>
-        <LandingFeaturesTile title="Icones.js" icon="ph:lightning-duotone">
-          Icones.js is a library that allows you to use any icon from any icon
-          library.
-        </LandingFeaturesTile>
-      </div>
-
-      <div class="mt-16 flex items-center justify-center">
-        <BaseButton
-          to="https://go.cssninja.io/buy-tairo"
-          shape="curved"
-          color="primary"
+        <LandingFeaturesTile
+          title="Buku Tamu"
+          icon="carbon:license-third-party"
         >
-          Get Tairo Dashboard System
-        </BaseButton>
+          Setiap ada kunjungan tamu ke sekolah, tamu tinggal scan QRCode di
+          sekolah dan langsung mengisikan form buku tamu. Dengan fitur ini,
+          sekolah dapat melihat informasi tamu/ instansi yang sering berkunjung
+          di sekolah.
+        </LandingFeaturesTile>
+        <LandingFeaturesTile
+          title="Rapor"
+          icon="fluent:clipboard-bullet-list-rtl-20-regular"
+        >
+          Mencatat informasi penilaian siswa secara real-time yang terintegrasi
+          dengan nilai tugas, UTS, UAS, pelanggaran, kehadiran, dan perilaku
+          siswa. Guru, siswa, dan wali murid dapat memantau hasil belajar siswa
+          melalui web dan aplikasi mobile.
+        </LandingFeaturesTile>
       </div>
     </div>
   </div>

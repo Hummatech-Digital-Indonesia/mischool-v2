@@ -9,12 +9,12 @@
     "clean": "rimraf .nuxt .output node_modules"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^1.0.4",
     "@fontsource-variable/fira-code": "^5.0.8",
     "@fontsource-variable/inter": "^5.0.8",
     "@fontsource-variable/karla": "^5.0.13",
     "@fontsource-variable/roboto-flex": "^5.0.8",
     "@mapbox/mapbox-gl-geocoder": "5.0.1",
+    "@nuxt/devtools": "^1.0.4",
     "@parcel/watcher": "2.3.0",
     "@popperjs/core": "2.11.8",
     "@types/chroma-js": "^2.4.1",
@@ -32,8 +32,8 @@
     "rehype-external-links": "3.0.0",
     "rehype-raw": "7.0.0",
     "rehype-sanitize": "6.0.0",
-    "rehype-stringify": "10.0.0",
     "rehype-shikiji": "0.6.8",
+    "rehype-stringify": "10.0.0",
     "remark-gfm": "3.0.1",
     "remark-parse": "10.0.2",
     "remark-rehype": "10.1.0",
@@ -46,5 +46,8 @@
     "vue3-carousel": "0.3.1",
     "vue3-popper": "1.5.0",
     "vue3-smooth-dnd": "0.0.6"
+  },
+  "dependencies": {
+    "pm2": "^5.3.0"
   }
 }

@@ -26,14 +26,14 @@ useHead({
   ],
 
   meta: [
-    { name: 'description', content: () => route.meta.description ?? 'The most advanced Nuxt and Tailwind CSS dashboard template' },
+    { name: 'description', content: () => route.meta.description ?? '. Sistem Manajemen Sekolah Terbaik' },
     {
       name: 'twitter:card',
       content: 'summary_large_image',
     },
     {
       name: 'twitter:site',
-      content: '@cssninjaStudio',
+      content: '@hummatech',
     },
     {
       name: 'og:image:type',
@@ -49,18 +49,7 @@ useHead({
     },
     {
       name: 'og:image',
-      content: `https://media.cssninja.io/embed/marketplace/product/wide.png?headline=${encodeURIComponent(
-        route.meta.description ||
-          (route.meta.preview
-            ? `${route.meta.preview?.title} - ${route.meta.preview?.description}`
-            : 'Nuxt & Tailwind CSS dashboard system'),
-      )}&url=${encodeURIComponent(
-        'https://media.cssninja.io/content/products/logos/tairo-text-white.svg',
-      )}&previewUrl=${encodeURIComponent(
-        `https://tairo.cssninja.io${
-          route.meta.preview?.src || '/img/screens/documentation-hub.png'
-        }`,
-      )}`,
+      content: `https://school.mischool.online/flat%20only%20logo%20.png`,
     },
   ],
 })

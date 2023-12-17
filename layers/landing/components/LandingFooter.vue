@@ -10,15 +10,7 @@ const year = new Date().getFullYear()
       to="https://cssninja.io"
       class="dark:bg-muted-900 absolute inset-x-0 -top-4 mx-auto flex h-9 w-14 items-center justify-center bg-white"
     >
-      <img
-        class="h-7 w-7"
-        src="/img/logos/cssninja-logo-icon.svg"
-        alt="Css Ninja logo"
-        height="28"
-        width="28"
-        loading="lazy"
-        decoding="async"
-      />
+      <TairoLogo class="h-12 w-10" />
     </NuxtLink>
     <div
       class="ltablet:flex-row mx-auto flex max-w-7xl flex-col items-center justify-between px-6 py-8 lg:flex-row"
@@ -76,9 +68,9 @@ const year = new Date().getFullYear()
             rel="noopener"
             class="text-muted-600 hover:text-primary-500 dark:text-muted-200 dark:hover:text-primary-400 text-sm transition-colors duration-300"
           >
-            Css Ninja
+            Hummatech
           </NuxtLink>
-          2018-{{ year }}.
+          2023-{{ year }}.
         </span>
       </div>
     </div>

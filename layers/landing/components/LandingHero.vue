@@ -80,7 +80,7 @@ function useGaugePersonal() {
 
 <template>
   <div
-    class="dark:to-muted-900 relative min-h-screen overflow-hidden bg-gradient-to-b from-transparent to-white"
+    class="dark:to-muted-900 relative min-h-[80vh] overflow-hidden bg-gradient-to-b from-transparent to-white"
   >
     <div class="gridlines absolute inset-x-0 z-10 -mt-8 py-20"></div>
     <div class="absolute inset-x-0 z-20 -mt-24 py-20">
@@ -96,7 +96,7 @@ function useGaugePersonal() {
       </div>
     </div>
     <div class="mx-auto w-full max-w-7xl px-4">
-      <div class="relative z-30 pt-32 text-center">
+      <div class="relative z-30 pt-56 text-center">
         <BaseHeading
           as="h1"
           size="5xl"
@@ -140,7 +140,7 @@ function useGaugePersonal() {
       </div>
 
       <!-- Components -->
-      <LandingHeroMockup />
+      <!-- <LandingHeroMockup /> -->
     </div>
   </div>
 </template>
