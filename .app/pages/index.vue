@@ -10,6 +10,7 @@ definePageMeta({
 })
 </script>
 
+
 <template>
   <div>
     <LandingHero />
