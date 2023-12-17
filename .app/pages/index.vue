@@ -19,8 +19,7 @@ definePageMeta({
     <LandingPackages />
     <LandingDemos :limit="12" />
     <LandingLayers />
-    <LandingLayouts />
-    <LandingCta />
+    <!-- <LandingCta /> -->
     <LandingContent />
     <LandingFooter />
   </div>
