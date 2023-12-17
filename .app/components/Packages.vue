@@ -28,7 +28,7 @@ const formatPrice = (price: number): string => {
 </script>
 
 <template>
-  <BaseCard shape="rounded" class="flex flex-col pb-2 h-full overflow-y-auto flex-1">
+  <BaseCard shape="rounded" class="flex flex-col pb-2 h-full overflow-y-auto flex-1 max-w-[90vw]">
     <div class="p-6 pb-1">
       <BaseHeading
         as="h3"

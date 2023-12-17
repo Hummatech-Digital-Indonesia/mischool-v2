@@ -2,6 +2,19 @@
 import { Carousel, Pagination, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
+const breakpoints = {
+      // 700px and up
+      604: {
+        itemsToShow: 2,
+        snapAlign: 'center',
+      },
+      // 1024 and up
+      900: {
+        itemsToShow: 3,
+        snapAlign: 'center',
+      },
+    }
+
 interface FeaturePackDetails {
   id: number
   feature_pack_id: string
@@ -60,9 +73,11 @@ const { data: response } = useFetch<FetchResponse>(
       pengalaman pendidikan Anda.
     </BaseParagraph>
     <Carousel
-      :items-to-show="3"
+      :items-to-show="1"
+      :breakpoints="breakpoints"
       :wrap-around="true"
       :transition="500"
+      :autoplay="2000"
       class="max-w-[1200px] py-8 mx-auto"
     >
       <Slide v-for="(features,index) in response?.data" :key="features.id">
