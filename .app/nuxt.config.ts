@@ -1,4 +1,8 @@
 export default defineNuxtConfig({
+  devServer : {
+    host: "127.0.0.1",
+    port: 5005
+  },
   ssr : true,
   devtools: { enabled: true },
   extends: [
@@ -58,5 +62,5 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'light', 
     fallback: 'light', 
-  }
+  },
 })
