@@ -3,7 +3,7 @@ module.exports = {
   apps: [
     {
       name: 'Mischool',
-      port: '2023',
+      port: '5005',
       exec_mode: 'cluster',
       instances: 'max',
       script: './.app/.output/server/index.mjs',
