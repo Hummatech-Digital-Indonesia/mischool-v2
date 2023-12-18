@@ -201,7 +201,7 @@ const filteredDemos = computed(() => {
               shape="curved"
               color="primary"
               flavor="outline"
-              to="/demos"
+              to="/"
               >View All {{ demoPages.length }} Demos</BaseButton
             >
           </div>

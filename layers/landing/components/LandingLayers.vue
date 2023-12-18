@@ -53,7 +53,7 @@ const { data: response } = useFetch<FetchResponse>(`${useApiUrl()}/landing-page`
         <LandingLayersBox
           title="Sekolah"
           icon="ic:baseline-business"
-          to="/documentation/setup"
+          to="/"
           color="indigo"
           :count="response?.data.school ? response.data.school : 0"
         >
@@ -65,7 +65,7 @@ const { data: response } = useFetch<FetchResponse>(`${useApiUrl()}/landing-page`
         <LandingLayersBox
           title="Guru"
           icon="ic:sharp-person"
-          to="/documentation/tailwindcss"
+          to="/"
           color="purple"
           :count="response?.data.teacher ? response.data.teacher : 0"
         >
@@ -76,7 +76,7 @@ const { data: response } = useFetch<FetchResponse>(`${useApiUrl()}/landing-page`
         <LandingLayersBox
           title="Siswa"
           icon="bi:mortarboard-fill"
-          to="/documentation/reference"
+          to="/"
           :count="response?.data.student ? response.data.student : 0"
         >
           {{ response?.data.student ? response.data.student : 0 }} siswa telah

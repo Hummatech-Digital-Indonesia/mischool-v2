@@ -28,14 +28,14 @@ const year = new Date().getFullYear()
         class="ltablet:mt-0 ltablet:gap-6 mt-6 flex flex-wrap items-center justify-center gap-4 lg:mt-0 lg:gap-6"
       >
         <NuxtLink
-          to="/demos"
+          to="/"
           class="text-muted-600 hover:text-primary-500 dark:text-muted-200 dark:hover:text-primary-400 text-sm transition-colors duration-300"
         >
           Demo pages
         </NuxtLink>
 
         <NuxtLink
-          to="/documentation"
+          to="/"
           class="text-muted-600 hover:text-primary-500 dark:text-muted-200 dark:hover:text-primary-400 text-sm transition-colors duration-300"
         >
           Documentation

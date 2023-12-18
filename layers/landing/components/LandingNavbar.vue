@@ -33,16 +33,10 @@ const { open } = usePanels()
             : 'hidden',
         ]"
       >
-        <NuxtLink
-          to="/demos"
-          class="inline-flex items-center justify-center px-6"
-        >
+        <NuxtLink to="/" class="inline-flex items-center justify-center px-6">
           Demo Halaman
         </NuxtLink>
-        <NuxtLink
-          to="/documentation"
-          class="inline-flex items-center justify-center px-6"
-        >
+        <NuxtLink to="" class="inline-flex items-center justify-center px-6">
           Dokumentasi
         </NuxtLink>
         <div class="px-6">
