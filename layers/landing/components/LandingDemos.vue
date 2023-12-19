@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { RouteRecordRaw } from 'vue-router'
-
 const props = withDefaults(
   defineProps<{
     limit?: number
@@ -12,41 +10,8 @@ const props = withDefaults(
   },
 )
 
-const selectedCategory = ref('')
+const { data: demoPages } = useFetch<any>('/api/demo-pages')
 
-const router = useRouter()
-
-const demoPages = computed(() => {
-  const match: RouteRecordRaw[] = []
-
-  function traverseRoutes(routes: Readonly<RouteRecordRaw[]>) {
-    for (const route of routes) {
-      if (route.children) {
-        // recurse
-        traverseRoutes(route.children)
-      } else if (
-        route.path.includes(':') &&
-        Array.isArray(route.meta?.preview)
-      ) {
-        match.push(route)
-      } else if (!route.path.includes(':') && route.meta?.preview) {
-        // has preview data
-        match.push(route)
-      }
-    }
-  }
-
-  // start on top route
-  traverseRoutes(router.options.routes)
-
-  return match.sort((a, b) => {
-    if (a.meta?.preview?.order === undefined) return 0
-    if (b.meta?.preview?.order === undefined) return 0
-    if (a.meta.preview?.order < b.meta.preview?.order) return -1
-    if (a.meta.preview?.order > b.meta.preview?.order) return 1
-    return 0
-  })
-})
 const selectedFeature = ref<string>('')
 const features = ref<string[]>([
   'Absensi',
@@ -56,69 +21,15 @@ const features = ref<string[]>([
   'Buku Tamu',
   'Pelanggaran',
 ])
-const categories = computed(() => {
-  const categories = new Set<string>()
-
-  function extractPreview(preview: any) {
-    if (!preview) {
-      return
-    }
-    if (Array.isArray(preview)) {
-      for (const item of preview) {
-        extractPreview(item)
-      }
-      return
-    }
-    if (!preview.categories) {
-      return
-    }
-    if (!Array.isArray(preview.categories)) {
-      return
-    }
-    for (const category of preview.categories) {
-      categories.add(category)
-    }
-  }
-
-  for (const route of demoPages.value) {
-    extractPreview(route.meta?.preview)
-  }
-  return Array.from(categories).sort((a, b) => {
-    return a.localeCompare(b)
-  })
-})
 
 const filteredDemos = computed(() => {
-  if (selectedCategory.value.length === 0) {
-    return demoPages.value
+  if (selectedFeature.value.length === 0) {
+    return demoPages.value.filter((page) => page.preview?.isDashboard === 1)
   }
 
-  function filterPreview(preview: any) {
-    if (!preview) {
-      return false
-    }
-    if (Array.isArray(preview)) {
-      for (const item of preview) {
-        if (filterPreview(item)) {
-          return true
-        }
-      }
-      return false
-    }
-    if (!preview.categories) {
-      return false
-    }
-    if (!Array.isArray(preview.categories)) {
-      return false
-    }
-    return preview.categories.some((category: string) =>
-      selectedCategory.value.includes(category),
-    )
-  }
-
-  return demoPages.value.filter((page) => {
-    return filterPreview(page.meta?.preview)
-  })
+  return demoPages.value.filter(
+    (page) => page.preview?.categories?.includes(selectedFeature.value),
+  )
 })
 </script>
 
@@ -180,29 +91,13 @@ const filteredDemos = computed(() => {
               v-for="page in filteredDemos.slice(0, props.limit)"
               :key="page.name"
             >
-              <LandingDemoLink
-                v-if="!Array.isArray(page.meta?.preview)"
-                :name="page.name"
-                :preview="page.meta?.preview"
-              />
-              <template v-else>
-                <LandingDemoLink
-                  v-for="preview in page.meta?.preview"
-                  :key="preview.title"
-                  :name="page.name"
-                  :preview="preview"
-                />
-              </template>
+              <LandingDemoLink :name="page.name" :preview="page.preview" />
             </template>
           </div>
 
           <div v-if="props.cta" class="mt-24 flex items-center justify-center">
-            <BaseButton
-              shape="curved"
-              color="primary"
-              flavor="outline"
-              to="/"
-              >View All {{ demoPages.length }} Demos</BaseButton
+            <BaseButton shape="curved" color="primary" flavor="outline" to="/"
+              >Lihat Semua Demo</BaseButton
             >
           </div>
         </div>
