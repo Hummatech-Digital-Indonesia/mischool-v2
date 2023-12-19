@@ -41,15 +41,7 @@ const year = new Date().getFullYear()
           Documentation
         </NuxtLink>
         <NuxtLink
-          to="https://github.com/shuriken-ui"
-          target="_blank"
-          rel="noopener"
-          class="text-muted-600 hover:text-primary-500 dark:text-muted-200 dark:hover:text-primary-400 text-sm transition-colors duration-300"
-        >
-          Shuriken UI
-        </NuxtLink>
-        <NuxtLink
-          to="https://cssninja.io/faq/support"
+          to=""
           target="_blank"
           rel="noopener"
           class="text-muted-600 hover:text-primary-500 dark:text-muted-200 dark:hover:text-primary-400 text-sm transition-colors duration-300"
