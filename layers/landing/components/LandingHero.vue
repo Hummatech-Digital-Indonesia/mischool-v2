@@ -130,7 +130,7 @@ function useGaugePersonal() {
           <BaseButton
             shape="curved"
             color="primary"
-            to="https://go.cssninja.io/buy-tairo"
+            to="https://school.mischool.id/register"
             shadow="hover"
             class="!h-12 w-44"
           >

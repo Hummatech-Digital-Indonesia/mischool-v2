@@ -1,4 +1,19 @@
 <script setup lang="ts">
+import type { RouteRecordName } from 'vue-router'
+
+interface Pages {
+  name?: RouteRecordName
+  preview?: {
+    title: string
+    description: string
+    categories?: string[]
+    isDashboard?: number
+    src: string
+    order?: number
+    params?: Record<string, string>
+  }
+}
+
 const props = withDefaults(
   defineProps<{
     limit?: number
@@ -10,7 +25,7 @@ const props = withDefaults(
   },
 )
 
-const { data: demoPages } = useFetch<any>('/api/demo-pages')
+const { data: demoPages } = useFetch<Pages[]>('/api/demo-pages')
 
 const selectedFeature = ref<string>('')
 const features = ref<string[]>([
@@ -24,9 +39,11 @@ const features = ref<string[]>([
 
 const filteredDemos = computed(() => {
   if (selectedFeature.value.length === 0) {
+    //@ts-ignore
     return demoPages.value.filter((page) => page.preview?.isDashboard === 1)
   }
 
+  //@ts-ignore
   return demoPages.value.filter(
     (page) => page.preview?.categories?.includes(selectedFeature.value),
   )

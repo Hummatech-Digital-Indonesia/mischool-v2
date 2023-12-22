@@ -59,6 +59,16 @@ const { open } = usePanels()
             </span>
           </button>
         </div>
+        <div class="px-6">
+          <BaseButton
+            v-if="isMobileOpen"
+            shape="curved"
+            color="primary"
+            to="https://school.mischool.id/login"
+          >
+            Login
+          </BaseButton>
+        </div>
       </div>
       <div class="flex w-1/2 items-center justify-end gap-4 md:w-1/5">
         <button
