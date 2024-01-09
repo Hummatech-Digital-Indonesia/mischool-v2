@@ -24,7 +24,6 @@ useHead({
       href: '/img/favicon.png',
     },
   ],
-
   meta: [
     { name: 'description', content: () => route.meta.description ?? '. Sistem Manajemen Sekolah Terbaik' },
     {

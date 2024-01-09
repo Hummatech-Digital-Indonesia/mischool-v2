@@ -45,15 +45,15 @@ const formatPrice = (price: number): string => {
         weight="bold"
         class="text-primary-500 mb-2"
       >
-        {{ $props.feature.name }}
+        {{ props.feature.name }}
       </BaseHeading>
 
       <BaseText size="xl" weight="extrabold" class="mt-4 text-primary-500"
-        >Rp{{ formatPrice($props.feature.price) }}/ <span class="text-md">bln</span>
+        >Rp{{ formatPrice(props.feature.price) }}/ <span class="text-md">bln</span>
       </BaseText>
 
       <BaseParagraph size="sm" class="text-muted-600 dark:text-muted-200 my-3">
-        {{ $props.feature.description }}
+        {{ props.feature.description }}
       </BaseParagraph>
 
       <BaseButton class="w-full mb-4" color="primary" shape="rounded"
@@ -75,7 +75,7 @@ const formatPrice = (price: number): string => {
       </BaseHeading>
     </div>
     <template
-      v-for="(featurePackDetail,index) in $props.feature.feature_pack_details"
+      v-for="(featurePackDetail,index) in props.feature.feature_pack_details"
       :key="featurePackDetail.id"
     >
       <div :class="index %  2 == 0 ? 'bg-slate-100 dark:bg-muted-700' : ''" class="w-full items-center flex py-1 rounded-md">

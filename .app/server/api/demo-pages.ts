@@ -18,13 +18,25 @@ export default defineEventHandler(async (event) => {
   function getPages(): any {
     const demoPages: Pages[] = [
       {
-        name: 'Absensi',
+        name: 'Dashboard Absensi',
+        preview: {
+          title: 'Dashboard Absensi',
+          description: 'This is the home page.',
+          categories: ['Absensi'],
+          isDashboard: 1,
+          src: '/img/screens/absensi/1',
+          order: 1,
+          params: { id: '1' },
+        },
+      },
+      {
+        name: '',
         preview: {
           title: 'Halaman Absensi',
           description: 'This is the home page.',
           categories: ['Absensi'],
           isDashboard: 1,
-          src: '/img/screens/dashboards-personal-1.png',
+          src: '/img/screens/absensi/1',
           order: 1,
           params: { id: '1' },
         },
