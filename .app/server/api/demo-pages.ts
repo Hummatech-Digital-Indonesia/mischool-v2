@@ -21,7 +21,7 @@ export default defineEventHandler(async (event) => {
         name: 'Dashboard Absensi',
         preview: {
           title: 'Dashboard Absensi',
-          description: 'This is the home page.',
+          description: 'Halaman Dashboard Fitur Absensi.',
           categories: ['Absensi'],
           isDashboard: 1,
           src: '/img/screens/absensi/1',
