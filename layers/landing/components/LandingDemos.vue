@@ -113,7 +113,11 @@ const filteredDemos = computed(() => {
           </div>
 
           <div v-if="props.cta" class="mt-24 flex items-center justify-center">
-            <BaseButton shape="curved" color="primary" flavor="outline" to="/"
+            <BaseButton
+              shape="curved"
+              color="primary"
+              flavor="outline"
+              to="/demo"
               >Lihat Semua Demo</BaseButton
             >
           </div>

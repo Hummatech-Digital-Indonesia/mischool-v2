@@ -10,36 +10,24 @@
           >
             <div class="ltablet:self-center font-sans lg:self-center">
               <h2 class="text-3xl font-medium text-white sm:text-4xl">
-                <span class="block">Ready to dive in?</span>
-                <span class="block">Explore all available components.</span>
+                <span class="block">Siap Untuk Mempelajari Lebih Dalam?</span>
               </h2>
               <p class="mt-4 text-lg leading-6 text-white">
-                We built a great documentation to help you get started. Each
-                component has a demo page and code snippets showing how to use
-                them.
+                Kami membangun dokumentasi komplex yang memudahkan setiap
+                pengguna dalam menggunakan sistem kami.
               </p>
               <div class="mt-8 flex items-center gap-2">
                 <BaseButton to="/documentation" shape="curved" class="!h-11"
-                  >Open Documentation</BaseButton
+                  >Buka Dokumentasi</BaseButton
                 >
               </div>
             </div>
           </div>
           <div class="aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1 -mt-6">
             <NuxtImg
-              class="ltablet:translate-y-20 block translate-x-6 translate-y-6 rounded-md object-cover object-left-top dark:hidden sm:translate-x-16 lg:translate-y-20"
-              src="/img/apps/tairo-screen-full.png"
-              alt="Tairo demo screenshot lightmode"
-              format="webp"
-              width="568"
-              height="532"
-              loading="lazy"
-              decoding="async"
-            />
-            <NuxtImg
-              class="ltablet:translate-y-20 hidden translate-x-6 translate-y-6 rounded-md object-cover object-left-top dark:block sm:translate-x-16 lg:translate-y-20"
-              src="/img/apps/tairo-screen-full-dark.png"
-              alt="Tairo demo screenshot darkmode"
+              class="ltablet:translate-y-20 block translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
+              src="/img/illustrations/people.svg"
+              alt="Mischool demo screenshot"
               format="webp"
               width="568"
               height="532"

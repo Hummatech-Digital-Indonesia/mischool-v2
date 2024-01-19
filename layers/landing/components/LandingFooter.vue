@@ -17,7 +17,7 @@ const year = new Date().getFullYear()
     >
       <NuxtLink
         to="/"
-        aria-label="Go to Tairo homepage"
+        aria-label="Go to Midchool homepage"
         class="ltablet:w-1/5 block w-full lg:w-1/5"
       >
         <TairoLogoText
@@ -28,7 +28,7 @@ const year = new Date().getFullYear()
         class="ltablet:mt-0 ltablet:gap-6 mt-6 flex flex-wrap items-center justify-center gap-4 lg:mt-0 lg:gap-6"
       >
         <NuxtLink
-          to="/"
+          to="/demo"
           class="text-muted-600 hover:text-primary-500 dark:text-muted-200 dark:hover:text-primary-400 text-sm transition-colors duration-300"
         >
           Demo pages
