@@ -18,7 +18,7 @@ interface Feature {
 }
 
 const props = defineProps<{
-  feature: Feature,
+  feature: Feature
   number: number
 }>()
 
@@ -28,7 +28,10 @@ const formatPrice = (price: number): string => {
 </script>
 
 <template>
-  <BaseCard shape="rounded" class="flex flex-col pb-2 h-full overflow-y-auto flex-1 max-w-[90vw]">
+  <BaseCard
+    shape="rounded"
+    class="flex flex-col pb-2 h-full overflow-y-auto flex-1 max-w-[90vw]"
+  >
     <div class="p-6 pb-1">
       <BaseHeading
         as="h3"
@@ -41,7 +44,7 @@ const formatPrice = (price: number): string => {
       </BaseHeading>
       <BaseHeading
         as="h3"
-        size="sm"
+        size="md"
         weight="bold"
         class="text-primary-500 mb-2"
       >
@@ -49,7 +52,8 @@ const formatPrice = (price: number): string => {
       </BaseHeading>
 
       <BaseText size="xl" weight="extrabold" class="mt-4 text-primary-500"
-        >Rp{{ formatPrice(props.feature.price) }}/ <span class="text-md">bln</span>
+        >Rp{{ formatPrice(props.feature.price) }}/
+        <span class="text-md">bln</span>
       </BaseText>
 
       <BaseParagraph size="sm" class="text-muted-600 dark:text-muted-200 my-3">
@@ -75,15 +79,16 @@ const formatPrice = (price: number): string => {
       </BaseHeading>
     </div>
     <template
-      v-for="(featurePackDetail,index) in props.feature.feature_pack_details"
+      v-for="(featurePackDetail, index) in props.feature.feature_pack_details"
       :key="featurePackDetail.id"
     >
-      <div :class="index %  2 == 0 ? 'bg-slate-100 dark:bg-muted-700' : ''" class="w-full items-center flex py-1 rounded-md">
+      <div
+        :class="index % 2 == 0 ? 'bg-slate-100 dark:bg-muted-700' : ''"
+        class="w-full items-center flex py-1 rounded-md"
+      >
         <svg
-          class="ml-6 mr-2"
+          class="ml-6 mx-2 h-6 w-6"
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
           viewBox="0 0 64 64"
         >
           <circle cx="32" cy="32" r="30" fill="#4bd37b" />
