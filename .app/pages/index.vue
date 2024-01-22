@@ -10,7 +10,6 @@ definePageMeta({
 })
 </script>
 
-
 <template>
   <div>
     <LandingHero />
@@ -20,6 +19,7 @@ definePageMeta({
     <LandingPackages />
     <LandingDemos :limit="12" />
     <LandingLayers />
+    <LandingNews />
     <!-- <LandingCta /> -->
     <LandingContent />
     <LandingFooter />

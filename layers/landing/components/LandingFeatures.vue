@@ -1,3 +1,4 @@
+
 <template>
   <div class="dark:bg-muted-900 bg-white py-24">
     <div class="mx-auto w-full max-w-7xl px-4">
