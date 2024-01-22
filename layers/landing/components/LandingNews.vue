@@ -4,7 +4,7 @@
       <div class="mb-10 max-w-2xl">
         <BaseText
           class="text-primary-500 mb-2 text-[0.65rem] uppercase tracking-wider"
-          >NEWS</BaseText
+          >Berita</BaseText
         >
         <BaseHeading
           as="h2"
@@ -16,7 +16,7 @@
           Berita Bulan Ini
         </BaseHeading>
       </div>
-      <div class="grid grid-cols-3 gap-5">
+      <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         <BaseCard
           shape="curved"
           elevated-hover
@@ -53,13 +53,15 @@
               Selamat datang di Galeri Kegiatan Alumni kami! Temukan warisan
               inspira....
             </BaseParagraph>
-            <BaseButton
-              shape="curved"
-              color="primary"
-              shadow="hover"
-              class="flex !h-12 w-48 justify-center"
-              >Lihat Selengkapnya...</BaseButton
-            >
+            <nuxt-link to="/news/detail">
+              <BaseButton
+                shape="curved"
+                color="primary"
+                shadow="hover"
+                class="flex !h-12 w-48 justify-center"
+                >Lihat Selengkapnya...</BaseButton
+              >
+            </nuxt-link>
           </div>
         </BaseCard>
         <BaseCard
