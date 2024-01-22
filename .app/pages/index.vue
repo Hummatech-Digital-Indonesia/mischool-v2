@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  title: 'System Manajemen Sekolah',
+  title: 'Sistem Manajemen Sekolah',
   description:
     'Mischool adalah platform manajemen sekolah yang memberikan solusi terbaik untuk administrasi dan komunikasi antara sekolah, siswa, dan orang tua.',
   breadcrumb: {
