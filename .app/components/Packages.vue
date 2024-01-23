@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 interface FeaturePackDetails {
   id: number
   feature_pack_id: string
