@@ -28,7 +28,7 @@
           lead="tight"
           class="text-muted-800 mx-auto mb-4 dark:text-white"
         >
-          Berita Bulan Ini
+          Berita Terbaru
         </BaseHeading>
       </div>
       <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
