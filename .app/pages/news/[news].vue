@@ -1,4 +1,24 @@
-<!-- eslint-disable prettier-vue/prettier -->
+<script setup lang="ts">
+    import type {Meta} from 'types'
+    import type {News} from 'types/news'
+
+    const route = useRoute()
+
+    interface Response {
+      meta : Meta
+      data : News
+    }
+
+    const {data : news , error } = useFetch<Response>(`https://core.mischool.online/api/news/${route.params.news}`)
+
+    if(error.value){
+      throw createError({
+        statusCode: 404,
+        statusMessage: 'Halaman Tidak Ditemukan!'
+      })
+    }
+</script>
+
 <template>
   <div class="dark:bg-muted-900 bg-white py-24">
     <div class="mx-auto w-full max-w-7xl px-4">
@@ -25,7 +45,7 @@
         >
           <div class="">
             <img
-              src="/img/detail-news.png"
+              :src="news?.data.thumbnail"
               class="h-full w-full rounded-md"
               alt=""
               srcset=""
@@ -37,7 +57,7 @@
               class="text-muted-500 dark:text-muted-100 mx-auto my-2 flex"
             >
               <Icon class="h-6 w-6" name="ph:calendar" />
-              <p class="ml-1 mt-1">Malang, 18 Juli 2023</p>
+              <p class="ml-1 mt-1">{{ news?.data.created_at }}</p>
             </BaseParagraph>
             <BaseHeading
               as="h2"
@@ -46,40 +66,13 @@
               lead="normal"
               class="mx-auto mb-4 font-bold text-black dark:text-white"
             >
-              MISCHOOL PROMO PADA TANGGAL 23 - 28 JANUARI 2024 DAN SEGERA CEK
-              BERITA BERIKUT
+              {{ news?.data.title }}
             </BaseHeading>
             <BaseParagraph
               size="sm"
               class="text-muted-700 dark:text-muted-100 mx-auto my-2"
+              v-html="news?.data.content"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              lectus neque, scelerisque et purus et, pharetra maximus sapien.
-              Quisque at leo massa. Quisque euismod vitae sapien sit amet
-              pharetra. Aenean nulla ipsum, volutpat ac ante a, iaculis cursus
-              nisi. Donec porttitor, eros hendrerit dignissim malesuada, enim
-              risus iaculis est, id maximus odio libero eu nulla. Morbi sed
-              nulla ex. Proin et blandit diam. Cras tincidunt nunc a tincidunt
-              tempor. Quisque eget nibh luctus, condimentum tellus quis, dapibus
-              leo. Nullam id congue purus, in elementum nulla. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit. Etiam convallis dictum
-              nibh, non sagittis eros gravida id. Aenean scelerisque auctor sem,
-              at auctor nulla imperdiet pharetra. Curabitur lacus magna, sodales
-              sed ante a, aliquet tempor ligula. Aliquam consectetur felis
-              risus, vitae ultricies tellus tristique a. Curabitur et massa
-              urna. Nullam aliquet ultrices diam, sed eleifend est rhoncus
-              scelerisque. Duis interdum nunc quis posuere ornare. Mauris id
-              erat ut magna congue mollis et ut massa. Duis at ex sit amet augue
-              interdum porttitor. Sed nec ipsum et dolor egestas pellentesque id
-              eu velit. Quisque congue tellus tortor, id viverra tortor iaculis
-              volutpat. Sed sodales placerat ante non venenatis. Vestibulum
-              fermentum, tellus viverra lobortis cursus, arcu quam bibendum
-              dolor, sit amet feugiat libero tortor at lorem. Praesent porta est
-              at dapibus pharetra. Ut a lectus sit amet magna sagittis tempor.
-              Donec lacinia iaculis nibh, id posuere neque. Nullam aliquet est
-              nec aliquet commodo. Duis gravida quam eu mi convallis ultrices.
-              Ut quis sagittis risus. Suspendisse nec libero nunc. Vestibulum
-              pharetra ipsum sed vestibulum ullamcorper.
             </BaseParagraph>
           </div>
         </BaseCard>
@@ -91,7 +84,7 @@
             lead="tight"
             class="text-muted-800 mx-auto mb-4 dark:text-white"
           >
-            Berita Terbaru
+            Berita Lainnya
           </BaseHeading>
           <div class="grid grid-cols-1 gap-4 md:grid-cols-1">
             <BaseCard

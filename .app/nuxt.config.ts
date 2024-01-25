@@ -1,4 +1,7 @@
 export default defineNuxtConfig({
+  typescript: {
+    typeCheck: true
+  },
   ssr : true,
   devtools: { enabled: true },
   extends: [
