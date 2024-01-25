@@ -29,14 +29,14 @@ const { data: otherNews } = useFetch<OtherNews>(
   `https://core.mischool.online/api/other-news`,
 )
 
-definePageMeta({
-  title: 'T',
-  description: 'D',
-  breadcrumb: {
-    label: 'Mischool',
-  },
-  layout: 'empty',
-})
+    definePageMeta({
+      title: 'Berita',
+      description: 'Berita Dari Mischool',
+      breadcrumb: {
+        label: 'Mischool',
+      },
+      layout: 'empty',
+    })
 </script>
 
 <template>
