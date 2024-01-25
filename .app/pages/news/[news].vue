@@ -17,6 +17,13 @@
         statusMessage: 'Halaman Tidak Ditemukan!'
       })
     }
+
+    interface OtherNews {
+      meta : Meta
+      data : News[]
+    }
+
+    const {data : otherNews} = useFetch<OtherNews>(`https://core.mischool.online/api/other-news`)
 </script>
 
 <template>
@@ -52,28 +59,21 @@
             />
           </div>
           <div class="">
-            <BaseParagraph
+            <BaseHeading
               size="sm"
+              weight="light"
+              lead="normal"
               class="text-muted-500 dark:text-muted-100 mx-auto my-2 flex"
             >
               <Icon class="h-6 w-6" name="ph:calendar" />
               <p class="ml-1 mt-1">{{ news?.data.created_at }}</p>
-            </BaseParagraph>
-            <BaseHeading
-              as="h2"
-              size="lg"
-              weight="light"
-              lead="normal"
-              class="mx-auto mb-4 font-bold text-black dark:text-white"
-            >
-              {{ news?.data.title }}
             </BaseHeading>
-            <BaseParagraph
-              size="sm"
+            <h2 class="nui-heading nui-heading-lg nui-weight-light nui-lead-normal mx-auto mb-4 font-bold text-black dark:text-white">{{ news?.data.title }}</h2>
+            <div
               class="text-muted-700 dark:text-muted-100 mx-auto my-2"
               v-html="news?.data.content"
             >
-            </BaseParagraph>
+            </div>
           </div>
         </BaseCard>
         <div class="col-span-2 gap-3 lg:col-span-1">
@@ -87,76 +87,10 @@
             Berita Lainnya
           </BaseHeading>
           <div class="grid grid-cols-1 gap-4 md:grid-cols-1">
-            <BaseCard
-              shape="curved"
-              elevated-hover
-              class="dark:!bg-muted-900 motion-safe:hover:!border-primary-500 relative z-10 my-3 motion-reduce:hover:shadow-none"
-            >
-              <div class="">
-                <img
-                  src="/img/detail-news.png"
-                  class="h-full w-full rounded-md"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <div class="p-2">
-                <BaseParagraph
-                  size="sm"
-                  class="text-muted-500 dark:text-muted-100 mx-auto my-2 flex"
-                >
-                  <p class="ml-1 mt-1">Malang, 18 Juli 2023</p>
-                </BaseParagraph>
-                <BaseHeading
-                  as="h2"
-                  size="lg"
-                  weight="light"
-                  lead="normal"
-                  class="mx-auto mb-4 font-bold text-black dark:text-white"
-                >
-                  MISCHOOL PROMO PADA TANGGAL 23 - 28 JANUARI 2024 DAN SEGERA
-                  CEK BERITA BERIKUT
-                </BaseHeading>
-                <BaseButton class="mb-4 w-full" color="primary" shape="rounded"
-                  >Lihat Selengkapnya...</BaseButton
-                >
-              </div>
-            </BaseCard>
-            <BaseCard
-              shape="curved"
-              elevated-hover
-              class="dark:!bg-muted-900 motion-safe:hover:!border-primary-500 relative z-10 my-3 motion-reduce:hover:shadow-none"
-            >
-              <div class="">
-                <img
-                  src="/img/detail-news.png"
-                  class="h-full w-full rounded-md"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <div class="p-2">
-                <BaseParagraph
-                  size="sm"
-                  class="text-muted-500 dark:text-muted-100 mx-auto my-2 flex"
-                >
-                  <p class="ml-1 mt-1">Malang, 18 Juli 2023</p>
-                </BaseParagraph>
-                <BaseHeading
-                  as="h2"
-                  size="lg"
-                  weight="light"
-                  lead="normal"
-                  class="mx-auto mb-4 font-bold text-black dark:text-white"
-                >
-                  MISCHOOL PROMO PADA TANGGAL 23 - 28 JANUARI 2024 DAN SEGERA
-                  CEK BERITA BERIKUT
-                </BaseHeading>
-                <BaseButton class="mb-4 w-full" color="primary" shape="rounded"
-                  >Lihat Selengkapnya...</BaseButton
-                >
-              </div>
-            </BaseCard>
+            <template v-if="otherNews?.data.length">
+              <LandingNewsCard v-for="item in otherNews?.data"  :key="item.id" :news="item" />
+            </template>
+            <LandingNewsCardEmpty v-else />
           </div>
         </div>
       </div>
