@@ -1,3 +1,5 @@
+
+
 <script setup lang="ts">
     import type {Meta} from 'types'
     import type {News} from 'types/news'
@@ -9,6 +11,11 @@
       data : News
     }
 
+    interface OtherNews {
+      meta : Meta
+      data : News[]
+    }
+
     const {data : news , error } = useFetch<Response>(`https://core.mischool.online/api/news/${route.params.news}`)
 
     if(error.value){
@@ -18,12 +25,16 @@
       })
     }
 
-    interface OtherNews {
-      meta : Meta
-      data : News[]
-    }
-
     const {data : otherNews} = useFetch<OtherNews>(`https://core.mischool.online/api/other-news`)
+
+    definePageMeta({
+      title: 'T',
+      description: 'D',
+      breadcrumb: {
+        label: 'Mischool',
+      },
+      layout: 'empty',
+    })
 </script>
 
 <template>
@@ -59,7 +70,7 @@
             />
           </div>
           <div class="">
-            <BaseHeading
+            <BaseParagraph
               size="sm"
               weight="light"
               lead="normal"
@@ -67,7 +78,7 @@
             >
               <Icon class="h-6 w-6" name="ph:calendar" />
               <p class="ml-1 mt-1">{{ news?.data.created_at }}</p>
-            </BaseHeading>
+            </BaseParagraph>
             <h2 class="nui-heading nui-heading-lg nui-weight-light nui-lead-normal mx-auto mb-4 font-bold text-black dark:text-white">{{ news?.data.title }}</h2>
             <div
               class="text-muted-700 dark:text-muted-100 mx-auto my-2"

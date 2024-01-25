@@ -1,7 +1,4 @@
 export default defineNuxtConfig({
-  typescript: {
-    typeCheck: true
-  },
   ssr : true,
   devtools: { enabled: true },
   extends: [
@@ -16,6 +13,7 @@ export default defineNuxtConfig({
      * This would allows you to create an empty git repository
      * with only your source code and no demo.
      */
+    '../layers/tairo-layout-sidebar',
     '../layers/landing',
     '../layers/tairo',
 
@@ -44,12 +42,6 @@ export default defineNuxtConfig({
     writeEarlyHints: true,
     // Render JSON payloads with support for revivifying complex types.
     renderJsonPayloads: true,
-  },
-
-  typescript: {
-    tsConfig: {
-      // Here you can customize the generated tsconfig.json file
-    },
   },
   runtimeConfig: {
 

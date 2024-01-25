@@ -80,8 +80,67 @@ const showStackTrace = ref(true)
             </BaseButton>
           </DevOnly>
         </div>
+        <DevOnly>
+          <div class="mt-6 flex items-center justify-center">
+            <BaseSwitchBall
+              v-model="showStackTrace"
+              color="danger"
+              :label="`${showStackTrace ? 'Hide' : 'Show'} Stacktrace (dev)`"
+            />
+          </div>
+        </DevOnly>
       </div>
     </BasePlaceholderPage>
+
+    <DevOnly>
+      <div v-if="showStackTrace">
+        <BaseCard
+          v-focus
+          shape="curved"
+          class="nui-focus nui-text-700 group relative mx-auto mt-6 max-w-3xl border-2 border-dashed p-8 hover:border-solid"
+          tabindex="0"
+        >
+          <div
+            class="mb-3 flex items-center justify-start gap-1 opacity-30 transition-opacity duration-300 group-hover:opacity-100 group-focus:opacity-100"
+          >
+            <BaseTag v-if="props.error.statusCode" color="danger" size="sm">
+              {{ props.error.statusCode }}
+            </BaseTag>
+            <BaseTag
+              v-if="props.error.url"
+              color="danger"
+              flavor="outline"
+              size="sm"
+            >
+              {{ props.error.url }}
+            </BaseTag>
+          </div>
+          <div class="mb-4 flex items-center gap-2">
+            <BaseIconBox color="danger" shape="full" size="md">
+              <Icon name="ph:skull-duotone" class="h-6 w-6" />
+            </BaseIconBox>
+            <div>
+              <h4
+                class="text-danger-500 font-mono text-lg font-medium [overflow-wrap:anywhere]"
+              >
+                {{ props.error.message }}
+              </h4>
+              <p class="nui-text-500 font-sans text-xs font-medium">
+                This is a dev only stacktrace, you won't see it in production.
+              </p>
+            </div>
+          </div>
+
+          <!-- eslint-disable vue/no-v-html -->
+          <div
+            v-if="props.error.stack"
+            class="mt-6 overflow-auto whitespace-pre p-2 font-mono text-sm opacity-60 transition-all duration-300 group-hover:opacity-100 group-focus:opacity-100"
+            v-html="props.error.stack"
+          ></div>
+          <!-- eslint-enable vue/no-v-html -->
+        </BaseCard>
+      </div>
+    </DevOnly>
   </div>
 </template>
 

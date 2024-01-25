@@ -32,9 +32,10 @@
         </BaseHeading>
       </div>
       <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-        <template v-for="item in news?.data">
-            <LandingNewsCard :news="item" />
+        <template v-if="news?.data.length">
+            <LandingNewsCard v-for="item in news?.data" :news="item" />
         </template>
+        <LandingNewsCardEmpty v-else/>
       </div>
     </div>
   </div>

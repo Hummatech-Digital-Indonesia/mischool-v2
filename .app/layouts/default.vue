@@ -8,5 +8,7 @@
 </script>
 
 <template>
-    <slot />
+    <TairoSidebarLayout>
+        <slot />
+    </TairoSidebarLayout>
 </template>
