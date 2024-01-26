@@ -1,3 +1,4 @@
+<!-- eslint-disable prettier-vue/prettier -->
 <script setup lang="ts">
 const { x, y } = useWindowScroll()
 const isSearchOpen = useState('search-open', () => false)
@@ -7,6 +8,7 @@ const metaKey = useMetaKey()
 const { open } = usePanels()
 </script>
 
+<!-- eslint-disable prettier-vue/prettier -->
 <template>
   <div
     class="group/nav ltablet:max-w-[1000px] ptablet:max-w-[47rem] fixed inset-x-0 top-0 z-50 mx-auto max-w-[350px] group-[&.scrolled]/landing:mt-2 group-[&:not(.scrolled)]/landing:mt-4 motion-safe:transition-all motion-safe:duration-200 lg:max-w-7xl"
