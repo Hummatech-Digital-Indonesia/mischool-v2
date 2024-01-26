@@ -1,7 +1,6 @@
 <!-- eslint-disable prettier-vue/prettier -->
 <script setup lang="ts">
-
-import type {News} from 'types/news'
+import type { News } from 'types/news'
 
 const props = defineProps<{
   news: News
@@ -21,11 +20,8 @@ const props = defineProps<{
         srcset=""
       />
     </div>
-    <div class="p-3">
-      <BaseParagraph
-        size="sm"
-        class="text-muted-500 dark:text-muted-100 mx-auto my-2"
-      >
+    <div class="p-3 flex flex-col">
+      <BaseParagraph size="sm" class="text-muted-500 dark:text-muted-100 my-2">
         {{ props.news.created_at }}
       </BaseParagraph>
       <BaseHeading
@@ -33,14 +29,11 @@ const props = defineProps<{
         size="lg"
         weight="light"
         lead="normal"
-        class="mx-auto mb-4 font-bold text-black dark:text-white"
+        class="mb-4 font-bold text-black dark:text-white"
       >
-       {{ props.news.title }}
+        {{ props.news.title }}
       </BaseHeading>
-      <BaseParagraph
-        size="sm"
-        class="text-muted-700 dark:text-muted-100 mx-auto my-2"
-      >
+      <BaseParagraph size="sm" class="text-muted-700 dark:text-muted-100 my-2">
         {{ $props.news.short_description }}
       </BaseParagraph>
       <NuxtLink :to="`/berita/${$props.news.slug}`">

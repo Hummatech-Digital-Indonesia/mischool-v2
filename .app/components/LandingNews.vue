@@ -1,15 +1,16 @@
 <!-- eslint-disable prettier-vue/prettier -->
 <script setup lang="ts">
-  import type { News } from 'types/news'
-  import type { Meta } from 'types'
+import type { News } from 'types/news'
+import type { Meta } from 'types'
 
-  interface Response {
-    meta : Meta
-    data : News[]
-  }
+interface Response {
+  meta: Meta
+  data: News[]
+}
 
-  const {data : news } = useFetch<Response>('https://core.mischool.online/api/latest-news')
-
+const { data: news } = useFetch<Response>(
+  'https://core.mischool.online/api/latest-news',
+)
 </script>
 
 <!-- eslint-disable prettier-vue/prettier -->
@@ -33,9 +34,9 @@
       </div>
       <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         <template v-if="news?.data.length">
-            <LandingNewsCard v-for="item in news?.data" :news="item" />
+          <LandingNewsCard v-for="item in news?.data" :news="item" />
         </template>
-        <LandingNewsCardEmpty v-else/>
+        <LandingNewsCardEmpty v-else />
       </div>
     </div>
   </div>

@@ -67,7 +67,11 @@ const { data: otherNews } = useFetch<OtherNews>(
               color="primary"
               shadow="hover"
               class="flex !h-12 w-36 justify-center"
-              >Kembali</BaseButton
+              ><Icon
+                class="text-white block text-2xl mr-3"
+                name="mdi:arrow-left-thin"
+              />
+              Kembali</BaseButton
             >
           </NuxtLink>
         </div>
