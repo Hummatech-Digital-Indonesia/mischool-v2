@@ -43,7 +43,7 @@ const { open } = usePanels()
           to="/berita"
           class="inline-flex items-center justify-center px-6"
         >
-          Preview
+          Berita
         </NuxtLink>
         <NuxtLink
           to="/documention"
