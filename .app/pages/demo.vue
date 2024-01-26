@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  title: 'Demo Halaman',
+  title: 'Preview',
   description:
     'Jelajahi Fitur fitur dan halaman halaman kami.',
   layout: 'landing',

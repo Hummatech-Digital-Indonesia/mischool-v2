@@ -56,7 +56,7 @@ const filteredDemos = computed(() => {
       <div class="mb-16 max-w-2xl">
         <BaseText
           class="text-primary-500 mb-2 text-[0.65rem] uppercase tracking-wider"
-          >Demo Halaman</BaseText
+          >Preview Halaman</BaseText
         >
         <BaseHeading
           as="h2"

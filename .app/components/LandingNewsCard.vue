@@ -43,7 +43,7 @@ const props = defineProps<{
       >
         {{ $props.news.short_description }}
       </BaseParagraph>
-      <NuxtLink :to="`/news/${$props.news.slug}`">
+      <NuxtLink :to="`/berita/${$props.news.slug}`">
         <BaseButton
           shape="curved"
           color="primary"

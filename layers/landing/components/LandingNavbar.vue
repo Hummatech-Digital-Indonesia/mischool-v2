@@ -34,12 +34,21 @@ const { open } = usePanels()
         ]"
       >
         <NuxtLink
-          to="/demo"
+          to="/preview"
           class="inline-flex items-center justify-center px-6"
         >
-          Demo Halaman
+          Preview
         </NuxtLink>
-        <NuxtLink to="" class="inline-flex items-center justify-center px-6">
+        <NuxtLink
+          to="/berita"
+          class="inline-flex items-center justify-center px-6"
+        >
+          Preview
+        </NuxtLink>
+        <NuxtLink
+          to="/documention"
+          class="inline-flex items-center justify-center px-6"
+        >
           Dokumentasi
         </NuxtLink>
         <div class="px-6">
