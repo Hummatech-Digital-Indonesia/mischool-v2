@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+
 import type { RouteRecordName } from 'vue-router'
 
 const props = defineProps<{
@@ -12,6 +14,8 @@ const props = defineProps<{
     params?: Record<string, string>
   }
 }>()
+
+const isModal3XlOpen = ref(false)
 </script>
 
 <template>
@@ -45,6 +49,8 @@ const props = defineProps<{
           </div>
           <div
             class="bg-primary-500/10 text-primary-500 me-2 ms-auto flex h-8 w-8 items-center justify-center rounded-full motion-safe:opacity-0 motion-safe:transition-opacity motion-safe:duration-300 motion-safe:group-hover:opacity-100"
+            style="cursor: pointer"
+            @click="isModal3XlOpen = true"
           >
             <Icon
               name="ic:outline-remove-red-eye"
@@ -55,4 +61,40 @@ const props = defineProps<{
       </div>
     </div>
   </NuxtLink>
+  <!-- Modal component -->
+  <TairoModal :open="isModal3XlOpen" size="3xl" @close="isModal3XlOpen = false">
+    <template #header>
+      <!-- Header -->
+      <div class="flex w-full items-center justify-between p-4 md:p-6">
+        <h3
+          class="font-heading text-muted-900 text-lg font-medium leading-6 dark:text-white"
+        >
+          {{ props.preview?.title }}
+        </h3>
+
+        <BaseButtonClose @click="isModal3XlOpen = false" />
+      </div>
+    </template>
+    <!-- Body -->
+    <div class="p-4 md:p-0">
+      <div class="mx-auto w-full max-w-2xl text-center">
+        <div class="size-44 relative mx-auto mb-4 flex">
+          <img
+            :src="props.preview?.src"
+            :alt="`Mischool - ${props.preview?.title}`"
+            class=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <template #footer>
+      <!-- Footer -->
+      <div class="p-4 md:p-6">
+        <div class="flex gap-x-2">
+          <BaseButton @click="isModal3XlOpen = false"> Tutup </BaseButton>
+        </div>
+      </div>
+    </template>
+  </TairoModal>
 </template>

@@ -325,7 +325,7 @@ export default defineEventHandler(async (event) => {
         },
       },
 
-       //report Student
+       //report
        {
         name: 'report',
         preview: {
@@ -518,6 +518,8 @@ export default defineEventHandler(async (event) => {
           // params: { id: '2' },
         },
       },
+
+      
     ]
 
     return demoPages
