@@ -47,7 +47,7 @@ const props = defineProps<{
             class="bg-primary-500/10 text-primary-500 me-2 ms-auto flex h-8 w-8 items-center justify-center rounded-full motion-safe:opacity-0 motion-safe:transition-opacity motion-safe:duration-300 motion-safe:group-hover:opacity-100"
           >
             <Icon
-              name="lucide:arrow-right"
+              name="ic:outline-remove-red-eye"
               class="h-4 w-4 motion-safe:-translate-x-2 motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:translate-x-0 motion-reduce:translate-x-0"
             />
           </div>
