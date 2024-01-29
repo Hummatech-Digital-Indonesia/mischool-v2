@@ -8,9 +8,7 @@ interface Response {
   data: News[]
 }
 
-const { data: news } = useFetch<Response>(
-  `${useApiUrl()}/latest-news`,
-)
+const { data: news } = useFetch<Response>(`${useApiUrl()}/latest-news`)
 </script>
 
 <!-- eslint-disable prettier-vue/prettier -->
@@ -36,7 +34,25 @@ const { data: news } = useFetch<Response>(
         <template v-if="news?.data.length">
           <LandingNewsCard v-for="item in news?.data" :news="item" />
         </template>
-        <LandingNewsCardEmpty v-else />
+        <div v-else class="col-span-3">
+          <BasePlaceholderPage
+            title="Berita tidak ditemukan."
+            subtitle="Belum ada berita ditambahkan"
+          >
+            <template #image>
+              <img
+                class="block dark:hidden"
+                src="/img/illustrations/placeholders/flat/placeholder-search-4.svg"
+                alt="Placeholder image"
+              />
+              <img
+                class="hidden dark:block"
+                src="/img/illustrations/placeholders/flat/placeholder-search-4-dark.svg"
+                alt="Placeholder image"
+              />
+            </template>
+          </BasePlaceholderPage>
+        </div>
       </div>
     </div>
   </div>
