@@ -34,7 +34,7 @@ const currentPage = computed(() => {
 const title = ref(route.query.title ? route.query.title as string : '')
 
 const { data: news, pending } = await useFetch<Response>(
-  'https://core.mischool.online/api/news',
+  `${useApiUrl()}/news`,
   {
     query: {
       page: currentPage,
@@ -75,7 +75,7 @@ const total = computed(() => {
             lead="tight"
             class="text-muted-800 mb-4 dark:text-white block"
           >
-            Berita {{ search }}
+            Berita 
           </BaseHeading>
           <BaseInput
             v-model="title"

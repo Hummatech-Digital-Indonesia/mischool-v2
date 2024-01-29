@@ -26,7 +26,7 @@ if (error.value) {
 }
 
 const { data: otherNews } = useFetch<OtherNews>(
-  `https://core.mischool.online/api/other-news`,
+  `${useApiUrl()}/other-news`,
 )
 
     definePageMeta({

@@ -9,7 +9,7 @@ interface Response {
 }
 
 const { data: news } = useFetch<Response>(
-  'https://core.mischool.online/api/latest-news',
+  `${useApiUrl()}/latest-news`,
 )
 </script>
 
