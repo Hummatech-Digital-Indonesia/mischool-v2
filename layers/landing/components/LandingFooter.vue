@@ -7,9 +7,9 @@ const year = new Date().getFullYear()
     class="dark:bg-muted-900 border-muted-200 dark:border-muted-700 relative border-t bg-white px-5 py-3"
   >
     <div
-      class="grid w-full grid-cols-1 gap-6 p-[3rem] md:grid-cols-2 lg:grid-cols-3"
+      class="grid w-full grid-cols-1 gap-16 p-[3rem] md:grid-cols-2 lg:grid-cols-3"
     >
-      <div class="">
+      <div class="sm:col-span-1 md:col-span-2 lg:col-span-1">
         <TairoLogoText
           class="text-muted-300 ltablet:mx-0 mx-auto h-6 transition-all duration-200 lg:mx-0"
         />
@@ -21,9 +21,9 @@ const year = new Date().getFullYear()
           Sed accumsan efficitur justo id mollis.
         </p>
         <div class="flex">
-          <Icon class="mx-3 text-[#5D87FF]" name="mdi:facebook" />
-          <Icon class="mx-3 text-[#5D87FF]" name="mdi:twitter" />
-          <Icon class="mx-3 text-[#5D87FF]" name="mdi:instagram" />
+          <Icon class="mx-3 text-3xl text-[#5D87FF]" name="mdi:facebook" />
+          <Icon class="mx-3 text-3xl text-[#5D87FF]" name="mdi:twitter" />
+          <Icon class="mx-3 text-3xl text-[#5D87FF]" name="mdi:instagram" />
         </div>
       </div>
       <div class="">
