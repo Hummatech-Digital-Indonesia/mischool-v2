@@ -94,21 +94,32 @@ export default defineAppConfig({
         },
         items: [
           {
-            title: 'Dashboards',
-            icon: { name: 'ph:sidebar-duotone', class: 'w-5 h-5' },
+            title: 'Home',
+            icon: { name: 'ic:outline-home', class: 'w-5 h-5' },
+            subsidebar: { component: 'DemoSubsidebarDashboards' },
+            activePath: '/home',
+          },
+          {
+            title: 'Sekolah',
+            icon: { name: 'material-symbols:menu-book', class: 'w-5 h-5' },
             subsidebar: { component: 'DemoSubsidebarDashboards' },
             activePath: '/dashboards',
           },
           {
-            title: 'Layouts',
-            icon: { name: 'ph:app-window-duotone', class: 'w-5 h-5' },
+            title: 'Siswa',
+            icon: { name: 'ph:graduation-cap-bold', class: 'w-5 h-5' },
             subsidebar: { component: 'DemoSubsidebarLayouts' },
             activePath: '/layouts',
           },
           {
-            title: 'Chat',
-            icon: { name: 'ph:chat-circle-duotone', class: 'w-5 h-5' },
+            title: 'Guru',
+            icon: { name: 'mdi:account-school-outline', class: 'w-5 h-5' },
             to: '/dashboards/messaging',
+          },
+          {
+            title: 'Staff',
+            icon: { name: 'mdi:account-tie-hat-outline', class: 'w-5 h-5' },
+            to: '/dashboards/mes',
           },
           {
             title: 'Customize',
@@ -118,7 +129,7 @@ export default defineAppConfig({
               isOpen.value = true
             },
             position: 'end',
-          },
+            },
           {
             title: 'Search',
             icon: { name: 'ph:magnifying-glass-duotone', class: 'w-5 h-5' },
