@@ -1,7 +1,15 @@
+<!-- eslint-disable prettier-vue/prettier -->
 <script setup lang="ts">
+import type { Toc } from 'types'
+
+const props = defineProps<{
+  toc : Toc[]
+}>()
+
 const route = useRoute()
 const activeAnchor = ref('')
-const toc = ref<any[]>([])
+
+const toc = ref(props.toc)
 
 const ids = computed(() => toc.value.map(({ id }: any) => `#${id}`))
 
@@ -26,25 +34,12 @@ if (process.client) {
       immediate: true,
     },
   )
-
-  // load toc item from dom
-  const stopPage = nuxtApp.hook('page:finish', (e) => {
-    loadTocItemFromDom()
-  })
-  const stopTransition = nuxtApp.hook('page:transition:finish', (e) => {
-    loadTocItemFromDom()
-  })
-
-  onBeforeUnmount(() => {
-    stopPage()
-    stopTransition()
-  })
 }
 
 function getTocItemClass(item: any) {
   const classes = []
 
-  if (item.level > 2) {
+  if (item.level >= 2) {
     classes.push('ms-3 text-xs')
   }
 
@@ -62,22 +57,9 @@ function getTocItemClass(item: any) {
 
   return classes
 }
-
-async function loadTocItemFromDom() {
-  await nextTick()
-
-  const elements = document.querySelectorAll('.tairo-toc-anchor')
-
-  toc.value = Array.from(elements).map((el) => {
-    return {
-      id: el.getAttribute('id'),
-      level: ('dataset' in el && (el.dataset as any)?.tocLevel) ?? 2,
-      label: 'dataset' in el && (el.dataset as any)?.tocLabel,
-    }
-  })
-}
 </script>
 
+<!-- eslint-disable prettier-vue/prettier -->
 <template>
   <div class="fixed flex flex-col justify-between pb-20 pe-1 ps-20 pt-2">
     <div class="w-52" v-if="toc.length">
