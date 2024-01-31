@@ -1,30 +1,8 @@
 <script setup lang="ts">
 const navigation = [
   {
-    name: 'Lists',
-    children: [
-      {
-        name: 'List view V1',
-        icon: 'ph:list-bullets',
-        to: '/layouts',
-        exact: true,
-      },
-      {
-        name: 'List view V2',
-        icon: 'ph:list-bullets',
-        to: '/layouts/list-view-2',
-      },
-      {
-        name: 'List view V3',
-        icon: 'ph:list-bullets',
-        to: '/layouts/list-view-3',
-      },
-      {
-        name: 'List view V4',
-        icon: 'ph:list-bullets',
-        to: '/layouts/list-view-4',
-      },
-    ],
+    name: 'Pelanggaran',
+    to: '/layouts/flex-list-1',
   },
   {
     name: 'Flex lists',
