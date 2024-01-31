@@ -119,6 +119,7 @@ const featuredVideos = [
             >
               <div class="ptablet:p-10 p-6">
                 <NuxtLink
+                target="_blank"
                   to="https://www.youtube.com/watch?v=y_j71QaINhI&list=RDOH5473CdRNQ&index=13"
                   class="group-hover:border-primary-500 text-muted-300 group-hover:text-primary-500 shadow-muted-300/30 dark:shadow-muted-900/20 flex h-14 w-14 items-center justify-center rounded-full border-2 border-transparent bg-white shadow-2xl transition-colors duration-300"
                 >
