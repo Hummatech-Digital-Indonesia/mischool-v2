@@ -128,12 +128,12 @@ const metaKey = useMetaKey()
           >
             <template #label>
               <span class="flex w-full justify-between">
-                <span class="mr-1">Cari</span>
+                <span>Search</span>
                 <span v-if="hasResult" class="text-xs opacity-60">
                   navigate with <kbd>↑</kbd> and <kbd>↓</kbd>
                 </span>
                 <span v-else-if="!search" class="text-xs opacity-60">
-                  tekan <kbd>{{ metaKey }}</kbd> + <kbd>k</kbd> untuk membuka
+                  press <kbd>{{ metaKey }}</kbd> + <kbd>k</kbd> to open
                 </span>
               </span>
             </template>
