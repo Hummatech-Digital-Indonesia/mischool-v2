@@ -60,11 +60,11 @@ const year = new Date().getFullYear()
         <BaseHeading>Fitur</BaseHeading>
         <div class="">
           <BaseList class="mt-2">
-            <li class="text-black">E-Learning</li>
-            <li class="text-black">Pelanggaran</li>
-            <li class="text-black">Rapot</li>
-            <li class="text-black">Absensi</li>
-            <li class="text-black">Ujian</li>
+            <li class="text-black dark:text-white">E-Learning</li>
+            <li class="text-black dark:text-white">Pelanggaran</li>
+            <li class="text-black dark:text-white">Rapot</li>
+            <li class="text-black dark:text-white">Absensi</li>
+            <li class="text-black dark:text-white">Ujian</li>
           </BaseList>
         </div>
       </div>

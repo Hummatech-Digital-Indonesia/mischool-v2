@@ -11,7 +11,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div>
+  <div class="dark:bg-muted-900">
     <LandingHero />
     <!-- <LandingPackages /> -->
     <!-- <LandingCustomizer /> -->
