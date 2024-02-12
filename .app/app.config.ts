@@ -96,14 +96,14 @@ export default defineAppConfig({
           {
             title: 'Home',
             icon: { name: 'ic:outline-home', class: 'w-5 h-5' },
-            subsidebar: { component: 'DemoSubsidebarDashboards' },
+            subsidebar: { component: 'DemoSubsidebarSchools' },
             activePath: '/home',
           },
           {
             title: 'Sekolah',
             icon: { name: 'material-symbols:menu-book', class: 'w-5 h-5' },
-            subsidebar: { component: 'DemoSubsidebarDashboards' },
-            activePath: '/dashboards',
+            subsidebar: { component: 'DemoSubsidebarSchools' },
+            activePath: '/dokumentasi/sekolah',
           },
           {
             title: 'Siswa',

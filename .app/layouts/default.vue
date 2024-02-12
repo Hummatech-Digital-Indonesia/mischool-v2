@@ -9,6 +9,6 @@
 
 <template>
     <TairoSidebarLayout>
-        <slot />
+        <slot/>
     </TairoSidebarLayout>
 </template>

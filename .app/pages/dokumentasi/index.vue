@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 definePageMeta({
   title: 'Dokumentasi',
   description: 'Jelajahi Fitur fitur dan halaman halaman kami.',

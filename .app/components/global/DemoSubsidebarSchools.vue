@@ -6,7 +6,7 @@ const navigation = [
       {
         name: 'Kop Surat',
         icon: 'ph:list-checks',
-        to: '/layouts/flex-list-1',
+        to: '/dokumentasi/sekolah/kop-surat',
       },
       {
         name: 'Pegawai',
