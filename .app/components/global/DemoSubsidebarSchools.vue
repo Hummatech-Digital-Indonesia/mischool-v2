@@ -4,6 +4,11 @@ const navigation = [
     name: 'Home',
     children: [
       {
+        name: 'Dokumentasi',
+        icon: 'ph:list-checks',
+        to: '/dokumentasi/sekolah/home',
+      },
+      {
         name: 'Kop Surat',
         icon: 'ph:list-checks',
         to: '/dokumentasi/sekolah/kop-surat',
@@ -19,6 +24,9 @@ const navigation = [
         to: '/layouts/flex-list-3',
       },
     ],
+  },
+  {
+    divider: true,
   },
   {
     name: 'Kesiswaan',
