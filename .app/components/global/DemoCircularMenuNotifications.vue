@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink
+  <!-- <NuxtLink
     to="#"
     class="inline-flex h-9 w-9 items-center justify-center rounded-full transition-all duration-300"
   >
@@ -8,5 +8,5 @@
     >
       <Icon name="ph:bell-duotone" class="h-5 w-5 text-white" />
     </span>
-  </NuxtLink>
+  </NuxtLink> -->
 </template>

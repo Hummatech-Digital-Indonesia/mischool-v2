@@ -3,7 +3,7 @@ import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 </script>
 
 <template>
-  <div class="group inline-flex items-center justify-center text-right">
+  <!-- <div class="group inline-flex items-center justify-center text-right">
     <Menu as="div" class="relative h-9 w-9 text-left" v-slot="{ close }">
       <MenuButton as="template">
         <button
@@ -162,5 +162,5 @@ import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
         </MenuItems>
       </Transition>
     </Menu>
-  </div>
+  </div> -->
 </template>
