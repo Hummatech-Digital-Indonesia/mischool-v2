@@ -31,7 +31,7 @@ const navigations = [
   },
 
   {
-    title: 'e-learning',
+    title: 'E-learning',
     id: 'e-learning',
     items: [
       {
