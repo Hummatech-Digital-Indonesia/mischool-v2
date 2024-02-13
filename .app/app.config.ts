@@ -108,18 +108,20 @@ export default defineAppConfig({
           {
             title: 'Siswa',
             icon: { name: 'ph:graduation-cap-bold', class: 'w-5 h-5' },
-            subsidebar: { component: 'DemoSubsidebarLayouts' },
-            activePath: '/layouts',
+            subsidebar: { component: 'DemoSubSidebarStudent' },
+            activePath: '/dokumentasi/siswa',
           },
           {
             title: 'Guru',
             icon: { name: 'mdi:account-school-outline', class: 'w-5 h-5' },
-            to: '/dashboards/messaging',
+            subsidebar: { component: 'DemoSubSidebarTeachers' },
+            activePath: '/dokumentasi/guru',
           },
           {
             title: 'Staff',
             icon: { name: 'mdi:account-tie-hat-outline', class: 'w-5 h-5' },
-            to: '/dashboards/mes',
+            subsidebar: { component: 'DemoSubSidebarStaff' },
+            activePath: '/dokumentasi/staff',
           },
           {
             title: 'Customize',
@@ -129,7 +131,7 @@ export default defineAppConfig({
               isOpen.value = true
             },
             position: 'end',
-            },
+          },
           {
             title: 'Search',
             icon: { name: 'ph:magnifying-glass-duotone', class: 'w-5 h-5' },
