@@ -2,11 +2,11 @@
 import type { Toc } from '../../../../types'
 const toc: Toc[] = [
   { id: 'fitur', level: 1, label: 'Fitur Akun Sekolah' },
-  { id: 'fitur-dasar', level: 1, label: 'Fitur Dasar' },
-  { id: 'kesiswaan', level: 1, label: 'Fitur Kesiswaan' },
-  { id: 'kurikulum', level: 1, label: 'Fitur Kurikulum' },
-  { id: 'absensi', level: 1, label: 'Fitur Absensi' },
-  { id: 'ujian', level: 1, label: 'Fitur Ujian' },
+  { id: 'fitur-dasar', level: 2, label: 'Fitur Dasar' },
+  { id: 'kesiswaan', level: 2, label: 'Fitur Kesiswaan' },
+  { id: 'kurikulum', level: 2, label: 'Fitur Kurikulum' },
+  { id: 'absensi', level: 2, label: 'Fitur Absensi' },
+  { id: 'ujian', level: 2, label: 'Fitur Ujian' },
 ]
 
 const navigations = [
@@ -257,7 +257,7 @@ const navigations = [
               size="lg"
               weight="semibold"
               lead="tight"
-              :id="navigation.title"
+              :id="navigation.id"
               class="text-muted-800 dark:text-white"
             >
               <span>{{ navigation.title }}</span>
