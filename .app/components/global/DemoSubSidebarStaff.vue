@@ -13,17 +13,17 @@ const navigation = [
     children: [
       {
         name: 'Pelanggaran',
-        icon: 'ph:list-checks',
+        icon: 'tabler:barrier-block',
         to: '/dokumentasi/staff/pelanggaran',
       },
       {
         name: 'Siswa',
-        icon: 'ph:list-checks',
+        icon: 'ph:student',
         to: '/dokumentasi/staff/pelanggaran/siswa',
       },
       {
         name: 'Pelanggaran',
-        icon: 'ph:list-checks',
+        icon: 'tabler:barrier-block',
         to: '/dokumentasi/staff/pelanggaran/pelanggaran',
       },
       {
@@ -33,7 +33,7 @@ const navigation = [
       },
       {
         name: 'Top Pelanggaran',
-        icon: 'ph:list-checks',
+        icon: 'ph:warning-bold',
         to: '/dokumentasi/staff/pelanggaran/top-pelanggaran',
       },
     ],
@@ -43,7 +43,7 @@ const navigation = [
     children: [
       {
         name: 'Pelanggaran',
-        icon: 'ph:list-checks',
+        icon: 'tabler:barrier-block',
         to: '/dokumentasi/staff/ekstrakurikuler',
       },
     ],

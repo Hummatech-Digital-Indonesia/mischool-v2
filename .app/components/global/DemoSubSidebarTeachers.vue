@@ -15,17 +15,17 @@ const navigation = [
     children: [
       {
         name: 'Input Nilai',
-        icon: 'ph:list-checks',
+        icon: 'ph:list-plus-bold',
         to: '/dokumentasi/guru/rapor',
       },
       {
         name: 'Deskripsi Karakter',
-        icon: 'ph:list-checks',
+        icon: 'ph:chalkboard-teacher-duotone',
         to: '/dokumentasi/guru/rapor/deskripsi-karakter',
       },
       {
         name: 'History Perbaikan',
-        icon: 'ph:list-checks',
+        icon: 'ic:sharp-manage-history',
         to: '/dokumentasi/guru/rapor/input-keagamaan',
       },
     ],
@@ -35,22 +35,22 @@ const navigation = [
     children: [
       {
         name: 'Dashboard',
-        icon: 'ph:table-duotone',
+        icon: 'ph:grid-four',
         to: '/dokumentasi/guru/ujian',
       },
       {
         name: 'Ulangan',
-        icon: 'ph:table-duotone',
+        icon: 'tabler:align-box-center-stretch',
         to: '/dokumentasi/guru/ujian/ulangan',
       },
       {
         name: 'Ujian',
-        icon: 'ph:table-duotone',
+        icon: 'mdi:folder-cog',
         to: '/dokumentasi/guru/ujian/ujian',
       },
       {
         name: 'Bank Soal',
-        icon: 'ph:table-duotone',
+        icon: 'mdi:folder-file',
         to: '/dokumentasi/guru/ujian/bank-soal',
       },
     ],
@@ -60,17 +60,17 @@ const navigation = [
     children: [
       {
         name: 'Dashboard',
-        icon: 'ph:table-duotone',
+        icon: 'ph:grid-four',
         to: '/dokumentasi/guru/e-learning',
       },
       {
         name: 'Kelas',
-        icon: 'ph:table-duotone',
+        icon: 'ph:chalkboard-simple',
         to: '/dokumentasi/guru/e-learning/kelas',
       },
       {
         name: 'Daftar Tugas',
-        icon: 'ph:table-duotone',
+        icon: 'tabler:clipboard-list',
         to: '/dokumentasi/guru/e-learning/daftar-tugas',
       },
     ],
@@ -80,7 +80,7 @@ const navigation = [
     children: [
       {
         name: 'Jurnal',
-        icon: 'tabler:barrier-block',
+        icon: 'tabler:align-box-right-stretch',
         to: '/dokumentasi/guru/jurnal',
       },
     ],
@@ -90,7 +90,7 @@ const navigation = [
     children: [
       {
         name: 'Ekstrakurikuler',
-        icon: 'tabler:barrier-block',
+        icon: 'ph:person-simple-run-light',
         to: '/dokumentasi/guru/ekstrakurikuler',
       },
     ],
