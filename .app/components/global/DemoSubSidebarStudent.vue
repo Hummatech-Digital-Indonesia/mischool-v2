@@ -1,8 +1,14 @@
 <script setup lang="ts">
 const navigation = [
   {
-    name: 'Dokumentasi',
-    to: '/dokumentasi/siswa',
+    name: 'Home',
+    children: [
+      {
+        name: 'Dokumentasi',
+        icon: 'ph:house',
+        to: '/dokumentasi/siswa',
+      },
+    ],
   },
   {
     name: 'Pelanggaran',
@@ -59,7 +65,6 @@ const navigation = [
       },
     ],
   },
-
 ]
 </script>
 

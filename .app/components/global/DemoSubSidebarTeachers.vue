@@ -1,8 +1,14 @@
 <script setup lang="ts">
 const navigation = [
   {
-    name: 'Dokumentasi',
-    to: '/dokumentasi/guru',
+    name: 'Home',
+    children: [
+      {
+        name: 'Dokumentasi',
+        icon: 'ph:house',
+        to: '/dokumentasi/guru',
+      },
+    ],
   },
   {
     name: 'Rapor',
@@ -66,6 +72,26 @@ const navigation = [
         name: 'Daftar Tugas',
         icon: 'ph:table-duotone',
         to: '/dokumentasi/guru/e-learning/daftar-tugas',
+      },
+    ],
+  },
+  {
+    name: 'Jurnal',
+    children: [
+      {
+        name: 'Jurnal',
+        icon: 'tabler:barrier-block',
+        to: '/dokumentasi/guru/jurnal',
+      },
+    ],
+  },
+  {
+    name: 'Ekstrakurikuler',
+    children: [
+      {
+        name: 'Ekstrakurikuler',
+        icon: 'tabler:barrier-block',
+        to: '/dokumentasi/guru/ekstrakurikuler',
       },
     ],
   },

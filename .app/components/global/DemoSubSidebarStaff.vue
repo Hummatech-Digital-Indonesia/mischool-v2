@@ -1,8 +1,12 @@
 <script setup lang="ts">
 const navigation = [
   {
-    name: 'Dokumentasi',
-    to: '/dokumentasi/staff',
+    name: 'Home',
+    children: [{
+      name:'Dokumentasi',
+      icon: 'ph:house',
+      to:'/dokumentasi/staff'
+    }],
   },
   {
     name: 'Pelanggaran',
