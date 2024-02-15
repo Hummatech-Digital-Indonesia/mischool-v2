@@ -11,27 +11,27 @@ const roles = [
   {
     name: 'Sekolah',
     icon: 'ph:house',
-    background: '/img/illustrations/dashboards/hobbies/hobby-1.svg',
-    to: '/dokumentasi/sekolah/home/dokumentasi'
+    background: '/img/illustrations/dashboards/hobbies/Sekolah.png',
+    to: '/dokumentasi/sekolah/home/dokumentasi',
   },
   {
     name: 'Guru',
     icon: 'ph:house',
-    background: '/img/illustrations/dashboards/hobbies/hobby-1.svg',
-    to: '/dokumentasi/sekolah/home/dokumentasi'
+    background: '/img/illustrations/dashboards/hobbies/Guru.png',
+    to: '/dokumentasi/sekolah/home/dokumentasi',
   },
   {
     name: 'Siswa',
     icon: 'ph:house',
-    background: '/img/illustrations/dashboards/hobbies/hobby-1.svg',
-    to: '/dokumentasi/sekolah/home/dokumentasi'
+    background: '/img/illustrations/dashboards/hobbies/Siswa.png',
+    to: '/dokumentasi/sekolah/home/dokumentasi',
   },
   {
     name: 'Staff',
     icon: 'ph:house',
-    background: '/img/illustrations/dashboards/hobbies/hobby-1.svg',
-    to: '/dokumentasi/sekolah/home/dokumentasi'
-  }
+    background: '/img/illustrations/dashboards/hobbies/Staff.png',
+    to: '/dokumentasi/sekolah/home/dokumentasi',
+  },
 ]
 </script>
 
@@ -51,7 +51,11 @@ const roles = [
           </div>
           <div class="mt-10 grow sm:mt-0">
             <div class="text-center sm:text-left">
-              <BaseHeading tag="h1" id="selamat-datang" class="text-white opacity-90">
+              <BaseHeading
+                tag="h1"
+                id="selamat-datang"
+                class="text-white opacity-90"
+              >
                 <span>Selamat Datang di Dokumentasi Mischool!</span>
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
@@ -143,11 +147,19 @@ const roles = [
         </NuxtLink>
       </BaseCard>
       <BaseCard class="col-span-2 grid grid-cols-12 w-full gap-2 p-4 mt-8">
-        <BaseHeading tag="h1" id="jelajahi-lebih-dalam" class="opacity-90 col-span-12 mt-2 mb-4">
+        <BaseHeading
+          tag="h1"
+          id="jelajahi-lebih-dalam"
+          class="opacity-90 col-span-12 mt-2 mb-4"
+        >
           <span>Jelajahi dokumentasi lebih dalam dokumentasi kami.</span>
         </BaseHeading>
         <!-- Grid item -->
-        <div class="col-span-12 md:col-span-6" v-for="(role,i) in roles" :key="i">
+        <div
+          class="col-span-12 md:col-span-6"
+          v-for="(role, i) in roles"
+          :key="i"
+        >
           <NuxtLink
             :to="role.to"
             class="group relative flex w-full flex-col overflow-hidden rounded-2xl"
