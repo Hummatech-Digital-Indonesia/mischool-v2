@@ -9,6 +9,9 @@ const navigation = [
     }],
   },
   {
+    divider: true,
+  },
+  {
     name: 'Pelanggaran',
     children: [
       {
