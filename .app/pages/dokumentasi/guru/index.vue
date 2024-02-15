@@ -105,7 +105,7 @@ const navigations = [
 </script>
 
 <template>
-  <div class="w-full grid grid-cols-4">
+  <div class="w-full grid grid-cols-6">
     <div class="col-span-4 lg:col-span-3 grid grid-cols-2">
       <div class="col-span-2">
         <div
@@ -192,9 +192,6 @@ const navigations = [
           </div>
         </div>
       </BaseCard>
-    </div>
-    <div class="hidden lg:block lg:col-span-1">
-      <TairoToc :toc="toc" />
     </div>
   </div>
 </template>
