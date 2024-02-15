@@ -1,5 +1,8 @@
-<script setup lang="ts">
-const year = new Date().getFullYear()
+<script setup lanh="ts">
+let a = 10;
+let b = 20;
+
+const total = a + b;
 </script>
 
 <template>
@@ -14,11 +17,9 @@ const year = new Date().getFullYear()
           class="text-muted-300 ltablet:mx-0 mx-auto h-6 transition-all duration-200 lg:mx-0"
         />
         <p class="my-2 text-sm">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-          vehicula lacus massa, a finibus urna hendrerit fringilla. Class aptent
-          taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-          himenaeos. Donec vitae augue egestas, commodo orci eu, tempus lectus.
-          Sed accumsan efficitur justo id mollis.
+          Management Information System for School Sistem informasi manajemen
+          sekolah berbasis web dan mobile yang membantu mengelola administrasi
+          sekolah secara real-time dan terintegrasi.
         </p>
         <div class="flex">
           <Icon class="mx-3 text-3xl text-[#5D87FF]" name="mdi:facebook" />
@@ -58,13 +59,14 @@ const year = new Date().getFullYear()
       </div>
       <div class="">
         <BaseHeading>Fitur</BaseHeading>
-        <div class="">
+        <div>
           <BaseList class="mt-2">
             <li class="text-black dark:text-white">E-Learning</li>
             <li class="text-black dark:text-white">Pelanggaran</li>
             <li class="text-black dark:text-white">Rapot</li>
             <li class="text-black dark:text-white">Absensi</li>
             <li class="text-black dark:text-white">Ujian</li>
+            <li class="text-black dark:text-white">Buku tamu</li>
           </BaseList>
         </div>
       </div>
