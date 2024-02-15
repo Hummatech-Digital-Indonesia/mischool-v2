@@ -44,7 +44,7 @@ const videos = [
           <div class="relative h-[168px] w-[280px] shrink-0">
             <img
               class="pointer-events-none absolute -start-6 -top-6 sm:-start-12"
-              src="/img/illustrations/placeholders/flat/chart-guy.svg"
+              src="/img/illustrations/placeholders/flat/placeholder-projects-dark.svg"
               alt="School Illustration"
             />
           </div>
