@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  title: 'cetak-rapor',
+  title: 'Cetak Rapor',
   description: 'Jelajahi Fitur fitur dan halaman halaman kami.',
   layout: 'sidebar',
 })

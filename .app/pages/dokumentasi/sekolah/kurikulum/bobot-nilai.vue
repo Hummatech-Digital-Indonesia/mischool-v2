@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  title: 'bobot-nilai',
+  title: 'Bobot Nilai',
   description: 'Jelajahi Fitur fitur dan halaman halaman kami.',
   layout: 'sidebar',
 })

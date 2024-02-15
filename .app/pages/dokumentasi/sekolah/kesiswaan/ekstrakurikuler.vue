@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  title: 'ekstrakurikuler',
+  title: 'Ekstrakurikuler',
   description: 'Jelajahi Fitur fitur dan halaman halaman kami.',
   layout: 'sidebar',
 })

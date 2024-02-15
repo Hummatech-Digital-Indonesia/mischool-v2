@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  title: 'bank soal',
+  title: 'Bank Soal',
   description: 'Jelajahi Fitur fitur dan halaman halaman kami.',
   layout: 'sidebar',
 })
