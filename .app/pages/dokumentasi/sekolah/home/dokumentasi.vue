@@ -20,13 +20,13 @@ const navigations = [
         to: '/dokumentasi/sekolah/home/kop-surat',
       },
       {
-        name: 'Data Pegawai',
-        icon: 'tabler:users',
+        name: 'Data Pegawai/Staff',
+        icon: 'mdi:account-tie-hat-outline',
         to: '/dokumentasi/sekolah/home/pegawai',
       },
       {
         name: 'Data Guru',
-        icon: 'tabler:users',
+        icon: 'mdi:account-school-outline',
         to: '/dokumentasi/sekolah/home/guru',
       },
     ],
@@ -78,7 +78,7 @@ const navigations = [
       },
       {
         name: 'Jam Pelajaran',
-        icon: 'ph:book',
+        icon: 'ph:clock',
         to: '/dokumentasi/sekolah/kurikulum/jam-pelajaran',
       },
       {
