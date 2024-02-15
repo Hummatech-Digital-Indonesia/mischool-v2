@@ -48,7 +48,7 @@ const { open } = usePanels()
           Berita
         </NuxtLink>
         <NuxtLink
-          to="/dokumentasi"
+          to="/docs"
           class="inline-flex items-center justify-center px-6"
         >
           Dokumentasi

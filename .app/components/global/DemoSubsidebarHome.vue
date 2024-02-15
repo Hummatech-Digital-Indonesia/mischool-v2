@@ -6,7 +6,7 @@ const navigation = [
       {
         name: 'Home',
         icon: 'ph:house',
-        to: '/dokumentasi',
+        to: '/docs',
       },
     ],
   },

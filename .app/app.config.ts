@@ -97,7 +97,7 @@ export default defineAppConfig({
             title: 'Home',
             icon: { name: 'ic:outline-home', class: 'w-5 h-5' },
             subsidebar : {component: 'DemoSubsidebarHome'},
-            activePath: '/dokumentasi',
+            activePath: '/docs',
           },
           {
             title: 'Sekolah',
@@ -139,17 +139,6 @@ export default defineAppConfig({
               const isOpen = useState('search-open', () => false)
               isOpen.value = true
             },
-            position: 'end',
-          },
-          {
-            title: 'Settings',
-            icon: { name: 'ph:gear-six-duotone', class: 'w-5 h-5' },
-            to: '/layouts/profile-settings',
-            position: 'end',
-          },
-          {
-            title: 'My Account',
-            component: 'DemoAccountMenu',
             position: 'end',
           },
         ],
