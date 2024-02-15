@@ -55,11 +55,14 @@ const videos = [
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Kop Surat Mischool memungkinkan pengguna untuk membuat
-                  kop surat secara cepat dan disesuaikan dengan mudah di dalam
-                  platform. Dengan kemampuan untuk menyesuaikan desainnya, fitur
-                  ini sangat berguna untuk menciptakan header profesional yang
-                  dapat digunakan dalam mencetak rapor dan surat.
+                  Fitur Halaman Pegawai di Mischool memudahkan sekolah untuk
+                  mengelola data guru dan staff. Dengan menyediakan akses cepat
+                  untuk menambah dan melihat informasi penting seperti email,
+                  nama, dan detail lainnya yang tercantum di website Mischool.
+                  Setiap pegawai akan secara otomatis memiliki akun yang
+                  terhubung dengan email mereka, memungkinkan akses langsung ke
+                  platform Mischool. Solusi praktis untuk manajemen data pegawai
+                  yang efisien.
                 </span>
               </BaseParagraph>
             </div>
