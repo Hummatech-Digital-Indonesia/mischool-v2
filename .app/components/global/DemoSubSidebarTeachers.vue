@@ -27,7 +27,7 @@ const navigation = [
         to: '/dokumentasi/guru/rapor/deskripsi-karakter',
       },
       {
-        name: 'History Perbaikan',
+        name: 'Input Keagamaan',
         icon: 'ic:sharp-manage-history',
         to: '/dokumentasi/guru/rapor/input-keagamaan',
       },

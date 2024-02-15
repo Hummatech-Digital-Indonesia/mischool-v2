@@ -14,13 +14,13 @@ const navigation = [
         to: '/dokumentasi/sekolah/home/kop-surat',
       },
       {
-        name: 'Pegawai',
-        icon: 'tabler:users',
+        name: 'Pegawai/Staff',
+        icon: 'mdi:account-school-outline',
         to: '/dokumentasi/sekolah/home/pegawai',
       },
       {
         name: 'Guru',
-        icon: 'tabler:users',
+        icon: 'mdi:account-school-outline',
         to: '/dokumentasi/sekolah/home/guru',
       },
     ],
@@ -73,7 +73,7 @@ const navigation = [
       },
       {
         name: 'Jam Pelajaran',
-        icon: 'ph:book',
+        icon: 'ph:clock',
         to: '/dokumentasi/sekolah/kurikulum/jam-pelajaran',
       },
       {

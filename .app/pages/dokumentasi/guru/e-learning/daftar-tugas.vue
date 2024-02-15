@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  title: 'Deskripsi Karakter',
+  title: 'Daftar Tugas',
   description: 'Jelajahi Fitur fitur dan halaman halaman kami.',
   layout: 'sidebar',
 })
@@ -52,7 +52,7 @@ const videos = [
           <div class="mt-10 grow sm:mt-0">
             <div class="text-center sm:text-left">
               <BaseHeading tag="h1" class="text-white opacity-90">
-                <span>Halaman Deskripsi Karakter</span>
+                <span>Halaman Daftar Tugas</span>
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
