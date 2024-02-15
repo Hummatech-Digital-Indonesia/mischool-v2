@@ -42,7 +42,7 @@ const navigation = [
     name: 'Ekstrakurikuler',
     children: [
       {
-        name: 'Pelanggaran',
+        name: 'Ekstrakurikuler',
         icon: 'tabler:barrier-block',
         to: '/dokumentasi/staff/ekstrakurikuler',
       },
