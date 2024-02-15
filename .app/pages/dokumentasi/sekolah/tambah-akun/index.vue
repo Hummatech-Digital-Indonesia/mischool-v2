@@ -41,7 +41,7 @@ definePageMeta({
       <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2" id="fitur">
         <div class="col-span-2 md:col-span-1">
           <BaseHeading tag="h1" id="apa-itu-mischool" class="opacity-90">
-            <span>Fitur Hamalan Tambah Akun</span>
+            <span>Fitur Halaman Tambah Akun</span>
           </BaseHeading>
           <BaseParagraph size="sm" class="opacity-80 mt-3">
             <span>

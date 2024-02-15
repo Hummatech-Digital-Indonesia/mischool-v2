@@ -41,12 +41,12 @@ definePageMeta({
       <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2" id="fitur">
         <div class="col-span-2 md:col-span-1">
           <BaseHeading tag="h1" id="apa-itu-mischool" class="opacity-90">
-            <span>Fitur Hamalan Guru</span>
+            <span>Halaman Paket Anda</span>
           </BaseHeading>
           <BaseParagraph size="sm" class="opacity-80 mt-3">
             <span>
-              Penjelasan lebih detail mengenai penggunaan fitur kop surat dapat
-              dilihat pada video tutorial berikut
+              Penjelasan lebih detail mengenai penggunaan halaman paket anda
+              dapat dilihat pada video tutorial berikut
             </span>
           </BaseParagraph>
         </div>

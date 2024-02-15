@@ -4,47 +4,6 @@ definePageMeta({
   description: 'Jelajahi Fitur fitur dan halaman halaman kami.',
   layout: 'sidebar',
 })
-
-const featuredVideos = [
-  {
-    id: 1,
-    title: 'Halaman Fitur Kop Surat',
-    slug: '',
-    cover: '/img/illustrations/dashboards/video/1.png',
-    uploaded: '2 hours ago',
-    category: 'Frontend',
-    author: {
-      name: 'Hermann Mayer',
-      avatar: '/img/avatars/16.svg',
-    },
-  },
-  {
-    id: 1,
-    title: 'Halaman Fitur Kop Surat',
-    slug: '',
-    cover: '/img/illustrations/dashboards/video/1.png',
-    uploaded: '2 hours ago',
-    category: 'Frontend',
-    author: {
-      name: 'Hermann Mayer',
-      avatar: '/img/avatars/16.svg',
-    },
-  },
-]
-const videos = [
-  {
-    id: 6,
-    title: 'How to think a mobile app landing page design',
-    slug: '',
-    cover: '/img/illustrations/dashboards/video/6.png',
-    uploaded: '7 hours ago',
-    category: 'Frontend',
-    author: {
-      name: 'Alan Skelli',
-      avatar: '/img/avatars/11.svg',
-    },
-  },
-]
 </script>
 
 <template>
