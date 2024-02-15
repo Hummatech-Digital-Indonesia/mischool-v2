@@ -5,7 +5,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:tailwindcss/recommended',
     'prettier',
-    'plugin:prettier-vue/recommended',
   ],
   plugins: ['tailwindcss', '@typescript-eslint'],
   parser: 'vue-eslint-parser',
@@ -37,13 +36,5 @@ module.exports = {
 
     'tailwindcss/no-custom-classname': 'off',
     'tailwindcss/classnames-order': 'error',
-
-    'prettier-vue/prettier': [
-      'error',
-      {
-        // Override all options of `prettier` here
-        // @see https://prettier.io/docs/en/options.html
-      },
-    ],
   },
 }
