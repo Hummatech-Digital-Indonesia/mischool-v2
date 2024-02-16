@@ -5,6 +5,16 @@ definePageMeta({
   layout: 'sidebar',
 })
 
+import type { Toc } from '~/types'
+
+const toc: Toc[] = [
+  {
+    id: 'dashboard-e-learning',
+    level: 1,
+    label: 'Dashboard E-learning',
+  },
+]
+
 const featuredVideos = [
   {
     id: 1,
@@ -38,7 +48,7 @@ const videos = [
 
 <template>
   <div class="w-full grid grid-cols-4">
-    <div class="col-span-4 lg:col-span-5 grid grid-cols-2">
+    <div class="col-span-4 lg:col-span-3 grid grid-cols-2">
       <div class="col-span-2">
         <div
           class="bg-primary-800 flex flex-col items-center rounded-2xl p-4 sm:flex-row"
@@ -75,7 +85,7 @@ const videos = [
         :id="'fitur' + video.id"
       >
         <div class="col-span-2 md:col-span-1">
-          <BaseHeading tag="h1" id="apa-itu-mischool" class="opacity-90">
+          <BaseHeading tag="h1" id="dashboard-e-learning" class="opacity-90">
             <span>{{ video.title }}</span>
           </BaseHeading>
           <BaseParagraph size="sm" class="opacity-80 mt-3">
@@ -92,6 +102,9 @@ const videos = [
           :title="video.title"
         />
       </BaseCard>
+    </div>
+    <div class="hidden lg:block lg:col-span-1">
+      <TairoToc :toc="toc" />
     </div>
   </div>
 </template>
