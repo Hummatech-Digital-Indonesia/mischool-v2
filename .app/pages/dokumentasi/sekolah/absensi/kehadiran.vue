@@ -27,11 +27,7 @@ definePageMeta({
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Kop Surat Mischool memungkinkan pengguna untuk membuat
-                  kop surat secara cepat dan disesuaikan dengan mudah di dalam
-                  platform. Dengan kemampuan untuk menyesuaikan desainnya, fitur
-                  ini sangat berguna untuk menciptakan header profesional yang
-                  dapat digunakan dalam mencetak rapor dan surat.
+                  halaman kehadiran terdapat fitur pencarian untuk mencari nama siswa atau guru, dan juga terdapat beberpa opsi untuk memilih tahun ajaran, kelas, dan tanggal. Terdapat beberapa kolom untuk melihat nama siswa, jam masuk dan jampulang point dan status siswa atau guru. Terdapat juga fitur untuk upload file.
                 </span>
               </BaseParagraph>
             </div>

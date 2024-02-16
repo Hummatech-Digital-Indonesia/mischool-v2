@@ -27,11 +27,15 @@ definePageMeta({
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Kop Surat Mischool memungkinkan pengguna untuk membuat
-                  kop surat secara cepat dan disesuaikan dengan mudah di dalam
-                  platform. Dengan kemampuan untuk menyesuaikan desainnya, fitur
-                  ini sangat berguna untuk menciptakan header profesional yang
-                  dapat digunakan dalam mencetak rapor dan surat.
+                  Menu registrasi RFID digunakan untuk mendaftarkan kartu RFID
+                  siswa/guru, memungkinkan mereka melakukan absensi dan mengisi
+                  jurnal di web mischool. Admin bertanggung jawab mendaftarkan
+                  RFID menggunakan RFID reader dan kartu RFID. Proses ini
+                  melibatkan pemindaian kartu RFID ke RFID reader yang terhubung
+                  dengan laptop. Pastikan kartu telah didaftarkan oleh admin
+                  sebelumnya. Setelah pemindaian berhasil, kode akan muncul,
+                  diikuti notifikasi bahwa siswa/guru telah
+                  berhasil didaftarkan.
                 </span>
               </BaseParagraph>
             </div>

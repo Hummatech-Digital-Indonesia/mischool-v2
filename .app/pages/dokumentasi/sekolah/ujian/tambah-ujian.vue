@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  title: 'Ujian Selesai',
+  title: 'Ujian',
   description: 'Jelajahi Fitur fitur dan halaman halaman kami.',
   layout: 'sidebar',
 })
@@ -23,15 +23,11 @@ definePageMeta({
           <div class="mt-10 grow sm:mt-0">
             <div class="text-center sm:text-left">
               <BaseHeading tag="h1" class="text-white opacity-90">
-                <span>Halaman Ujian Selesai</span>
+                <span>Halaman Ujian</span>
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Di halaman menu ujian selesai, kita dapat melihat data ujian
-                  yang telah selesai dan melakukan pencarian ujian yang sudah
-                  selesai. Selain itu, tersedia informasi detail mengenai siswa
-                  yang telah mengerjakan ujian, serta statistik rata-rata waktu
-                  pengerjaan, nilai ujian, dan nilai tertinggi serta terendah.
+                  Di halaman menu ujian, tersedia data ujian yang dapat dicari berdasarkan semester dan tingkatannya. Kita juga bisa menambahkan, mengedit, menghapus ujian, serta melihat detail seperti tahun ajaran, jumlah soal, semester, kelas, tanggal mulai dan berakhir, dan waktu pengerjaan.
                 </span>
               </BaseParagraph>
             </div>
@@ -41,12 +37,12 @@ definePageMeta({
       <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2" id="fitur">
         <div class="col-span-2 md:col-span-1">
           <BaseHeading tag="h1" id="apa-itu-mischool" class="opacity-90">
-            <span>Fitur Halaman Ujian Selesai</span>
+            <span>Fitur Halaman Ujian</span>
           </BaseHeading>
           <BaseParagraph size="sm" class="opacity-80 mt-3">
             <span>
-              Penjelasan lebih detail mengenai penggunaan fitur halaman ujian
-              selesai dapat dilihat pada video tutorial berikut
+              Penjelasan lebih detail mengenai penggunaan fitur ujian dapat
+              dilihat pada video tutorial berikut
             </span>
           </BaseParagraph>
         </div>

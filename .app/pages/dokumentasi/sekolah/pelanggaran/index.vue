@@ -27,11 +27,11 @@ definePageMeta({
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Kop Surat Mischool memungkinkan pengguna untuk membuat
-                  kop surat secara cepat dan disesuaikan dengan mudah di dalam
-                  platform. Dengan kemampuan untuk menyesuaikan desainnya, fitur
-                  ini sangat berguna untuk menciptakan header profesional yang
-                  dapat digunakan dalam mencetak rapor dan surat.
+                  Di halaman pelanggaran, kita dapat melihat jenis pelanggaran
+                  beserta poinnya dan batas maksimal poin. Terdapat opsi untuk
+                  mengedit atau menghapus data pelanggaran, serta melakukan
+                  pencarian pelanggaran. Selain itu, kita dapat mengatur batas
+                  maksimal poin dan menambahkan pelanggaran.
                 </span>
               </BaseParagraph>
             </div>

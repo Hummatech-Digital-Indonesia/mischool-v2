@@ -27,12 +27,7 @@ definePageMeta({
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Kop Surat Mischool memungkinkan pengguna untuk membuat
-                  kop surat secara cepat dan disesuaikan dengan mudah di dalam
-                  platform. Dengan kemampuan untuk menyesuaikan desainnya, fitur
-                  ini sangat berguna untuk menciptakan header profesional yang
-                  dapat digunakan dalam mencetak rapor dan surat.
-                </span>
+                  Pada fitur ini, pengguna dapat melihat riwayat paket yang telah berhasil dia transaksikan dan paket yang sudah dapat digunakan. Di halaman ini, pengguna juga dapat mencetak riwayat paket dengan menyesuaikan waktu pembelian paket yang diinginkan. Fitur ini dilengkapi dengan kolom keterangan lengkap paket, termasuk nama sekolah, jenis paket yang dibeli, cara pembayaran, harga paket, kode transaksi, dan tanggal pembelian.                </span>
               </BaseParagraph>
             </div>
           </div>
