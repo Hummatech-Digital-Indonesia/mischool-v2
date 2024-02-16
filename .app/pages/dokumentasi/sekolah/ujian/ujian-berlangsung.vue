@@ -27,11 +27,13 @@ definePageMeta({
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Kop Surat Mischool memungkinkan pengguna untuk membuat
-                  kop surat secara cepat dan disesuaikan dengan mudah di dalam
-                  platform. Dengan kemampuan untuk menyesuaikan desainnya, fitur
-                  ini sangat berguna untuk menciptakan header profesional yang
-                  dapat digunakan dalam mencetak rapor dan surat.
+                  Pada halaman menu ujian berlangsung, akan muncul data ujian
+                  yang sedang berlangsung. Di halaman ini kita bisa melihat
+                  detail berupa tahun ajaran, jumlah soal, semester, kelas,
+                  tanggal mulai dan berakhir, waktu pengerjaan, token ujian, dan
+                  tenggat berakhirnya ujian. kita juga bisa menyalin token,
+                  mengupdate token, dan melihat siapa saja yang
+                  mengerjakan ujian tersebut.
                 </span>
               </BaseParagraph>
             </div>

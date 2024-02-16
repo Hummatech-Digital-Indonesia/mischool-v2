@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  title: 'Ujian',
+  title: 'Buku Tamu',
   description: 'Jelajahi Fitur fitur dan halaman halaman kami.',
   layout: 'sidebar',
 })
@@ -16,14 +16,14 @@ definePageMeta({
           <div class="relative h-[168px] w-[280px] shrink-0">
             <img
               class="pointer-events-none absolute -start-6 -top-14 sm:-start-12"
-              src="/img/illustrations/placeholders/flat/placeholder-search-1.svg"
+              src="/img/illustrations/placeholders/flat/placeholder-projects.svg"
               alt="School Illustration"
             />
           </div>
           <div class="mt-10 grow sm:mt-0">
             <div class="text-center sm:text-left">
               <BaseHeading tag="h1" class="text-white opacity-90">
-                <span>Halaman Ujian</span>
+                <span>Halaman Buku Tamu</span>
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
@@ -41,11 +41,11 @@ definePageMeta({
       <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2" id="fitur">
         <div class="col-span-2 md:col-span-1">
           <BaseHeading tag="h1" id="apa-itu-mischool" class="opacity-90">
-            <span>Fitur Halaman Ujian</span>
+            <span>Fitur Halaman History</span>
           </BaseHeading>
           <BaseParagraph size="sm" class="opacity-80 mt-3">
             <span>
-              Penjelasan lebih detail mengenai penggunaan fitur ujian dapat
+              Penjelasan lebih detail mengenai penggunaan fitur history dapat
               dilihat pada video tutorial berikut
             </span>
           </BaseParagraph>

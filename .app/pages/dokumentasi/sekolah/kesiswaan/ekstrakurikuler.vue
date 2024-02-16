@@ -27,11 +27,12 @@ definePageMeta({
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Kop Surat Mischool memungkinkan pengguna untuk membuat
-                  kop surat secara cepat dan disesuaikan dengan mudah di dalam
-                  platform. Dengan kemampuan untuk menyesuaikan desainnya, fitur
-                  ini sangat berguna untuk menciptakan header profesional yang
-                  dapat digunakan dalam mencetak rapor dan surat.
+                  pada fitur ekstrakulikuler ini kita bisa melihat sejumlah
+                  daftar ekstra yang ada di sekolah. di halaman ini sudah
+                  tertera secara jelas deskripsi setiap ekstra mu,ai dari
+                  pengajar ekstra, jumlah siswa. kita juga bisa menambah atau
+                  mengeluarkan siswa pada ekstra yang di pilih. dan terakhir
+                  kita juga bisa menambah ekstra baru secara manual.
                 </span>
               </BaseParagraph>
             </div>

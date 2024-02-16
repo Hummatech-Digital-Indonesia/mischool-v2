@@ -139,12 +139,22 @@ const navigation = [
     ],
   },
   {
+    name: 'Buku Tamu',
+    children: [
+      {
+        name: 'Buku Tamu',
+        icon: 'ph:address-book',
+        to: '/dokumentasi/sekolah/buku-tamu',
+      },
+    ],
+  },
+  {
     name: 'Ujian',
     children: [
       {
         name: 'Ujian',
         icon: 'mdi:folder-cog',
-        to: '/dokumentasi/sekolah/ujian',
+        to: '/dokumentasi/sekolah/tambah-ujian',
       },
       {
         name: 'Ujian Berlangsung',

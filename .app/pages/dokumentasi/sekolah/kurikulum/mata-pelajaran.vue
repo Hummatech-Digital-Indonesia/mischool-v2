@@ -27,11 +27,12 @@ definePageMeta({
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Kop Surat Mischool memungkinkan pengguna untuk membuat
-                  kop surat secara cepat dan disesuaikan dengan mudah di dalam
-                  platform. Dengan kemampuan untuk menyesuaikan desainnya, fitur
-                  ini sangat berguna untuk menciptakan header profesional yang
-                  dapat digunakan dalam mencetak rapor dan surat.
+                  Dalam fitur Mata Pelajaran, pengguna bisa menambahkan mata
+                  pelajaran umum serta mata pelajaran keagamaan sesuai dengan
+                  kepercayaan masing-masing. Selain itu, pengguna juga dapat
+                  mengedit dan menghapus mata pelajaran. Perbedaan antara mata
+                  pelajaran umum dan keagamaan terlihat di pojok kanan atas, di
+                  mana pelajaran keagamaan akan menampilkan agamanya.
                 </span>
               </BaseParagraph>
             </div>

@@ -55,11 +55,8 @@ const videos = [
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Kop Surat Mischool memungkinkan pengguna untuk membuat
-                  kop surat secara cepat dan disesuaikan dengan mudah di dalam
-                  platform. Dengan kemampuan untuk menyesuaikan desainnya, fitur
-                  ini sangat berguna untuk menciptakan header profesional yang
-                  dapat digunakan dalam mencetak rapor dan surat.
+                  Pada menu fitur, kita bisa memilih dan membeli paket atau fitur. Di sini terdapat berbagai macam fitur yang tersedia untuk dibeli, seperti buku tamu, e-learning, rapor, absensi, ujian, dan pelanggaran. Fungsi dari fitur-fitur ini adalah untuk memberikan pengalaman yang lebih baik saat menggunakan web Mischool. Kita juga dapat melihat harga dari fitur-fitur tersebut.
+
                 </span>
               </BaseParagraph>
             </div>

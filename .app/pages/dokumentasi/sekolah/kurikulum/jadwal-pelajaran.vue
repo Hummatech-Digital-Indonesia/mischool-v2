@@ -27,11 +27,8 @@ definePageMeta({
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Kop Surat Mischool memungkinkan pengguna untuk membuat
-                  kop surat secara cepat dan disesuaikan dengan mudah di dalam
-                  platform. Dengan kemampuan untuk menyesuaikan desainnya, fitur
-                  ini sangat berguna untuk menciptakan header profesional yang
-                  dapat digunakan dalam mencetak rapor dan surat.
+                  Dalam fitur jadwal pelajaran, kita bisa menambahkan jadwal pelajaran untuk semester ganjil atau genap. Admin juga dapat menambahkan atau mengedit jadwal pelajaran jika ada perubahan.
+
                 </span>
               </BaseParagraph>
             </div>

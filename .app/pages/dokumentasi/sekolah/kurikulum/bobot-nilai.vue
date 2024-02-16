@@ -27,11 +27,10 @@ definePageMeta({
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Kop Surat Mischool memungkinkan pengguna untuk membuat
-                  kop surat secara cepat dan disesuaikan dengan mudah di dalam
-                  platform. Dengan kemampuan untuk menyesuaikan desainnya, fitur
-                  ini sangat berguna untuk menciptakan header profesional yang
-                  dapat digunakan dalam mencetak rapor dan surat.
+                  fitur bobot nilai. di bobot nilai dapat melihat nilai nilai
+                  dari berbagai macam mata pelajaran dan juga bisa mengedit
+                  nilai. Setelah itu terdapat opsi untuk memilih tahun ajaran
+                  dan memilih semester.
                 </span>
               </BaseParagraph>
             </div>

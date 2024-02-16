@@ -27,11 +27,12 @@ definePageMeta({
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Kop Surat Mischool memungkinkan pengguna untuk membuat
-                  kop surat secara cepat dan disesuaikan dengan mudah di dalam
-                  platform. Dengan kemampuan untuk menyesuaikan desainnya, fitur
-                  ini sangat berguna untuk menciptakan header profesional yang
-                  dapat digunakan dalam mencetak rapor dan surat.
+                  pada fitur wali murid ini kita bisa melihat data wali murdi
+                  siswa yang sudah terdaftar pada sistem mischool. tidak hanya
+                  itu, kita juga bisa menambahkan data wali murid seacra manual
+                  dan juga secara cepat. karna pada halaman ini juga disediakan
+                  format excel khusus agar memudahkan admin sekolah untuk
+                  menambahkan data
                 </span>
               </BaseParagraph>
             </div>
