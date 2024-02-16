@@ -154,7 +154,7 @@ const navigation = [
       {
         name: 'Ujian',
         icon: 'mdi:folder-cog',
-        to: '/dokumentasi/sekolah/tambah-ujian',
+        to: '/dokumentasi/sekolah/ujian/tambah-ujian',
       },
       {
         name: 'Ujian Berlangsung',

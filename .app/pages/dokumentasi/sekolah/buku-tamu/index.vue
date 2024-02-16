@@ -15,7 +15,7 @@ definePageMeta({
         >
           <div class="relative h-[168px] w-[280px] shrink-0">
             <img
-              class="pointer-events-none absolute -start-6 -top-14 sm:-start-12"
+              class="pointer-events-none absolute -start-6 -top-6 sm:-start-12"
               src="/img/illustrations/placeholders/flat/placeholder-projects.svg"
               alt="School Illustration"
             />
@@ -46,7 +46,7 @@ definePageMeta({
       <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2" id="fitur">
         <div class="col-span-2 md:col-span-1">
           <BaseHeading tag="h1" id="apa-itu-mischool" class="opacity-90">
-            <span>Fitur Halaman History</span>
+            <span>Fitur Buku tamu</span>
           </BaseHeading>
           <BaseParagraph size="sm" class="opacity-80 mt-3">
             <span>
