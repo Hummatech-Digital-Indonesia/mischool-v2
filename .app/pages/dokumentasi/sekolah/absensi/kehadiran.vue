@@ -27,7 +27,7 @@ definePageMeta({
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  halaman kehadir terdapat fitur pencarian untuk mencari nama siswa atau guru, dan juga terdapat beberpa opsi untuk memilih tahun ajaran, kelas, dan tanggal. Terdapat beberapa kolom untuk melihat nama siswa, jam masuk dan jampulang point dan status siswa atau guru. Terdapat juga fitur untuk upload file.
+                  halaman kehadiran terdapat fitur pencarian untuk mencari nama siswa atau guru, dan juga terdapat beberpa opsi untuk memilih tahun ajaran, kelas, dan tanggal. Terdapat beberapa kolom untuk melihat nama siswa, jam masuk dan jampulang point dan status siswa atau guru. Terdapat juga fitur untuk upload file.
                 </span>
               </BaseParagraph>
             </div>

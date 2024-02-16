@@ -29,9 +29,7 @@ definePageMeta({
                 <span>
                   Di setting jam terdapat dua opsi yaitu guru dan siswa ke dua
                   fitur tersebut sama hanya berbeda user. Di fitur setting jam
-                  kita dapat menseting jam pulang cepat dan libur Kehadiran. Di
-                  fitur kehadiran terdapat dua opsi yaitu guru dan siswa ke dua
-                  fitur tersebut sama hanya berbeda user
+                  kita dapat menseting jam pulang cepat dan libur Kehadiran.
                 </span>
               </BaseParagraph>
             </div>

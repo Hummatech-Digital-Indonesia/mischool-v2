@@ -27,11 +27,16 @@ definePageMeta({
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Kop Surat Mischool memungkinkan pengguna untuk membuat
-                  kop surat secara cepat dan disesuaikan dengan mudah di dalam
-                  platform. Dengan kemampuan untuk menyesuaikan desainnya, fitur
-                  ini sangat berguna untuk menciptakan header profesional yang
-                  dapat digunakan dalam mencetak rapor dan surat.
+                  Fitur Buku Tamu ini memiliki beberapa komponen yang membuatnya
+                  lebih efektif. Halaman ini menampilkan data kunjungan dan
+                  perbandingan kunjungan di sekolah Anda. Data kunjungan
+                  instansi tersering dan kunjungan terbaru juga ditampilkan di
+                  halaman ini. Terdapat pula tombol "Lihat Selengkapnya" yang
+                  memungkinkan pengguna menuju halaman detail. Di halaman
+                  detail, semua data kunjungan ditampilkan, dan terdapat filter
+                  untuk memfilter berdasarkan tanggal kunjungan dan tahun
+                  ajaran. Terdapat juga tombol "Print" untuk mencetak data
+                  kunjungan tersebut
                 </span>
               </BaseParagraph>
             </div>
