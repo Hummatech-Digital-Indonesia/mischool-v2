@@ -105,7 +105,7 @@ const navigations = [
 </script>
 
 <template>
-  <div class="w-full grid grid-cols-6">
+  <div class="w-full grid grid-cols-4">
     <div class="col-span-4 lg:col-span-3 grid grid-cols-2">
       <div class="col-span-2">
         <div
@@ -192,6 +192,28 @@ const navigations = [
           </div>
         </div>
       </BaseCard>
+      <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2">
+        <div class="col-span-2 md:col-span-1">
+          <BaseHeading tag="h1" id="apa-itu-mischool" class="opacity-90">
+            <span>Dashboard Guru</span>
+          </BaseHeading>
+          <BaseParagraph size="sm" class="opacity-80 mt-3">
+            <span>
+              Penjelasan lebih detail mengenai dashboard guru dapat dilihat pada
+              video tutorial berikut
+            </span>
+          </BaseParagraph>
+        </div>
+        <TutorialVideo
+          class="w-10/12 m-auto"
+          url="https://tairo.cssninja.io/dashboards/soccer"
+          src="/img/dokumentasi/guru/Dashboard Guru.png"
+          title="Dashboard Guru"
+        />
+      </BaseCard>
+    </div>
+    <div class="hidden lg:block lg:col-span-1">
+      <TairoToc :toc="toc" />
     </div>
   </div>
 </template>

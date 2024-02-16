@@ -3,7 +3,7 @@ const props = withDefaults(
   defineProps<{
     url: string
     src: string
-    title: string
+    title?: string
   }>(),
   {
     title: 'video tutorial',

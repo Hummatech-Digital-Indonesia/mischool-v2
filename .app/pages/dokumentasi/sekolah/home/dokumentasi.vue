@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Toc } from '../../../../types'
+
 const toc: Toc[] = [
   { id: 'fitur', level: 1, label: 'Fitur Akun Sekolah' },
   { id: 'fitur-dasar', level: 2, label: 'Fitur Dasar' },
@@ -12,7 +13,7 @@ const toc: Toc[] = [
 const navigations = [
   {
     title: 'Fitur Dasar',
-    id : 'fitur-dasar',
+    id: 'fitur-dasar',
     items: [
       {
         name: 'Kop Surat Sekolah',
@@ -54,7 +55,7 @@ const navigations = [
   },
   {
     title: 'Kurikulum',
-    id:'kurikulum',
+    id: 'kurikulum',
     items: [
       {
         name: 'Kelas',
@@ -110,7 +111,7 @@ const navigations = [
   },
   {
     title: 'Absensi',
-    id:'absensi',
+    id: 'absensi',
     items: [
       {
         name: 'Registrasi RFID',
@@ -136,7 +137,7 @@ const navigations = [
   },
   {
     title: 'Ujian',
-    id : 'ujian',
+    id: 'ujian',
     items: [
       {
         name: 'Ujian',

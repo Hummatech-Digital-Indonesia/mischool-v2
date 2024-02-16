@@ -73,7 +73,7 @@ const videos = [
           </BaseHeading>
           <BaseParagraph size="sm" class="opacity-80 mt-3">
             <span>
-              Penjelasan lebih detail mengenai penggunaan fitur kop surat dapat
+              Penjelasan lebih detail mengenai penggunaan fitur guru dapat
               dilihat pada video tutorial berikut
             </span>
           </BaseParagraph>
