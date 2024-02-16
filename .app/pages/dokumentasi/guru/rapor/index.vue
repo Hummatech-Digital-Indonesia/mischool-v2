@@ -8,7 +8,7 @@ definePageMeta({
 const featuredVideos = [
   {
     id: 1,
-    title: 'Tutorial Input Nilai Raport Tengah Semester Rapor',
+    title: 'Tutorial Input Nilai Rapor',
     slug: '',
     url: 'https://tairo.cssninja.io/dashboards/soccer',
     cover:
