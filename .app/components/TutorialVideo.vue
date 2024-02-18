@@ -26,13 +26,15 @@ const props = withDefaults(
           class="absolute inset-x-0 bottom-0 z-10 h-3/5 w-full bg-gradient-to-t from-black transition-all duration-500 ease-in-out group-hover:h-full"
         ></div>
         <div
-          class="absolute inset-0 z-20 flex h-full w-full flex-col justify-between"
+          class="absolute inset-0 z-20 flex h-full w-full flex-col justify-end"
         >
-          <div class="ptablet:p-10 p-6">
+          <div
+            class="absolute z-10 h-full w-full flex justify-center items-center ptablet:p-10 p-6"
+          >
             <NuxtLink
               :to="$props.url"
               target="_blank"
-              class="group-hover:border-primary-500 text-muted-300 group-hover:text-primary-500 shadow-muted-300/30 dark:shadow-muted-900/20 flex h-12 w-12 items-center justify-center rounded-full border-2 border-transparent bg-white shadow-xl transition-colors duration-300"
+              class="border-primary-500 text-muted-300 text-primary-500 shadow-muted-300/30 dark:shadow-muted-900/20 flex h-12 w-12 items-center justify-center rounded-full border-2 bg-white shadow-xl transition-colors duration-300"
             >
               <Icon name="ic:round-play-arrow" class="h-6 w-6" />
             </NuxtLink>

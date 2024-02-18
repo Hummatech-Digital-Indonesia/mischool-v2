@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import type { Toc } from '~/types'
+const toc: Toc[] = [
+  { id: 'dashboard-ujian', level: 1, label: 'Dashboard Ujian' },
+]
 definePageMeta({
   title: 'Dashboard',
   description: 'Jelajahi Fitur fitur dan halaman halaman kami.',
   layout: 'sidebar',
 })
-
-const toc: Toc[] = [
-  { id: 'dashboard-ujian', level: 1, label: 'Dashboard Ujian' },
-]
 
 const featuredVideos = [
   {
@@ -74,29 +73,29 @@ const videos = [
           </div>
         </div>
       </div>
-      <BaseCard
-        class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2"
-        v-for="video in featuredVideos"
-        :id="'fitur' + video.id"
-      >
-        <div class="col-span-2 md:col-span-1">
-          <BaseHeading tag="h1" id="dashboard-ujian" class="opacity-90">
+      <div class="mt-16 col-span-2 grid lg:grid-cols-2 gap-4" id="tutorial">
+        <BaseCard
+          class="p-4 grid grid-cols-1"
+          v-for="video in featuredVideos"
+          :id="video.slug"
+        >
+          <BaseHeading tag="h1" class="opacity-90 col-span-2">
             <span>{{ video.title }}</span>
           </BaseHeading>
-          <BaseParagraph size="sm" class="opacity-80 mt-3">
+          <BaseParagraph size="sm" class="opacity-80 mt-3 col-span-2">
             <span>
               Penjelasan lebih detail mengenai
               {{ video.title }} dapat dilihat pada video tutorial berikut
             </span>
           </BaseParagraph>
-        </div>
-        <TutorialVideo
-          class="w-10/12 m-auto"
-          :url="video.url"
-          :src="video.cover"
-          :title="video.title"
-        />
-      </BaseCard>
+          <TutorialVideo
+            class="mt-10"
+            :url="video.url"
+            :src="video.cover"
+            :title="video.title"
+          />
+        </BaseCard>
+      </div>
     </div>
     <div class="hidden lg:block lg:col-span-1">
       <TairoToc :toc="toc" />

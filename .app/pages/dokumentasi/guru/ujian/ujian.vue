@@ -4,12 +4,22 @@ definePageMeta({
   description: 'Jelajahi Fitur fitur dan halaman halaman kami.',
   layout: 'sidebar',
 })
+import type { Toc } from '~/types'
+const toc: Toc[] = [
+  { id: 'tutorial', level: 1, label: 'Tutorial' },
+  {
+    id: 'cara-memilih-menu',
+    level: 2,
+    label: 'Memilih Menu Halaman Fitur ujian',
+  },
+  { id: 'cara-mencetak-nilai', level: 2, label: 'Cara Mencetak Nilai Ujian' },
+]
 
 const featuredVideos = [
   {
     id: 1,
     title: 'Cara Memilih Menu Halaman di Fitur ujian',
-    slug: '',
+    slug: 'cara-memilih-menu',
     url: 'https://tairo.cssninja.io/dashboards/soccer',
     cover: '/img/dokumentasi/guru/Cara Memilih Menu Halaman di Fitur ujian.png',
     uploaded: '2 hours ago',
@@ -22,7 +32,7 @@ const featuredVideos = [
   {
     id: 1,
     title: 'Cara Mencetak Nilai Ujian',
-    slug: '',
+    slug: 'cara-mencetak-nilai',
     url: 'https://tairo.cssninja.io/dashboards/soccer',
     cover: '/img/dokumentasi/guru/Cara Mencetak Nilai Ujian.png',
     uploaded: '2 hours ago',
@@ -51,7 +61,7 @@ const videos = [
 
 <template>
   <div class="w-full grid grid-cols-4">
-    <div class="col-span-4 lg:col-span-5 grid grid-cols-2">
+    <div class="col-span-4 lg:col-span-3 grid grid-cols-2">
       <div class="col-span-2">
         <div
           class="bg-primary-800 flex flex-col items-center rounded-2xl p-4 sm:flex-row"
@@ -82,29 +92,32 @@ const videos = [
           </div>
         </div>
       </div>
-      <BaseCard
-        class="col-span-2 mt-16 p-4 grid grid-cols-3 gap-2"
-        v-for="video in featuredVideos"
-        :id="'fitur' + video.id"
-      >
-        <div class="col-span-3 md:col-span-2">
-          <BaseHeading tag="h1" id="apa-itu-mischool" class="opacity-90">
+      <div class="mt-16 col-span-2 grid lg:grid-cols-2 gap-4" id="tutorial">
+        <BaseCard
+          class="p-4 grid grid-cols-1"
+          v-for="video in featuredVideos"
+          :id="video.slug"
+        >
+          <BaseHeading tag="h1" class="opacity-90 col-span-2">
             <span>{{ video.title }}</span>
           </BaseHeading>
-          <BaseParagraph size="sm" class="opacity-80 mt-3">
+          <BaseParagraph size="sm" class="opacity-80 mt-3 col-span-2">
             <span>
               Penjelasan lebih detail mengenai
               {{ video.title }} dapat dilihat pada video tutorial berikut
             </span>
           </BaseParagraph>
-        </div>
-        <TutorialVideo
-          class="col-span-3 lg:col-span-1"
-          :url="video.url"
-          :src="video.cover"
-          :title="video.title"
-        />
-      </BaseCard>
+          <TutorialVideo
+            class="mt-10"
+            :url="video.url"
+            :src="video.cover"
+            :title="video.title"
+          />
+        </BaseCard>
+      </div>
+    </div>
+    <div class="hidden lg:block lg:col-span-1">
+      <TairoToc :toc="toc" />
     </div>
   </div>
 </template>
