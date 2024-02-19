@@ -47,9 +47,9 @@ const navigation = [
         to: '/dokumentasi/guru/ujian/ulangan',
       },
       {
-        name: 'Ujian',
+        name: 'Setting',
         icon: 'mdi:folder-cog',
-        to: '/dokumentasi/guru/ujian/ujian',
+        to: '/dokumentasi/guru/ujian/setting',
       },
       {
         name: 'Bank Soal',

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  title: 'Ujian',
+  title: 'Setting Ujian',
   description: 'Jelajahi Fitur fitur dan halaman halaman kami.',
   layout: 'sidebar',
 })

@@ -6,7 +6,7 @@ const navigation = [
       {
         name: 'Dokumentasi',
         icon: 'ph:house',
-        to: '/dokumentasi/siswa',
+        to: '/dokumentasi/siswa/docs',
       },
     ],
   },
@@ -20,7 +20,7 @@ const navigation = [
         name: 'Pelanggaran',
         // icon: 'tabler:message-report',
         icon: 'tabler:barrier-block',
-        to: '/dokumentasi/siswa/pelanggaran',
+        to: '/dokumentasi/siswa/pelanggaran/pelanggaran',
       },
       {
         name: 'History Pelanggaran',
@@ -40,9 +40,9 @@ const navigation = [
     name: 'Ujian',
     children: [
       {
-        name: 'Ujian',
+        name: 'Setting',
         icon: 'mdi:folder-cog',
-        to: '/dokumentasi/siswa/ujian',
+        to: '/dokumentasi/siswa/ujian/setting',
       },
       {
         name: 'Ulangan',
@@ -57,7 +57,7 @@ const navigation = [
       {
         name: 'Dashboard',
         icon: 'ph:grid-four',
-        to: '/dokumentasi/siswa/e-learning',
+        to: '/dokumentasi/siswa/e-learning/dashboard',
       },
       {
         name: 'Kelas',

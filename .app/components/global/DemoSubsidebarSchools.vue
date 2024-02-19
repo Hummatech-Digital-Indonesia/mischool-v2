@@ -152,9 +152,9 @@ const navigation = [
     name: 'Ujian',
     children: [
       {
-        name: 'Ujian',
+        name: 'Setting',
         icon: 'mdi:folder-cog',
-        to: '/dokumentasi/sekolah/ujian/tambah-ujian',
+        to: '/dokumentasi/sekolah/ujian/setting',
       },
       {
         name: 'Ujian Berlangsung',
@@ -184,12 +184,12 @@ const navigation = [
     ],
   },
   {
-    name: 'Paket Fitur',
+    name: 'Fitur',
     children: [
       {
-        name: 'Fitur',
+        name: 'Paket Fitur',
         icon: 'mdi:package-variant-closed',
-        to: '/dokumentasi/sekolah/fitur',
+        to: '/dokumentasi/sekolah/fitur/paket-fitur',
       },
       {
         name: 'Paket Anda',

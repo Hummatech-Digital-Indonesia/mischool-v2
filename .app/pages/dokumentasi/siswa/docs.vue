@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Toc } from '../../../../types'
+import type { Toc } from '../../../types'
 const toc: Toc[] = [
   { id: 'fitur', level: 1, label: 'Fitur Akun Siswa' },
   { id: 'fitur-pelanggaran', level: 2, label: 'Fitur Pelanggaran' },
