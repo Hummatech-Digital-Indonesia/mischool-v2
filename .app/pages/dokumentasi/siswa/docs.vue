@@ -14,17 +14,17 @@ const navigations = [
     items: [
       {
         name: 'Pelanggaran',
-        icon: 'ph:list-checks',
+        icon: 'tabler:barrier-block',
         to: '/dokumentasi/siswa/pelanggaran',
       },
       {
         name: 'History Pelanggaran',
-        icon: 'ph:list-checks',
+        icon: 'ic:sharp-history',
         to: '/dokumentasi/siswa/pelanggaran/history-pelanggaran',
       },
       {
         name: 'History Perbaikan',
-        icon: 'ph:list-checks',
+        icon: 'ic:sharp-manage-history',
         to: '/dokumentasi/siswa/pelanggaran/history-perbaikan',
       },
     ],
@@ -36,17 +36,17 @@ const navigations = [
     items: [
       {
         name: 'Dashboard',
-        icon: 'ph:table-duotone',
+        icon: 'ph:grid-four',
         to: '/dokumentasi/siswa/e-learning',
       },
       {
         name: 'Kelas',
-        icon: 'ph:table-duotone',
+        icon: 'ph:chalkboard-simple',
         to: '/dokumentasi/siswa/e-learning/kelas',
       },
       {
         name: 'Daftar Tugas',
-        icon: 'ph:table-duotone',
+        icon: 'tabler:clipboard-list',
         to: '/dokumentasi/siswa/e-learning/daftar-tugas',
       },
     ],
@@ -57,12 +57,12 @@ const navigations = [
     items: [
       {
         name: 'Ujian',
-        icon: 'ph:table-duotone',
+        icon: 'mdi:folder-cog',
         to: '/dokumentasi/siswa/ujian',
       },
       {
         name: 'Ulangan',
-        icon: 'ph:table-duotone',
+        icon: 'tabler:align-box-center-stretch',
         to: '/dokumentasi/siswa/ujian/ulangan',
       },
     ],

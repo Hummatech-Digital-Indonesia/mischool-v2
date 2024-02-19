@@ -12,18 +12,18 @@ const navigations = [
     id: 'fitur-pelanggaran',
     items: [
       {
-        name: 'Pelanggaran',
-        icon: 'ph:list-checks',
-        to: '/dokumentasi/staff/pelanggaran',
+        name: 'Dashboard',
+        icon: 'ph:grid-four',
+        to: '/dokumentasi/staff/pelanggaran/dashboard',
       },
       {
         name: 'Siswa',
-        icon: 'ph:list-checks',
+        icon: 'ph:student',
         to: '/dokumentasi/staff/pelanggaran/siswa',
       },
       {
         name: 'Pelanggaran',
-        icon: 'ph:list-checks',
+        icon: 'tabler:barrier-block',
         to: '/dokumentasi/staff/pelanggaran/pelanggaran',
       },
       {
@@ -33,7 +33,7 @@ const navigations = [
       },
       {
         name: 'Top Pelanggaran',
-        icon: 'ph:list-checks',
+        icon: 'ph:warning-bold',
         to: '/dokumentasi/staff/pelanggaran/top-pelanggaran',
       },
     ],
@@ -45,7 +45,7 @@ const navigations = [
     items: [
       {
         name: 'Pelanggaran',
-        icon: 'ph:list-checks',
+        icon: 'ph:person-simple-run-light',
         to: '/dokumentasi/staff/ekstrakurikuler',
       },
     ],
