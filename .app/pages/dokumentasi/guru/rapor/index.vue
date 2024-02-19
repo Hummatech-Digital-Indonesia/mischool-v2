@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import type { Toc } from '~/types'
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 definePageMeta({
   title: 'Input Nilai',
   description: 'Jelajahi Fitur fitur dan halaman halaman kami.',
