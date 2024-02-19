@@ -1,5 +1,9 @@
 <script setup lang="ts">
+<<<<<<< Updated upstream
 import type { Toc } from '~/types'
+=======
+
+>>>>>>> Stashed changes
 definePageMeta({
   title: 'Input Nilai',
   description: 'Jelajahi Fitur fitur dan halaman halaman kami.',
@@ -24,20 +28,6 @@ const featuredVideos = [
     author: {
       name: 'Hermann Mayer',
       avatar: '/img/avatars/16.svg',
-    },
-  },
-]
-const videos = [
-  {
-    id: 6,
-    title: 'How to think a mobile app landing page design',
-    slug: '',
-    cover: '/img/illustrations/dashboards/video/6.png',
-    uploaded: '7 hours ago',
-    category: 'Frontend',
-    author: {
-      name: 'Alan Skelli',
-      avatar: '/img/avatars/11.svg',
     },
   },
 ]
