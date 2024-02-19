@@ -23,13 +23,14 @@ export interface Feature {
   price: number
   photo: string
   status: null | string
-  description: string 
+  description: string
   discount: {
     id: string
     feature_pack_id: string
     start_discount: string
-    end_discount: number
+    end_discount: string
     discount: number
+    price: number
   }
   six_mount: number
   one_year: number

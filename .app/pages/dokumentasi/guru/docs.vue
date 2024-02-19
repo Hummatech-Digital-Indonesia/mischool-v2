@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Toc } from '../../../../types'
+import type { Toc } from '../../../types'
 const toc: Toc[] = [
   { id: 'fitur', level: 1, label: 'Fitur Akun Guru' },
   { id: 'fitur-rapor', level: 2, label: 'Fitur Rapor' },
@@ -16,16 +16,16 @@ const navigations = [
     items: [
       {
         name: 'Input Nilai',
-        icon: 'ph:list-checks',
+        icon: 'ph:list-plus-bold',
         to: '/dokumentasi/guru/rapor',
       },
       {
         name: 'Deskripsi Karakter',
-        icon: 'ph:list-checks',
+        icon: 'ph:chalkboard-teacher-duotone',
         to: '/dokumentasi/guru/rapor/deskripsi-karakter',
       },
       {
-        name: 'History Perbaikan',
+        name: 'Input Keagamaan',
         icon: 'ph:list-checks',
         to: '/dokumentasi/guru/rapor/input-keagamaan',
       },
@@ -38,17 +38,17 @@ const navigations = [
     items: [
       {
         name: 'Dashboard',
-        icon: 'ph:table-duotone',
-        to: '/dokumentasi/guru/e-learning',
+        icon: 'ph:grid-four',
+        to: '/dokumentasi/guru/e-learning/dashboard',
       },
       {
         name: 'Kelas',
-        icon: 'ph:table-duotone',
+        icon: 'ph:chalkboard-simple',
         to: '/dokumentasi/guru/e-learning/kelas',
       },
       {
         name: 'Daftar Tugas',
-        icon: 'ph:table-duotone',
+        icon: 'tabler:clipboard-list',
         to: '/dokumentasi/guru/e-learning/daftar-tugas',
       },
     ],
@@ -59,7 +59,7 @@ const navigations = [
     items: [
       {
         name: 'Jurnal',
-        icon: 'tabler:barrier-block',
+        icon: 'tabler:align-box-right-stretch',
         to: '/dokumentasi/guru/jurnal',
       },
     ],
@@ -70,7 +70,7 @@ const navigations = [
     items: [
       {
         name: 'Ekstrakurikuler',
-        icon: 'tabler:barrier-block',
+        icon: 'ph:person-simple-run-light',
         to: '/dokumentasi/guru/ekstrakurikuler',
       },
     ],
@@ -81,22 +81,22 @@ const navigations = [
     items: [
       {
         name: 'Dashboard',
-        icon: 'ph:table-duotone',
-        to: '/dokumentasi/guru/ujian',
+        icon: 'ph:grid-four',
+        to: '/dokumentasi/guru/ujian/dashboard',
       },
       {
         name: 'Ulangan',
-        icon: 'ph:table-duotone',
+        icon: 'tabler:align-box-center-stretch',
         to: '/dokumentasi/guru/ujian/ulangan',
       },
       {
         name: 'Ujian',
-        icon: 'ph:table-duotone',
+        icon: 'mdi:folder-cog',
         to: '/dokumentasi/guru/ujian/ujian',
       },
       {
         name: 'Bank Soal',
-        icon: 'ph:table-duotone',
+        icon: 'mdi:folder-file',
         to: '/dokumentasi/guru/ujian/bank-soal',
       },
     ],

@@ -9,7 +9,30 @@ const props = defineProps<{
 const formatPrice = (price: number): string => {
   return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')
 }
-console.log(props.feature)
+
+const endPeriod = props.feature.discount
+  ? calculateDayDifference(props.feature.discount.end_discount)
+  : null
+function calculateDayDifference(dateString: string) {
+  const date = dateString.split('-')
+  const year = parseInt(date[0])
+  const month = parseInt(date[1]) - 1
+  const day = parseInt(date[2])
+
+  // Create a Date object for the input date
+  const inputDate = new Date(year, month, day)
+
+  // Create a Date object for today's date
+  const today = new Date()
+
+  // Calculate the difference in milliseconds between the two dates
+  const timeDifference = today.getTime() - inputDate.getTime()
+
+  // Convert the time difference to days
+  const dayDifference = Math.ceil(timeDifference / (1000 * 60 * 60 * 24))
+
+  return dayDifference
+}
 </script>
 
 <template>
@@ -41,7 +64,7 @@ console.log(props.feature)
             size="sm"
             weight="extrabold"
             class="text-primary-500 line-through"
-            >Rp {{ formatPrice(props.feature.price) }}
+            >Rp {{ formatPrice(props.feature.discount.price) }}
           </BaseText>
           <BaseTag
             class="h-fit"
@@ -50,10 +73,13 @@ console.log(props.feature)
             shape="full"
             color="warning"
           >
-            Diskon 10%</BaseTag
+            Diskon {{ props.feature.discount.discount }} %</BaseTag
           >
         </div>
-        <span class="text-xs">Berakhir dalam 2 hari</span>
+        <!-- <span v-if="endPeriod && endPeriod > 0" class="text-xs"
+          >Berakhir dalam {{ endPeriod }} hari</span
+        >
+        <span v-else class="text-xs">Berakhir hari ini</span> -->
       </div>
       <BaseText size="xl" weight="bold" class="mt-4 text-primary-500"
         >Rp{{ formatPrice(props.feature.price) }}/
