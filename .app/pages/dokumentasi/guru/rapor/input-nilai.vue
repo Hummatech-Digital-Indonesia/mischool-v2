@@ -1,46 +1,30 @@
 <script setup lang="ts">
+import type { Toc } from '~/types'
+
 definePageMeta({
-  title: 'Dashboard',
+  title: 'Input Nilai',
   description: 'Jelajahi Fitur fitur dan halaman halaman kami.',
   layout: 'sidebar',
 })
 
-import type { Toc } from '~/types'
-
 const toc: Toc[] = [
-  {
-    id: 'dashboard-e-learning',
-    level: 1,
-    label: 'Dashboard E-learning',
-  },
+  { id: 'tutorial', level: 1, label: 'Tutorial' },
+  { id: 'input-nilai-rapor', level: 2, label: 'Input Nilai Rapor' },
 ]
 
 const featuredVideos = [
   {
     id: 1,
-    title: 'Halaman Dashboard E-Learning',
-    slug: 'dashboard-e-learning',
+    title: 'Tutorial Input Nilai Rapor',
+    slug: 'input-nilai-rapor',
     url: 'https://tairo.cssninja.io/dashboards/soccer',
-    cover: '/img/dokumentasi/guru/Halaman Dashboard E-Learning.png',
+    cover:
+      '/img/dokumentasi/guru/Tutorial Input Nilai Raport Tengah Semester Rapor.png',
     uploaded: '2 hours ago',
     category: 'Frontend',
     author: {
       name: 'Hermann Mayer',
       avatar: '/img/avatars/16.svg',
-    },
-  },
-]
-const videos = [
-  {
-    id: 6,
-    title: 'How to think a mobile app landing page design',
-    slug: '',
-    cover: '/img/illustrations/dashboards/video/6.png',
-    uploaded: '7 hours ago',
-    category: 'Frontend',
-    author: {
-      name: 'Alan Skelli',
-      avatar: '/img/avatars/11.svg',
     },
   },
 ]
@@ -63,16 +47,15 @@ const videos = [
           <div class="mt-10 grow sm:mt-0">
             <div class="text-center sm:text-left">
               <BaseHeading tag="h1" class="text-white opacity-90">
-                <span>Halaman Dashboard</span>
+                <span>Halaman Input Nilai</span>
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Deskripsi Karakter Mischool memungkinkan pengguna untuk
-                  membuat deskripsi karakter secara cepat dan disesuaikan dengan
-                  mudah di dalam platform. Dengan kemampuan untuk menyesuaikan
-                  desainnya, fitur ini sangat berguna untuk menciptakan header
-                  profesional yang dapat digunakan dalam mencetak rapor dan
-                  surat.
+                  Fitur Kop Surat Mischool memungkinkan pengguna untuk membuat
+                  kop surat secara cepat dan disesuaikan dengan mudah di dalam
+                  platform. Dengan kemampuan untuk menyesuaikan desainnya, fitur
+                  ini sangat berguna untuk menciptakan header profesional yang
+                  dapat digunakan dalam mencetak rapor dan surat.
                 </span>
               </BaseParagraph>
             </div>

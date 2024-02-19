@@ -6,7 +6,7 @@ const navigation = [
       {
         name: 'Dokumentasi',
         icon: 'ph:house',
-        to: '/dokumentasi/guru',
+        to: '/dokumentasi/guru/docs',
       },
     ],
   },
@@ -19,7 +19,7 @@ const navigation = [
       {
         name: 'Input Nilai',
         icon: 'ph:list-plus-bold',
-        to: '/dokumentasi/guru/rapor',
+        to: '/dokumentasi/guru/rapor/input-nilai',
       },
       {
         name: 'Deskripsi Karakter',
@@ -39,7 +39,7 @@ const navigation = [
       {
         name: 'Dashboard',
         icon: 'ph:grid-four',
-        to: '/dokumentasi/guru/ujian',
+        to: '/dokumentasi/guru/ujian/dashboard',
       },
       {
         name: 'Ulangan',
@@ -64,7 +64,7 @@ const navigation = [
       {
         name: 'Dashboard',
         icon: 'ph:grid-four',
-        to: '/dokumentasi/guru/e-learning',
+        to: '/dokumentasi/guru/e-learning/dashboard',
       },
       {
         name: 'Kelas',

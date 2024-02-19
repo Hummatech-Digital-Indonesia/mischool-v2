@@ -1,22 +1,5 @@
 <script setup lang="ts">
-
-interface FeaturePackDetails {
-  id: number
-  feature_pack_id: string
-  item: string
-}
-
-interface Feature {
-  id: string
-  name: string
-  price: number
-  photo: string
-  status: null | string
-  description: string
-  voucher: any[]
-  discount: any[]
-  feature_pack_details: FeaturePackDetails[]
-}
+import type { FeaturePackDetails, Feature } from '~/types'
 
 const props = defineProps<{
   feature: Feature

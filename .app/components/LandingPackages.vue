@@ -1,26 +1,10 @@
 <script setup lang="ts">
-interface FeaturePackDetails{
-id: number
-feature_pack_id: string
-item: string
-}
+import type { FeaturePackDetails, Feature } from '~/types'
 
 interface Meta {
   code: number
   message: string | null
   status: 'success' | 'error'
-}
-
-interface Feature {
-  id: string
-  name: string
-  price: number
-  photo: string
-  status: null | string
-  description: string
-  voucher: any[]
-  discount: any[]
-  feature_pack_details: FeaturePackDetails[]
 }
 
 interface FetchResponse {
@@ -58,11 +42,11 @@ const { data: response } = useFetch<FetchResponse>(
         pengalaman pendidikan Anda.
       </BaseParagraph>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-        <template v-for="(features, index) in response?.data" :key="features.id">
-          <Packages
-            :feature="features"
-            :number="index + 1"
-          />
+        <template
+          v-for="(features, index) in response?.data"
+          :key="features.id"
+        >
+          <Packages :feature="features" :number="index + 1" />
         </template>
       </div>
     </div>

@@ -2,11 +2,13 @@
 const navigation = [
   {
     name: 'Home',
-    children: [{
-      name:'Dokumentasi',
-      icon: 'ph:house',
-      to:'/dokumentasi/staff'
-    }],
+    children: [
+      {
+        name: 'Dokumentasi',
+        icon: 'ph:house',
+        to: '/dokumentasi/staff',
+      },
+    ],
   },
   {
     divider: true,
@@ -15,9 +17,9 @@ const navigation = [
     name: 'Pelanggaran',
     children: [
       {
-        name: 'Pelanggaran',
-        icon: 'tabler:barrier-block',
-        to: '/dokumentasi/staff/pelanggaran',
+        name: 'Dashboard',
+        icon: 'ph:grid-four',
+        to: '/dokumentasi/staff/pelanggaran/dashboard',
       },
       {
         name: 'Siswa',
@@ -46,12 +48,11 @@ const navigation = [
     children: [
       {
         name: 'Ekstrakurikuler',
-        icon: 'tabler:barrier-block',
+        icon: 'ph:person-simple-run-light',
         to: '/dokumentasi/staff/ekstrakurikuler',
       },
     ],
   },
-
 ]
 </script>
 
