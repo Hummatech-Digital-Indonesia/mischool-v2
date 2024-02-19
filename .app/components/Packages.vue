@@ -9,6 +9,7 @@ const props = defineProps<{
 const formatPrice = (price: number): string => {
   return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')
 }
+console.log(props.feature)
 </script>
 
 <template>
@@ -34,8 +35,27 @@ const formatPrice = (price: number): string => {
       >
         {{ props.feature.name }}
       </BaseHeading>
-
-      <BaseText size="xl" weight="extrabold" class="mt-4 text-primary-500"
+      <div v-if="props.feature.discount" class="flex flex-col">
+        <div class="w-full mt-3 mb-5 flex justify-center items-center gap-4">
+          <BaseText
+            size="sm"
+            weight="extrabold"
+            class="text-primary-500 line-through"
+            >Rp {{ formatPrice(props.feature.price) }}
+          </BaseText>
+          <BaseTag
+            class="h-fit"
+            size="sm"
+            rounded="lg"
+            shape="full"
+            color="warning"
+          >
+            Diskon 10%</BaseTag
+          >
+        </div>
+        <span class="text-xs">Berakhir dalam 2 hari</span>
+      </div>
+      <BaseText size="xl" weight="bold" class="mt-4 text-primary-500"
         >Rp{{ formatPrice(props.feature.price) }}/
         <span class="text-md">bln</span>
       </BaseText>
