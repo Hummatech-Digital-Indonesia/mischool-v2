@@ -2,9 +2,9 @@
 definePageMeta({
   title: 'Sistem Manajemen Sekolah',
   description:
-    'Mischool adalah platform manajemen sekolah yang memberikan solusi terbaik untuk administrasi dan komunikasi antara sekolah, siswa, dan orang tua.',
+    'AcsSchool adalah platform manajemen sekolah yang memberikan solusi terbaik untuk administrasi dan komunikasi antara sekolah, siswa, dan orang tua.',
   breadcrumb: {
-    label: 'Mischool',
+    label: 'AcsSchool',
   },
   layout: 'landing',
 })

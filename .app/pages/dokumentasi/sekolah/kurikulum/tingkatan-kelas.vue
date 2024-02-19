@@ -27,7 +27,9 @@ definePageMeta({
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Di fitur tingkatan kelas, kita dapat menambahkan, mengedit, dan menghapus kelas. Selain itu, kita juga bisa melakukan pencarian untuk menemukan kelas yang diinginkan.
+                  Di fitur tingkatan kelas, kita dapat menambahkan, mengedit,
+                  dan menghapus kelas. Selain itu, kita juga bisa melakukan
+                  pencarian untuk menemukan kelas yang diinginkan.
                 </span>
               </BaseParagraph>
             </div>
@@ -36,7 +38,7 @@ definePageMeta({
       </div>
       <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2" id="fitur">
         <div class="col-span-2 md:col-span-1">
-          <BaseHeading tag="h1" id="apa-itu-mischool" class="opacity-90">
+          <BaseHeading tag="h1" id="apa-itu-AcsSchool" class="opacity-90">
             <span>Fitur Halaman Tingkatan Kelas</span>
           </BaseHeading>
           <BaseParagraph size="sm" class="opacity-80 mt-3">

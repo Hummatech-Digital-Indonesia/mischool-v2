@@ -78,7 +78,7 @@ const { open } = usePanels()
             v-if="isMobileOpen"
             shape="curved"
             color="primary"
-            to="https://school.mischool.id/login"
+            to="https://school.AcsSchool.id/login"
           >
             Login
           </BaseButton>
@@ -104,7 +104,7 @@ const { open } = usePanels()
         <BaseButton
           shape="curved"
           color="primary"
-          to="https://school.mischool.id/login"
+          to="https://school.AcsSchool.id/login"
           class="ltablet:!flex !hidden lg:!flex"
         >
           Login

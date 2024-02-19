@@ -27,7 +27,7 @@
             <NuxtImg
               class="ltablet:translate-y-20 block translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
               src="/img/illustrations/people.svg"
-              alt="Mischool demo screenshot"
+              alt="AcsSchool demo screenshot"
               format="webp"
               width="568"
               height="532"

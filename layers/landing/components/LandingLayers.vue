@@ -18,7 +18,9 @@ interface FetchResponse {
 
 //@ts-ignore
 // eslint-disable-next-line prettier-vue/prettier
-const { data: response } = useFetch<FetchResponse>(`${useApiUrl()}/landing-page`)
+const { data: response } = useFetch<FetchResponse>(
+  `${useApiUrl()}/landing-page`,
+)
 </script>
 
 <template>
@@ -36,15 +38,15 @@ const { data: response } = useFetch<FetchResponse>(`${useApiUrl()}/landing-page`
           lead="tight"
           class="text-muted-800 mx-auto mb-4 dark:text-white"
         >
-          Pengguna Mischool
+          Pengguna AcsSchool
         </BaseHeading>
         <BaseParagraph
           size="lg"
           class="text-muted-500 dark:text-muted-100 mx-auto mb-4"
         >
-          Jumlah pengguna Mischool terus meningkat setiap tahunnya, menunjukkan
-          bahwa Mischool merupakan sebuah solusi yang tepat untuk pengelolaan
-          sekolah. Mischool dapat membantu sekolah untuk meningkatkan efisiensi
+          Jumlah pengguna AcsSchool terus meningkat setiap tahunnya, menunjukkan
+          bahwa AcsSchool merupakan sebuah solusi yang tepat untuk pengelolaan
+          sekolah. AcsSchool dapat membantu sekolah untuk meningkatkan efisiensi
           dan efektivitas pengelolaan sekolah, meningkatkan kualitas
           pembelajaran, dan meningkatkan keterjangkauan pendidikan.
         </BaseParagraph>
@@ -57,7 +59,7 @@ const { data: response } = useFetch<FetchResponse>(`${useApiUrl()}/landing-page`
           color="indigo"
           :count="response?.data.school ? response.data.school : 0"
         >
-          Mischool telah dipilih
+          AcsSchool telah dipilih
           {{ response?.data.school ? response.data.school : 0 }} sekolah ,
           menjadi mitra terpercaya dalam mendorong efisiensi dan inovasi dalam
           manajemen sekolah.
@@ -70,7 +72,7 @@ const { data: response } = useFetch<FetchResponse>(`${useApiUrl()}/landing-page`
           :count="response?.data.teacher ? response.data.teacher : 0"
         >
           {{ response?.data.teacher ? response.data.teacher : 0 }} guru telah
-          bergabung dengan Mischool untuk mendukung proses pengajaran dan
+          bergabung dengan AcsSchool untuk mendukung proses pengajaran dan
           meningkatkan kualitas pembelajaran.
         </LandingLayersBox>
         <LandingLayersBox
@@ -80,11 +82,10 @@ const { data: response } = useFetch<FetchResponse>(`${useApiUrl()}/landing-page`
           :count="response?.data.student ? response.data.student : 0"
         >
           {{ response?.data.student ? response.data.student : 0 }} siswa telah
-          merasakan manfaat pendekatan terintegrasi MiSchool, mendapatkan
+          merasakan manfaat pendekatan terintegrasi AcsSchool, mendapatkan
           pengalaman pendidikan yang lebih baik dan terfokus.
         </LandingLayersBox>
       </div>
     </div>
   </div>
 </template>
-

@@ -29,7 +29,7 @@ definePageMeta({
                 <span>
                   Menu registrasi RFID digunakan untuk mendaftarkan kartu RFID
                   siswa/guru, memungkinkan mereka melakukan absensi dan mengisi
-                  jurnal di web mischool. Admin bertanggung jawab mendaftarkan
+                  jurnal di web AcsSchool. Admin bertanggung jawab mendaftarkan
                   RFID menggunakan RFID reader dan kartu RFID. Proses ini
                   melibatkan pemindaian kartu RFID ke RFID reader yang terhubung
                   dengan laptop. Pastikan kartu telah didaftarkan oleh admin
@@ -44,7 +44,7 @@ definePageMeta({
       </div>
       <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2" id="fitur">
         <div class="col-span-2 md:col-span-1">
-          <BaseHeading tag="h1" id="apa-itu-mischool" class="opacity-90">
+          <BaseHeading tag="h1" id="apa-itu-AcsSchool" class="opacity-90">
             <span>Fitur Halaman Regristasi RFID</span>
           </BaseHeading>
           <BaseParagraph size="sm" class="opacity-80 mt-3">

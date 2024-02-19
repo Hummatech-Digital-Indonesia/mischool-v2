@@ -3,7 +3,7 @@ import type { Toc } from '../types'
 
 const toc: Toc[] = [
   { id: 'selamat-datang', level: 1, label: 'Selamat Datang' },
-  { id: 'apa-itu-mischool', level: 1, label: 'Apa itu Mischool?' },
+  { id: 'apa-itu-AcsSchool', level: 1, label: 'Apa itu AcsSchool?' },
   { id: 'jelajahi-lebih-dalam', level: 1, label: 'Jelajahi lebih dalam' },
 ]
 
@@ -56,17 +56,17 @@ const roles = [
                 id="selamat-datang"
                 class="text-white opacity-90"
               >
-                <span>Selamat Datang di Dokumentasi Mischool!</span>
+                <span>Selamat Datang di Dokumentasi AcsSchool!</span>
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Selamat datang di Dokumentasi Mischool! Temukan panduan
-                  lengkap untuk mengoptimalkan penggunaan Mischool dalam
+                  Selamat datang di Dokumentasi AcsSchool! Temukan panduan
+                  lengkap untuk mengoptimalkan penggunaan AcsSchool dalam
                   manajemen sekolah Anda. Dengan informasi mendalam dan panduan
                   praktis, kami siap membantu meningkatkan efisiensi pengelolaan
                   sekolah. Jelajahi dokumentasi ini, dan jika ada pertanyaan,
                   tim dukungan kami siap membantu. Terima kasih telah memilih
-                  Mischool sebagai solusi terpercaya untuk sekolah Anda!
+                  AcsSchool sebagai solusi terpercaya untuk sekolah Anda!
                 </span>
               </BaseParagraph>
             </div>
@@ -75,14 +75,14 @@ const roles = [
       </div>
       <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2" id="fitur">
         <div class="col-span-2 md:col-span-1">
-          <BaseHeading tag="h1" id="apa-itu-mischool" class="opacity-90">
-            <span>Apa Itu Mischool!</span>
+          <BaseHeading tag="h1" id="apa-itu-AcsSchool" class="opacity-90">
+            <span>Apa Itu AcsSchool!</span>
           </BaseHeading>
           <BaseParagraph size="sm" class="opacity-80 mt-3">
             <span>
-              Mischool adalah sebuah platform manajemen sekolah yang canggih,
+              AcsSchool adalah sebuah platform manajemen sekolah yang canggih,
               dirancang untuk memberikan solusi terpadu dalam mengelola berbagai
-              aspek kegiatan sekolah. Dengan Mischool, pengguna dapat mengakses
+              aspek kegiatan sekolah. Dengan AcsSchool, pengguna dapat mengakses
               fitur-fitur seperti manajemen siswa, penjadwalan, pelaporan, dan
               lainnya, yang bertujuan untuk meningkatkan efisiensi operasional
               dan pengalaman pembelajaran.
@@ -130,7 +130,7 @@ const roles = [
                       lead="tight"
                       class="xs:text-xl hover:text-primary-300 mb-4 line-clamp-2 text-white transition-colors duration-300"
                     >
-                      <span>Apa itu Mischool?</span>
+                      <span>Apa itu AcsSchool?</span>
                     </BaseHeading>
                   </NuxtLink>
                   <div class="flex gap-3">

@@ -25,7 +25,11 @@ useHead({
     },
   ],
   meta: [
-    { name: 'description', content: () => route.meta.description ?? '. Sistem Manajemen Sekolah Terbaik' },
+    {
+      name: 'description',
+      content: () =>
+        route.meta.description ?? '. Sistem Manajemen Sekolah Terbaik',
+    },
     {
       name: 'twitter:card',
       content: 'summary_large_image',
@@ -48,7 +52,7 @@ useHead({
     },
     {
       name: 'og:image',
-      content: `https://school.mischool.online/flat%20only%20logo%20.png`,
+      content: `https://school.AcsSchool.online/flat%20only%20logo%20.png`,
     },
   ],
 })

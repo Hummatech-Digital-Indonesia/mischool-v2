@@ -27,14 +27,14 @@ definePageMeta({
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Halaman Pegawai di Mischool memudahkan sekolah untuk
+                  Fitur Halaman Pegawai di AcsSchool memudahkan sekolah untuk
                   mengelola data guru dan staff. Dengan menyediakan akses cepat
                   untuk menambah dan melihat informasi penting seperti email,
-                  nama, dan detail lainnya yang tercantum di website Mischool.
+                  nama, dan detail lainnya yang tercantum di website AcsSchool.
                   Setiap pegawai akan secara otomatis memiliki akun yang
                   terhubung dengan email mereka, memungkinkan akses langsung ke
-                  platform Mischool. Solusi praktis untuk manajemen data pegawai
-                  yang efisien.
+                  platform AcsSchool. Solusi praktis untuk manajemen data
+                  pegawai yang efisien.
                 </span>
               </BaseParagraph>
             </div>
@@ -43,7 +43,7 @@ definePageMeta({
       </div>
       <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2" id="fitur">
         <div class="col-span-2 md:col-span-1">
-          <BaseHeading tag="h1" id="apa-itu-mischool" class="opacity-90">
+          <BaseHeading tag="h1" id="apa-itu-AcsSchool" class="opacity-90">
             <span>Fitur Halaman Pegawai</span>
           </BaseHeading>
           <BaseParagraph size="sm" class="opacity-80 mt-3">

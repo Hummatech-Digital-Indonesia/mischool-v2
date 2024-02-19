@@ -227,16 +227,16 @@ const navigations = [
             <div class="text-center sm:text-left">
               <BaseHeading tag="h1" class="text-white opacity-90">
                 <span
-                  >Selamat Datang di Dokumentasi Akun Sekolah Mischool!</span
+                  >Selamat Datang di Dokumentasi Akun Sekolah AcsSchool!</span
                 >
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
                   Dokumentasi ini memberikan panduan singkat untuk mengelola
-                  akun sekolah Anda di Mischool. Pelajari cara mengatur profil,
+                  akun sekolah Anda di AcsSchool. Pelajari cara mengatur profil,
                   manfaatkan fitur-fitur, dan pastikan keamanan akun. Semoga
                   dokumentasi ini membantu Anda memaksimalkan penggunaan akun
-                  sekolah Mischool. Selamat menggunakan!
+                  sekolah AcsSchool. Selamat menggunakan!
                 </span>
               </BaseParagraph>
             </div>

@@ -27,7 +27,11 @@ definePageMeta({
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  halaman kehadiran terdapat fitur pencarian untuk mencari nama siswa atau guru, dan juga terdapat beberpa opsi untuk memilih tahun ajaran, kelas, dan tanggal. Terdapat beberapa kolom untuk melihat nama siswa, jam masuk dan jampulang point dan status siswa atau guru. Terdapat juga fitur untuk upload file.
+                  halaman kehadiran terdapat fitur pencarian untuk mencari nama
+                  siswa atau guru, dan juga terdapat beberpa opsi untuk memilih
+                  tahun ajaran, kelas, dan tanggal. Terdapat beberapa kolom
+                  untuk melihat nama siswa, jam masuk dan jampulang point dan
+                  status siswa atau guru. Terdapat juga fitur untuk upload file.
                 </span>
               </BaseParagraph>
             </div>
@@ -36,7 +40,7 @@ definePageMeta({
       </div>
       <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2" id="fitur">
         <div class="col-span-2 md:col-span-1">
-          <BaseHeading tag="h1" id="apa-itu-mischool" class="opacity-90">
+          <BaseHeading tag="h1" id="apa-itu-AcsSchool" class="opacity-90">
             <span>Fitur Halaman Kehadiran</span>
           </BaseHeading>
           <BaseParagraph size="sm" class="opacity-80 mt-3">

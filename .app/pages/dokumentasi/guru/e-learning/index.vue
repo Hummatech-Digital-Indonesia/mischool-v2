@@ -67,7 +67,7 @@ const videos = [
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Deskripsi Karakter Mischool memungkinkan pengguna untuk
+                  Fitur Deskripsi Karakter AcsSchool memungkinkan pengguna untuk
                   membuat deskripsi karakter secara cepat dan disesuaikan dengan
                   mudah di dalam platform. Dengan kemampuan untuk menyesuaikan
                   desainnya, fitur ini sangat berguna untuk menciptakan header

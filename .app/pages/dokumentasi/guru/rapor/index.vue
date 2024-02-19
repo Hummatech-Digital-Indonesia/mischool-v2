@@ -1,9 +1,5 @@
 <script setup lang="ts">
-<<<<<<< Updated upstream
 import type { Toc } from '~/types'
-=======
-
->>>>>>> Stashed changes
 definePageMeta({
   title: 'Input Nilai',
   description: 'Jelajahi Fitur fitur dan halaman halaman kami.',
@@ -54,7 +50,7 @@ const featuredVideos = [
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Kop Surat Mischool memungkinkan pengguna untuk membuat
+                  Fitur Kop Surat AcsSchool memungkinkan pengguna untuk membuat
                   kop surat secara cepat dan disesuaikan dengan mudah di dalam
                   platform. Dengan kemampuan untuk menyesuaikan desainnya, fitur
                   ini sangat berguna untuk menciptakan header profesional yang

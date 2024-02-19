@@ -4,8 +4,6 @@
  * Layout components are imported below to be made available to the composable.
  */
 
-
 export function useApiUrl() {
-    return 'https://dev.mischool.id/api'
+  return 'https://dev.AcsSchool.id/api'
 }
-  

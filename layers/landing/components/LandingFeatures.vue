@@ -14,13 +14,13 @@
           lead="tight"
           class="text-muted-800 mx-auto mb-4 dark:text-white"
         >
-          Fitur Fitur Mischool
+          Fitur Fitur AcsSchool
         </BaseHeading>
         <BaseParagraph
           size="lg"
           class="text-muted-500 dark:text-muted-100 mx-auto mb-4"
         >
-          Mischool menghadirkan 6 fitur penting yang dirancang untuk
+          AcsSchool menghadirkan 6 fitur penting yang dirancang untuk
           meningkatkan pengalaman pendidikan Anda.
         </BaseParagraph>
       </div>

@@ -70,15 +70,15 @@ const navigations = [
           <div class="mt-10 grow sm:mt-0">
             <div class="text-center sm:text-left">
               <BaseHeading tag="h1" class="text-white opacity-90">
-                <span>Selamat Datang di Dokumentasi Akun Staff Mischool!</span>
+                <span>Selamat Datang di Dokumentasi Akun Staff AcsSchool!</span>
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
                   Dokumentasi ini memberikan panduan singkat untuk mengelola
-                  akun staff Anda di Mischool. Pelajari cara mengatur profil,
+                  akun staff Anda di AcsSchool. Pelajari cara mengatur profil,
                   manfaatkan fitur-fitur, dan pastikan keamanan akun. Semoga
                   dokumentasi ini membantu Anda memaksimalkan penggunaan akun
-                  staff Mischool. Selamat menggunakan!
+                  staff AcsSchool. Selamat menggunakan!
                 </span>
               </BaseParagraph>
             </div>

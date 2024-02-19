@@ -27,7 +27,10 @@ definePageMeta({
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Dalam fitur jam pelajaran, sebagai admin, Anda dapat menambahkan jadwal pelajaran dengan menentukan waktu mulai dan selesai untuk setiap hari dalam seminggu. Anda juga dapat mengedit jadwal pelajaran jika ada perubahan.
+                  Dalam fitur jam pelajaran, sebagai admin, Anda dapat
+                  menambahkan jadwal pelajaran dengan menentukan waktu mulai dan
+                  selesai untuk setiap hari dalam seminggu. Anda juga dapat
+                  mengedit jadwal pelajaran jika ada perubahan.
                 </span>
               </BaseParagraph>
             </div>
@@ -36,7 +39,7 @@ definePageMeta({
       </div>
       <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2" id="fitur">
         <div class="col-span-2 md:col-span-1">
-          <BaseHeading tag="h1" id="apa-itu-mischool" class="opacity-90">
+          <BaseHeading tag="h1" id="apa-itu-AcsSchool" class="opacity-90">
             <span>Fitur Halaman Jam Pelajaran</span>
           </BaseHeading>
           <BaseParagraph size="sm" class="opacity-80 mt-3">
