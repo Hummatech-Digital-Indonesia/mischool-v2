@@ -52,11 +52,7 @@ useHead({
     },
     {
       name: 'og:image',
-<<<<<<< Updated upstream
-      content: `https://school.Mischool.online/flat%20only%20logo%20.png`,
-=======
       content: `/img/logos/logo.png`,
->>>>>>> Stashed changes
     },
   ],
 })
