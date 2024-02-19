@@ -121,15 +121,15 @@ const navigations = [
           <div class="mt-10 grow sm:mt-0">
             <div class="text-center sm:text-left">
               <BaseHeading tag="h1" class="text-white opacity-90">
-                <span>Selamat Datang di Dokumentasi Akun Guru AcsSchool!</span>
+                <span>Selamat Datang di Dokumentasi Akun Guru Mischool!</span>
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
                   Dokumentasi ini memberikan panduan singkat untuk mengelola
-                  akun guru Anda di AcsSchool. Pelajari cara mengatur profil,
+                  akun guru Anda di Mischool. Pelajari cara mengatur profil,
                   manfaatkan fitur-fitur, dan pastikan keamanan akun. Semoga
                   dokumentasi ini membantu Anda memaksimalkan penggunaan akun
-                  guru AcsSchool. Selamat menggunakan!
+                  guru Mischool. Selamat menggunakan!
                 </span>
               </BaseParagraph>
             </div>
@@ -194,7 +194,7 @@ const navigations = [
       </BaseCard>
       <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2">
         <div class="col-span-2 md:col-span-1">
-          <BaseHeading tag="h1" id="apa-itu-AcsSchool" class="opacity-90">
+          <BaseHeading tag="h1" id="apa-itu-Mischool" class="opacity-90">
             <span>Dashboard Guru</span>
           </BaseHeading>
           <BaseParagraph size="sm" class="opacity-80 mt-3">

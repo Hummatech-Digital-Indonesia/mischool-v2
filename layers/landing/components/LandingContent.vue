@@ -13,16 +13,16 @@
           lead="normal"
           class="text-muted-800 mx-auto mb-4 dark:text-white"
         >
-          Kenapa Memilih AcsSchool?
+          Kenapa Memilih Mischool?
         </BaseHeading>
         <BaseParagraph
           size="lg"
           class="text-muted-500 dark:text-muted-100 mx-auto mb-4"
         >
-          AcsSchool adalah solusi manajemen sekolah terdepan untuk memajukan
-          pendidikan! Ada begitu banyak alasan mengapa AcsSchool menjadi pilihan
+          Mischool adalah solusi manajemen sekolah terdepan untuk memajukan
+          pendidikan! Ada begitu banyak alasan mengapa Mischool menjadi pilihan
           utama bagi sekolah dan lembaga pendidikan. Berikut adalah beberapa
-          alasan yang membuat AcsSchool unggul
+          alasan yang membuat Mischool unggul
         </BaseParagraph>
       </div>
       <div class="mb-10 grid gap-y-16 sm:grid-cols-3 sm:gap-x-8 sm:gap-y-16">
@@ -42,7 +42,7 @@
               lead="normal"
               class="text-muted-500 dark:text-muted-400"
             >
-              AcsSchool didesain dengan fokus pada pengguna, memastikan
+              Mischool didesain dengan fokus pada pengguna, memastikan
               pengelolaan sekolah menjadi lebih intuitif dan efisien. Antarmuka
               yang ramah pengguna memungkinkan staf sekolah dengan berbagai
               latar belakang untuk dengan mudah mengakses dan mengelola data
@@ -55,7 +55,7 @@
             >
               Sistem manajemen sekolah kami sangat fleksibel dan dapat
               disesuaikan dengan kebutuhan unik setiap sekolah. Ini memungkinkan
-              AcsSchool beradaptasi dengan perubahan kebijakan atau struktur
+              Mischool beradaptasi dengan perubahan kebijakan atau struktur
               organisasi, memberikan kebebasan untuk berkembang tanpa hambatan
               teknis.
             </BaseParagraph>
@@ -64,7 +64,7 @@
               lead="normal"
               class="text-muted-500 dark:text-muted-400"
             >
-              Dengan mengintegrasikan berbagai fungsi manajemen, AcsSchool
+              Dengan mengintegrasikan berbagai fungsi manajemen, Mischool
               membantu sekolah menghemat waktu dan biaya. Proses otomatisasi
               mengurangi beban administratif, memungkinkan staf fokus pada
               pengembangan siswa dan meningkatkan kualitas pendidikan.
@@ -87,7 +87,7 @@
               lead="normal"
               class="text-muted-500 dark:text-muted-400"
             >
-              AcsSchool membawa pemantauan akademis ke tingkat berikutnya dengan
+              Mischool membawa pemantauan akademis ke tingkat berikutnya dengan
               menyediakan analisis data yang mendalam. Guru dapat dengan mudah
               melacak kinerja siswa, mengidentifikasi area yang memerlukan
               perhatian khusus, dan merancang pendekatan pembelajaran yang lebih
@@ -98,7 +98,7 @@
               lead="normal"
               class="text-muted-500 dark:text-muted-400"
             >
-              Dengan memberikan akses orang tua ke portal khusus, AcsSchool
+              Dengan memberikan akses orang tua ke portal khusus, Mischool
               memfasilitasi keterlibatan orang tua dalam proses pendidikan anak
               mereka. Laporan kemajuan, catatan absensi, dan informasi kurikulum
               memberikan gambaran komprehensif yang memperkuat kemitraan antara
@@ -109,9 +109,9 @@
               lead="normal"
               class="text-muted-500 dark:text-muted-400"
             >
-              AcsSchool tidak hanya memantau prestasi akademis, tetapi juga
+              Mischool tidak hanya memantau prestasi akademis, tetapi juga
               mendukung pemantauan perkembangan holistik siswa. Dengan
-              memasukkan aspek sosial dan emosional, AcsSchool membantu
+              memasukkan aspek sosial dan emosional, Mischool membantu
               menciptakan lingkungan pembelajaran yang mendukung pertumbuhan
               menyeluruh.
             </BaseParagraph>
@@ -133,7 +133,7 @@
               lead="normal"
               class="text-muted-500 dark:text-muted-400"
             >
-              Keamanan data adalah prioritas utama kami. AcsSchool menggunakan
+              Keamanan data adalah prioritas utama kami. Mischool menggunakan
               teknologi keamanan terkini untuk melindungi informasi sensitif
               siswa, guru, dan staf sekolah. Dengan enkripsi yang kuat dan
               kontrol akses yang ketat, kami memastikan data tetap aman dan
@@ -154,7 +154,7 @@
               lead="normal"
               class="text-muted-500 dark:text-muted-400"
             >
-              AcsSchool sepenuhnya mematuhi regulasi privasi data dan keamanan.
+              Mischool sepenuhnya mematuhi regulasi privasi data dan keamanan.
               Dengan memahami dan mengikuti standar kepatuhan yang berlaku, kami
               memastikan bahwa sekolah dan lembaga pendidikan dapat menggunakan
               platform kami dengan keyakinan penuh.
@@ -180,10 +180,10 @@
             lead="normal"
             class="text-muted-800 mb-1 dark:text-white"
           >
-            Gunakan AcsSchool Sekarang..
+            Gunakan Mischool Sekarang..
           </BaseHeading>
           <BaseParagraph size="sm" class="text-muted-500 dark:text-muted-100">
-            Dengan AcsSchool, Anda tidak hanya mendapatkan sistem manajemen
+            Dengan Mischool, Anda tidak hanya mendapatkan sistem manajemen
             sekolah, tetapi juga mitra yang peduli untuk meningkatkan kualitas
             pendidikan.
           </BaseParagraph>
@@ -194,7 +194,7 @@
             shape="curved"
             shadow="hover"
             class="!h-11 w-48"
-            to="https://school.AcsSchool.id/register"
+            to="https://school.Mischool.id/register"
           >
             <Icon name="cib:envato" class="h-4 w-4" />
             <span>Mulai</span>

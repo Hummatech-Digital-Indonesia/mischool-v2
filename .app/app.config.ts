@@ -14,7 +14,7 @@ export default defineAppConfig({
     defaultShapes: {},
   },
   tairo: {
-    title: 'AcsSchool',
+    title: 'Mischool',
     panels: [
       {
         name: 'activity',

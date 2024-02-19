@@ -60,7 +60,7 @@ const videos = [
                   untuk dibeli, seperti buku tamu, e-learning, rapor, absensi,
                   ujian, dan pelanggaran. Fungsi dari fitur-fitur ini adalah
                   untuk memberikan pengalaman yang lebih baik saat menggunakan
-                  web AcsSchool. Kita juga dapat melihat harga dari fitur-fitur
+                  web Mischool. Kita juga dapat melihat harga dari fitur-fitur
                   tersebut.
                 </span>
               </BaseParagraph>
@@ -70,7 +70,7 @@ const videos = [
       </div>
       <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2" id="fitur">
         <div class="col-span-2 md:col-span-1">
-          <BaseHeading tag="h1" id="apa-itu-AcsSchool" class="opacity-90">
+          <BaseHeading tag="h1" id="apa-itu-Mischool" class="opacity-90">
             <span>Halaman Fitur</span>
           </BaseHeading>
           <BaseParagraph size="sm" class="opacity-80 mt-3">

@@ -1,6 +1,6 @@
 export default defineAppConfig({
   tairo: {
-    title: 'AcsSchool',
+    title: 'Mischool',
     error: {
       logo: {
         component: 'TairoLogo',

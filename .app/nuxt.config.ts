@@ -47,7 +47,7 @@ export default defineNuxtConfig({
     // Public keys that are exposed to the client
     public: {
       apiBase:
-        process.env.NUXT_PUBLIC_API_BASE || 'https://dev.acsschool.id/api',
+        process.env.NUXT_PUBLIC_API_BASE || 'https://dev.Mischool.id/api',
     },
   },
   colorMode: {

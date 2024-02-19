@@ -5,5 +5,5 @@
  */
 
 export function useApiUrl() {
-  return 'https://dev.AcsSchool.id/api'
+  return 'https://dev.Mischool.id/api'
 }

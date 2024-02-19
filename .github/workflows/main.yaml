@@ -22,11 +22,11 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.3
         with:
           # ftp server
-          server: AcsSchool.id
+          server: Mischool.id
           # ftp username
-          username: admin_AcsSchool.id
+          username: admin_Mischool.id
           # ftp password
-          password: AcsSchoolpunya#123
+          password: Mischoolpunya#123
           # Server port to connect to (read your web hosts docs)
           port: 21
           # protocol to deploy with - ftp, ftps, or ftps-legacy

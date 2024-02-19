@@ -50,7 +50,7 @@ const featuredVideos = [
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Kop Surat AcsSchool memungkinkan pengguna untuk membuat
+                  Fitur Kop Surat Mischool memungkinkan pengguna untuk membuat
                   kop surat secara cepat dan disesuaikan dengan mudah di dalam
                   platform. Dengan kemampuan untuk menyesuaikan desainnya, fitur
                   ini sangat berguna untuk menciptakan header profesional yang

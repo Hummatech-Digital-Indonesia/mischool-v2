@@ -31,7 +31,11 @@ const colorPreference = computed(() => {
         id="image0_5516_5474"
         width="1412"
         height="375"
-        xlink:href="/img/logos/logo-text.png"
+        :xlink:href="
+          colorPreference == 'light'
+            ? '/img/logos/logo-text.png'
+            : '/img/logos/logo-text-dark.png'
+        "
       />
     </defs>
   </svg>

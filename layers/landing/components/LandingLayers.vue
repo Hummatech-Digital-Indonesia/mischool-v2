@@ -38,15 +38,15 @@ const { data: response } = useFetch<FetchResponse>(
           lead="tight"
           class="text-muted-800 mx-auto mb-4 dark:text-white"
         >
-          Pengguna AcsSchool
+          Pengguna Mischool
         </BaseHeading>
         <BaseParagraph
           size="lg"
           class="text-muted-500 dark:text-muted-100 mx-auto mb-4"
         >
-          Jumlah pengguna AcsSchool terus meningkat setiap tahunnya, menunjukkan
-          bahwa AcsSchool merupakan sebuah solusi yang tepat untuk pengelolaan
-          sekolah. AcsSchool dapat membantu sekolah untuk meningkatkan efisiensi
+          Jumlah pengguna Mischool terus meningkat setiap tahunnya, menunjukkan
+          bahwa Mischool merupakan sebuah solusi yang tepat untuk pengelolaan
+          sekolah. Mischool dapat membantu sekolah untuk meningkatkan efisiensi
           dan efektivitas pengelolaan sekolah, meningkatkan kualitas
           pembelajaran, dan meningkatkan keterjangkauan pendidikan.
         </BaseParagraph>
@@ -59,7 +59,7 @@ const { data: response } = useFetch<FetchResponse>(
           color="indigo"
           :count="response?.data.school ? response.data.school : 0"
         >
-          AcsSchool telah dipilih
+          Mischool telah dipilih
           {{ response?.data.school ? response.data.school : 0 }} sekolah ,
           menjadi mitra terpercaya dalam mendorong efisiensi dan inovasi dalam
           manajemen sekolah.
@@ -72,7 +72,7 @@ const { data: response } = useFetch<FetchResponse>(
           :count="response?.data.teacher ? response.data.teacher : 0"
         >
           {{ response?.data.teacher ? response.data.teacher : 0 }} guru telah
-          bergabung dengan AcsSchool untuk mendukung proses pengajaran dan
+          bergabung dengan Mischool untuk mendukung proses pengajaran dan
           meningkatkan kualitas pembelajaran.
         </LandingLayersBox>
         <LandingLayersBox
@@ -82,7 +82,7 @@ const { data: response } = useFetch<FetchResponse>(
           :count="response?.data.student ? response.data.student : 0"
         >
           {{ response?.data.student ? response.data.student : 0 }} siswa telah
-          merasakan manfaat pendekatan terintegrasi AcsSchool, mendapatkan
+          merasakan manfaat pendekatan terintegrasi Mischool, mendapatkan
           pengalaman pendidikan yang lebih baik dan terfokus.
         </LandingLayersBox>
       </div>

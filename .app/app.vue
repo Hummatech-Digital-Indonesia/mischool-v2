@@ -52,7 +52,7 @@ useHead({
     },
     {
       name: 'og:image',
-      content: `https://school.AcsSchool.online/flat%20only%20logo%20.png`,
+      content: `https://school.Mischool.online/flat%20only%20logo%20.png`,
     },
   ],
 })

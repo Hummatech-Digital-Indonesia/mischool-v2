@@ -114,7 +114,7 @@ function useGaugePersonal() {
           class="text-muted-800 xs:!text-4xl mx-auto mb-4 max-w-2xl dark:text-white"
         >
           <span class="text-primary-500 font-hairline underline-offset-4"
-            >AcsSchool</span
+            >Mischool</span
           >
         </BaseHeading>
 
@@ -130,7 +130,7 @@ function useGaugePersonal() {
           <BaseButton
             shape="curved"
             color="primary"
-            to="https://school.AcsSchool.id/register"
+            to="https://school.Mischool.id/register"
             shadow="hover"
             class="!h-12 w-44"
           >

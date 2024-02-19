@@ -24,7 +24,7 @@ const isModal3XlOpen = ref(false)
       <NuxtImg
         class="border-muted-200 block rounded-lg border motion-safe:transition-opacity motion-safe:duration-200 motion-safe:group-hover:opacity-75"
         :src="props.preview?.src"
-        :alt="`AcsSchool - ${props.preview?.title}`"
+        :alt="`Mischool - ${props.preview?.title}`"
         height="271"
         width="487"
         sizes="sm:100vw md:50vw lg:974px"
@@ -81,7 +81,7 @@ const isModal3XlOpen = ref(false)
         <div class="size-44 relative mx-auto mb-4 flex">
           <img
             :src="props.preview?.src"
-            :alt="`AcsSchool - ${props.preview?.title}`"
+            :alt="`Mischool - ${props.preview?.title}`"
             class=""
           />
         </div>

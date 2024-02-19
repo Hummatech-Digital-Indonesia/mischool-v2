@@ -2,7 +2,7 @@
 module.exports = {
   apps: [
     {
-      name: 'AcsSchool',
+      name: 'Mischool',
       port: '5005',
       exec_mode: 'cluster',
       instances: 'max',

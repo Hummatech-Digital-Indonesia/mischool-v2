@@ -15,7 +15,7 @@ interface OtherNews {
 }
 
 const { data: news, error } = useFetch<Response>(
-  `https://core.AcsSchool.online/api/news/${route.params.news}`,
+  `https://core.Mischool.online/api/news/${route.params.news}`,
 )
 
 if (error.value) {
@@ -29,9 +29,9 @@ const { data: otherNews } = useFetch<OtherNews>(`${useApiUrl()}/other-news`)
 
 definePageMeta({
   title: 'Berita',
-  description: 'Berita Dari AcsSchool',
+  description: 'Berita Dari Mischool',
   breadcrumb: {
-    label: 'AcsSchool',
+    label: 'Mischool',
   },
   layout: 'empty',
 })

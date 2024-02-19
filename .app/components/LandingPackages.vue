@@ -48,13 +48,13 @@ const { data: response } = useFetch<FetchResponse>(
         lead="tight"
         class="text-muted-800 mx-auto mb-4 dark:text-white"
       >
-        Fitur Fitur AcsSchool
+        Fitur Fitur Mischool
       </BaseHeading>
       <BaseParagraph
         size="lg"
         class="text-muted-500 dark:text-muted-100 mx-auto mb-4"
       >
-        AcsSchool menghadirkan 6 fitur penting yang dirancang untuk meningkatkan
+        Mischool menghadirkan 6 fitur penting yang dirancang untuk meningkatkan
         pengalaman pendidikan Anda.
       </BaseParagraph>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
