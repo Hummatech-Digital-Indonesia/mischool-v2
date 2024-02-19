@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import type { FeaturePackDetails, Feature } from '~/types'
+interface FeaturePackDetails {
+  id: number
+  feature_pack_id: string
+  item: string
+}
 
 interface Meta {
   code: number

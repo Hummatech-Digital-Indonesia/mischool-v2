@@ -27,7 +27,15 @@ definePageMeta({
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Pada fitur ini, pengguna dapat melihat riwayat paket yang telah berhasil dia transaksikan dan paket yang sudah dapat digunakan. Di halaman ini, pengguna juga dapat mencetak riwayat paket dengan menyesuaikan waktu pembelian paket yang diinginkan. Fitur ini dilengkapi dengan kolom keterangan lengkap paket, termasuk nama sekolah, jenis paket yang dibeli, cara pembayaran, harga paket, kode transaksi, dan tanggal pembelian.                </span>
+                  Pada fitur ini, pengguna dapat melihat riwayat paket yang
+                  telah berhasil dia transaksikan dan paket yang sudah dapat
+                  digunakan. Di halaman ini, pengguna juga dapat mencetak
+                  riwayat paket dengan menyesuaikan waktu pembelian paket yang
+                  diinginkan. Fitur ini dilengkapi dengan kolom keterangan
+                  lengkap paket, termasuk nama sekolah, jenis paket yang dibeli,
+                  cara pembayaran, harga paket, kode transaksi, dan tanggal
+                  pembelian.
+                </span>
               </BaseParagraph>
             </div>
           </div>
@@ -35,7 +43,7 @@ definePageMeta({
       </div>
       <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2" id="fitur">
         <div class="col-span-2 md:col-span-1">
-          <BaseHeading tag="h1" id="apa-itu-mischool" class="opacity-90">
+          <BaseHeading tag="h1" id="apa-itu-Mischool" class="opacity-90">
             <span>Fitur Halaman History</span>
           </BaseHeading>
           <BaseParagraph size="sm" class="opacity-80 mt-3">

@@ -28,7 +28,7 @@ definePageMeta({
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
                   pada fitur wali murid ini kita bisa melihat data wali murdi
-                  siswa yang sudah terdaftar pada sistem mischool. tidak hanya
+                  siswa yang sudah terdaftar pada sistem Mischool. tidak hanya
                   itu, kita juga bisa menambahkan data wali murid seacra manual
                   dan juga secara cepat. karna pada halaman ini juga disediakan
                   format excel khusus agar memudahkan admin sekolah untuk
@@ -41,7 +41,7 @@ definePageMeta({
       </div>
       <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2" id="fitur">
         <div class="col-span-2 md:col-span-1">
-          <BaseHeading tag="h1" id="apa-itu-mischool" class="opacity-90">
+          <BaseHeading tag="h1" id="apa-itu-Mischool" class="opacity-90">
             <span>Fitur Halaman Wali murid</span>
           </BaseHeading>
           <BaseParagraph size="sm" class="opacity-80 mt-3">

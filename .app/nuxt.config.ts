@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  ssr : true,
+  ssr: true,
   devtools: { enabled: true },
   extends: [
     /**
@@ -44,17 +44,17 @@ export default defineNuxtConfig({
     renderJsonPayloads: true,
   },
   runtimeConfig: {
-
     // Public keys that are exposed to the client
     public: {
-      apiBase: process.env.NUXT_PUBLIC_API_BASE || 'https://dev.mischool.id/api'
-    }
+      apiBase:
+        process.env.NUXT_PUBLIC_API_BASE || 'https://dev.Mischool.id/api',
+    },
   },
   colorMode: {
-    preference: 'light', 
-    fallback: 'light', 
+    preference: 'light',
+    fallback: 'light',
   },
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' }
+    pageTransition: { name: 'page', mode: 'out-in' },
   },
 })

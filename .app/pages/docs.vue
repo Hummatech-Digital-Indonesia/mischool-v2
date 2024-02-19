@@ -3,7 +3,7 @@ import type { Toc } from '../types'
 
 const toc: Toc[] = [
   { id: 'selamat-datang', level: 1, label: 'Selamat Datang' },
-  { id: 'apa-itu-mischool', level: 1, label: 'Apa itu Mischool?' },
+  { id: 'apa-itu-Mischool', level: 1, label: 'Apa itu Mischool?' },
   { id: 'jelajahi-lebih-dalam', level: 1, label: 'Jelajahi lebih dalam' },
 ]
 
@@ -75,7 +75,7 @@ const roles = [
       </div>
       <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2" id="fitur">
         <div class="col-span-2 md:col-span-1">
-          <BaseHeading tag="h1" id="apa-itu-mischool" class="opacity-90">
+          <BaseHeading tag="h1" id="apa-itu-Mischool" class="opacity-90">
             <span>Apa Itu Mischool!</span>
           </BaseHeading>
           <BaseParagraph size="sm" class="opacity-80 mt-3">

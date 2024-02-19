@@ -27,7 +27,14 @@ definePageMeta({
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  fitur setting deskripsi. Di setting deskripsi user bisa melihat ada berbagai macam mata pelajaran di bagian mata pelajaran terdapat tombol untuk melihat detail, di dalam detail terdapat beberpa kolom untuk menmpilkan nilai dari mata pelajaran dan predikat. Di detail user dapat mengedit dan juga menghapus nilai dari mata pelajaran. Di halaman setting deskripsi juga terdapat fitur pencarian untuk mencar mata pelajaran
+                  fitur setting deskripsi. Di setting deskripsi user bisa
+                  melihat ada berbagai macam mata pelajaran di bagian mata
+                  pelajaran terdapat tombol untuk melihat detail, di dalam
+                  detail terdapat beberpa kolom untuk menmpilkan nilai dari mata
+                  pelajaran dan predikat. Di detail user dapat mengedit dan juga
+                  menghapus nilai dari mata pelajaran. Di halaman setting
+                  deskripsi juga terdapat fitur pencarian untuk mencar mata
+                  pelajaran
                 </span>
               </BaseParagraph>
             </div>
@@ -36,7 +43,7 @@ definePageMeta({
       </div>
       <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2" id="fitur">
         <div class="col-span-2 md:col-span-1">
-          <BaseHeading tag="h1" id="apa-itu-mischool" class="opacity-90">
+          <BaseHeading tag="h1" id="apa-itu-Mischool" class="opacity-90">
             <span>Fitur Halaman Seting Deskripsi</span>
           </BaseHeading>
           <BaseParagraph size="sm" class="opacity-80 mt-3">

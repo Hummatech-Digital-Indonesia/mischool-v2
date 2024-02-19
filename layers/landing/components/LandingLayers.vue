@@ -18,7 +18,9 @@ interface FetchResponse {
 
 //@ts-ignore
 // eslint-disable-next-line prettier-vue/prettier
-const { data: response } = useFetch<FetchResponse>(`${useApiUrl()}/landing-page`)
+const { data: response } = useFetch<FetchResponse>(
+  `${useApiUrl()}/landing-page`,
+)
 </script>
 
 <template>
@@ -80,11 +82,10 @@ const { data: response } = useFetch<FetchResponse>(`${useApiUrl()}/landing-page`
           :count="response?.data.student ? response.data.student : 0"
         >
           {{ response?.data.student ? response.data.student : 0 }} siswa telah
-          merasakan manfaat pendekatan terintegrasi MiSchool, mendapatkan
+          merasakan manfaat pendekatan terintegrasi Mischool, mendapatkan
           pengalaman pendidikan yang lebih baik dan terfokus.
         </LandingLayersBox>
       </div>
     </div>
   </div>
 </template>
-

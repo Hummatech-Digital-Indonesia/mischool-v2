@@ -9,7 +9,7 @@ definePageMeta({
   layout: 'landing',
 })
 </script>
-
+..
 <template>
   <div class="dark:bg-muted-900">
     <LandingHero />

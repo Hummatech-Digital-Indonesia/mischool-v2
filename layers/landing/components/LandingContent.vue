@@ -20,9 +20,9 @@
           class="text-muted-500 dark:text-muted-100 mx-auto mb-4"
         >
           Mischool adalah solusi manajemen sekolah terdepan untuk memajukan
-          pendidikan! Ada begitu banyak alasan mengapa MiSchool menjadi pilihan
+          pendidikan! Ada begitu banyak alasan mengapa Mischool menjadi pilihan
           utama bagi sekolah dan lembaga pendidikan. Berikut adalah beberapa
-          alasan yang membuat MiSchool unggul
+          alasan yang membuat Mischool unggul
         </BaseParagraph>
       </div>
       <div class="mb-10 grid gap-y-16 sm:grid-cols-3 sm:gap-x-8 sm:gap-y-16">
@@ -154,7 +154,7 @@
               lead="normal"
               class="text-muted-500 dark:text-muted-400"
             >
-              MiSchool sepenuhnya mematuhi regulasi privasi data dan keamanan.
+              Mischool sepenuhnya mematuhi regulasi privasi data dan keamanan.
               Dengan memahami dan mengikuti standar kepatuhan yang berlaku, kami
               memastikan bahwa sekolah dan lembaga pendidikan dapat menggunakan
               platform kami dengan keyakinan penuh.
@@ -194,7 +194,7 @@
             shape="curved"
             shadow="hover"
             class="!h-11 w-48"
-            to="https://school.mischool.id/register"
+            to="https://school.Mischool.id/register"
           >
             <Icon name="cib:envato" class="h-4 w-4" />
             <span>Mulai</span>
