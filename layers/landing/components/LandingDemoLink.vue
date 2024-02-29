@@ -21,16 +21,13 @@ const isModal3XlOpen = ref(false)
 <template>
   <NuxtLink to="" class="group relative block">
     <div>
-      <NuxtImg
+      <img
         class="border-muted-200 block rounded-lg border motion-safe:transition-opacity motion-safe:duration-200 motion-safe:group-hover:opacity-75"
         :src="props.preview?.src"
         :alt="`Mischool - ${props.preview?.title}`"
         height="271"
         width="487"
         sizes="sm:100vw md:50vw lg:974px"
-        format="webp"
-        loading="lazy"
-        decoding="async"
       />
       <div class="absolute inset-x-0 -bottom-2 mx-auto max-w-[85%]">
         <BaseCard shape="curved" class="flex items-center p-4" elevated>
