@@ -22,7 +22,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.3
         with:
           # ftp server
-          server: mischool
+          server: mischool.id
           # ftp username
           username: mischool
           # ftp password
