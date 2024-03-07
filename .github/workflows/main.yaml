@@ -1,4 +1,4 @@
-name: CI/CD
+name: CI/CD Production
 on:
   push:
     branches: [main]
@@ -24,7 +24,7 @@ jobs:
           # ftp server
           server: mischool.id
           # ftp username
-          username: mischool
+          username: landing
           # ftp password
           password: Mischool123
           # Server port to connect to (read your web hosts docs)
@@ -36,3 +36,4 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
+            **/.app/public/**
