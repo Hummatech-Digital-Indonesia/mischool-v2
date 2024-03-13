@@ -45,7 +45,7 @@ const total = a + b;
                 class="mr-1 mt-1 w-[45px] text-[#5D87FF]"
                 name="mdi:email-open"
               />
-              <p class="w-[31rem]">Hummasoft.tech@gmail.com</p>
+              <p class="w-[31rem]">mischooldev@gmail.com</p>
             </div>
             <div class="mt-2 flex">
               <Icon
@@ -72,7 +72,7 @@ const total = a + b;
       </div>
     </div>
     <div class="flex justify-between">
-      <p class="text-base">2023 Hummatech All Rights Reseresed</p>
+      <p class="text-base">2023 Mischool All Rights Reseresed</p>
       <p class="text-base text-[#5D87FF]">Copyright By Hummatech</p>
     </div>
   </footer>
