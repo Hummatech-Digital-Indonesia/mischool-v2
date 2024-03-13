@@ -24,15 +24,15 @@ const props = withDefaults(
         class="relative mb-4 flex h-40 w-full items-center justify-center overflow-hidden"
       >
         <div
-          class="nui-mask nui-mask-hexed relative mb-2 flex h-[84px] w-[84px] shrink-0 items-center justify-center"
+          class="nui-mask nui-mask-hexed relative mb-2 flex size-[84px] shrink-0 items-center justify-center"
         >
           <div
-            class="from-primary-100 to-primary-500 dark:from-primary-800 motion-safe:animate-spin-slow absolute inset-0 flex h-full w-full items-center justify-center bg-gradient-to-tr blur-sm motion-safe:transition-all motion-safe:duration-200"
+            class="from-primary-100 to-primary-500 dark:from-primary-800 motion-safe:animate-spin-slow absolute inset-0 flex size-full items-center justify-center bg-gradient-to-tr blur-sm motion-safe:transition-all motion-safe:duration-200"
           ></div>
           <div
-            class="nui-mask nui-mask-hexed dark:bg-muted-800 flex h-[80px] w-[80px] items-center justify-center bg-white"
+            class="nui-mask nui-mask-hexed dark:bg-muted-800 flex size-[80px] items-center justify-center bg-white"
           >
-            <Icon :name="props.icon" class="text-primary-500 h-7 w-7" />
+            <Icon :name="props.icon" class="text-primary-500 size-7" />
           </div>
         </div>
         <div
@@ -47,7 +47,7 @@ const props = withDefaults(
           lead="tight"
           class="text-primary-500 mx-auto text-center"
         >
-          <BaseText weight="bold" size="2xl">{{ props.count }}</BaseText>
+          <BaseText weight="bold" class="mx-2" size="2xl">{{ props.count }}</BaseText>
           <BaseText class="text-muted-800 dark:text-white" weight="semibold">{{
             props.title
           }}</BaseText>
