@@ -11,52 +11,28 @@ const toc: Toc[] = [
   { id: 'mencari-data-siswa', level: 2, label: 'Mencari Data Siswa' },
   { id: 'memberi-nilai', level: 2, label: 'Memberi Nilai' },
 ]
-const featuredVideos = [
+const tutorials = [
   {
     id: 1,
     title: 'Mencari Data Siswa Ekstrakurikuler',
     slug: 'mencari-data-siswa',
-    url: 'https://tairo.cssninja.io/dashboards/soccer',
-    cover: '/img/dokumentasi/guru/Mencari Data Siswa Ekstrakurikuler.png',
-    uploaded: '2 hours ago',
-    category: 'Frontend',
-    author: {
-      name: 'Hermann Mayer',
-      avatar: '/img/avatars/16.svg',
-    },
+    url: 'https://youtu.be/zjo3QQ2CTU4?si=1kPA6nsYd4m46037&t=60',
+    cover: '/img/thumbnail/guru/Mencari Data Siswa Ekstrakurikuler.png',
   },
   {
     id: 1,
     title: 'Cara Memberi Nilai Ekstrakurikuler',
     slug: 'memberi-nilai',
-    url: 'https://tairo.cssninja.io/dashboards/soccer',
-    cover: '/img/dokumentasi/guru/Cara Memberi Nilai Ekstrakurikuler.png',
-    uploaded: '2 hours ago',
-    category: 'Frontend',
-    author: {
-      name: 'Hermann Mayer',
-      avatar: '/img/avatars/16.svg',
-    },
+    url: 'https://youtu.be/zjo3QQ2CTU4?si=Cc51k6WH8lbRERoN',
+    cover: '/img/thumbnail/guru/Cara Memberi Nilai Ekstrakurikuler.png',
   },
 ]
-const videos = [
-  {
-    id: 6,
-    title: 'How to think a mobile app landing page design',
-    slug: '',
-    cover: '/img/illustrations/dashboards/video/6.png',
-    uploaded: '7 hours ago',
-    category: 'Frontend',
-    author: {
-      name: 'Alan Skelli',
-      avatar: '/img/avatars/11.svg',
-    },
-  },
-]
+
 </script>
 
 <template>
   <div class="w-full grid grid-cols-4">
+    <HeaderDocs class="col-span-4" />
     <div class="col-span-4 lg:col-span-3 grid grid-cols-2">
       <div class="col-span-2">
         <div
@@ -91,7 +67,7 @@ const videos = [
       <div class="mt-16 col-span-2 grid lg:grid-cols-2 gap-4" id="tutorial">
         <BaseCard
           class="p-4 grid grid-cols-1"
-          v-for="video in featuredVideos"
+          v-for="video in tutorials"
           :id="video.slug"
         >
           <BaseHeading tag="h1" class="opacity-90 col-span-2">

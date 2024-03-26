@@ -41,13 +41,19 @@ const features = ref<string[]>([
 const filteredDemos = computed(() => {
   if (selectedFeature.value.length === 0) {
     //@ts-ignore
-    return demoPages.value.filter((page) => page.preview?.isDashboard === 1)
+    if(demoPages.value?.length){
+      return demoPages.value.filter((page) => page.preview?.isDashboard === 1)
+    }
   }
 
   //@ts-ignore
-  return demoPages.value.filter(
-    (page) => page.preview?.categories?.includes(selectedFeature.value),
-  )
+  if(demoPages.value?.length){
+    return demoPages.value.filter(
+      (page) => page.preview?.categories?.includes(selectedFeature.value),
+    )
+  }
+
+  return []
 })
 </script>
 
@@ -119,8 +125,8 @@ const filteredDemos = computed(() => {
               shape="curved"
               color="primary"
               flavor="outline"
-              to="/demo"
-              >Lihat Semua Demo</BaseButton
+              to="/preview"
+              >Lihat Semua </BaseButton
             >
           </div>
         </div>

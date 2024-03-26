@@ -1,43 +1,32 @@
 <script setup lang="ts">
+import type { Toc } from '~/types'
+
 definePageMeta({
   title: 'Kop Surat',
-  description: 'Jelajahi Fitur fitur dan halaman halaman kami.',
+  description:
+    'Fitur Kop Surat Mischool memungkinkan pengguna untuk membuat kop surat secara cepat dan disesuaikan dengan mudah di dalam platform. Dengan kemampuan untuk menyesuaikan desainnya, fitur ini sangat berguna untuk menciptakan header profesional yang dapat digunakan dalam mencetak rapor dan surat.',
   layout: 'sidebar',
 })
+const toc: Toc[] = [
+  { id: 'tutorial', level: 1, label: 'Tutorial' },
+  { id: 'kop-surat', level: 2, label: 'Kop Surat' },
+]
 
-const featuredVideos = [
+const tutorials = [
   {
     id: 1,
-    title: 'Halaman Fitur Kop Surat',
-    slug: '',
-    cover: '/img/illustrations/dashboards/video/1.png',
-    uploaded: '2 hours ago',
-    category: 'Frontend',
-    author: {
-      name: 'Hermann Mayer',
-      avatar: '/img/avatars/16.svg',
-    },
-  },
-]
-const videos = [
-  {
-    id: 6,
-    title: 'How to think a mobile app landing page design',
-    slug: '',
-    cover: '/img/illustrations/dashboards/video/6.png',
-    uploaded: '7 hours ago',
-    category: 'Frontend',
-    author: {
-      name: 'Alan Skelli',
-      avatar: '/img/avatars/11.svg',
-    },
+    title: 'Tutorial Halaman Kop Surat',
+    slug: 'kop-surat',
+    url: 'https://youtu.be/JFnwgCHKvEU?si=WOp6yyGN6ED0oKrn',
+    cover: '/img/thumbnail/sekolah/kop-surat.png',
   },
 ]
 </script>
 
 <template>
   <div class="w-full grid grid-cols-4">
-    <div class="col-span-4 lg:col-span-5 grid grid-cols-2">
+    <HeaderDocs class="col-span-4" />
+    <div class="col-span-4 lg:col-span-3 grid grid-cols-2">
       <div class="col-span-2">
         <div
           class="bg-primary-800 flex flex-col items-center rounded-2xl p-4 sm:flex-row"
@@ -67,23 +56,32 @@ const videos = [
           </div>
         </div>
       </div>
-      <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2" id="fitur">
-        <div class="col-span-2 md:col-span-1">
-          <BaseHeading tag="h1" id="apa-itu-Mischool" class="opacity-90">
-            <span>Halaman Kop Surat</span>
+      <div class="mt-16 col-span-2 grid lg:grid-cols-2 gap-4" id="tutorial">
+        <BaseCard
+          class="p-4 grid grid-cols-1"
+          v-for="video in tutorials"
+          :id="video.slug"
+        >
+          <BaseHeading tag="h1" class="opacity-90 col-span-2">
+            <span>{{ video.title }}</span>
           </BaseHeading>
-          <BaseParagraph size="sm" class="opacity-80 mt-3">
+          <BaseParagraph size="sm" class="opacity-80 col-span-2">
             <span>
-              Penjelasan lebih detail mengenai penggunaan fitur kop surat dapat
-              dilihat pada video tutorial berikut
+              Penjelasan lebih detail mengenai
+              {{ video.title }} dapat dilihat pada video tutorial berikut
             </span>
           </BaseParagraph>
-        </div>
-        <TutorialVideo
-          url="https://tairo.cssninja.io/dashboards/soccer"
-          src="/img/illustrations/dashboards/video/6.png"
-        />
-      </BaseCard>
+          <TutorialVideo
+            class="mt-10"
+            :url="video.url"
+            :src="video.cover"
+            :title="video.title"
+          />
+        </BaseCard>
+      </div>
+    </div>
+    <div class="hidden lg:block lg:col-span-1">
+      <TairoToc :toc="toc" />
     </div>
   </div>
 </template>

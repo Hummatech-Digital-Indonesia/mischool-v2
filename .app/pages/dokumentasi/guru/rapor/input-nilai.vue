@@ -9,29 +9,31 @@ definePageMeta({
 
 const toc: Toc[] = [
   { id: 'tutorial', level: 1, label: 'Tutorial' },
-  { id: 'input-nilai-rapor', level: 2, label: 'Input Nilai Rapor' },
+  { id: 'input-nilai-rapor', level: 2, label: 'Input Nilai Tengah Semester' },
+  { id: 'input-nilai-rapor', level: 2, label: 'Input Nilai Akhir Semester' },
 ]
 
 const featuredVideos = [
   {
     id: 1,
-    title: 'Tutorial Input Nilai Rapor',
+    title: 'Tutorial Input Nilai Tengah Semester',
     slug: 'input-nilai-rapor',
-    url: 'https://tairo.cssninja.io/dashboards/soccer',
-    cover:
-      '/img/dokumentasi/guru/Tutorial Input Nilai Raport Tengah Semester Rapor.png',
-    uploaded: '2 hours ago',
-    category: 'Frontend',
-    author: {
-      name: 'Hermann Mayer',
-      avatar: '/img/avatars/16.svg',
-    },
+    url: 'https://youtu.be/LYL3wv8--X8?si=MBLDjCNvk1N2LqK6',
+    cover:'/img/thumbnail/guru/Tutorial Input Nilai Raport Tengah Semester Rapor.png',
+  },
+  {
+    id: 1,
+    title: 'Tutorial Input Nilai Akhir Semester',
+    slug: 'input-nilai-rapor',
+    url: 'https://youtu.be/LYL3wv8--X8?si=jbrh2LRCcN281TUf&t=61',
+    cover:'/img/thumbnail/guru/Tutorial Input Nilai Raport Akhir Semester Rapor.png',
   },
 ]
 </script>
 
 <template>
   <div class="w-full grid grid-cols-4">
+    <HeaderDocs class="col-span-4" />
     <div class="col-span-4 lg:col-span-3 grid grid-cols-2">
       <div class="col-span-2">
         <div

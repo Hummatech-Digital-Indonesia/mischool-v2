@@ -17,29 +17,9 @@ const navigation = [
     name: 'Pelanggaran',
     children: [
       {
-        name: 'Dashboard',
-        icon: 'ph:grid-four',
-        to: '/dokumentasi/staff/pelanggaran/dashboard',
-      },
-      {
-        name: 'Siswa',
-        icon: 'ph:student',
-        to: '/dokumentasi/staff/pelanggaran/siswa',
-      },
-      {
         name: 'Pelanggaran',
         icon: 'tabler:barrier-block',
         to: '/dokumentasi/staff/pelanggaran/pelanggaran',
-      },
-      {
-        name: 'Perbaikan',
-        icon: 'ph:list-checks',
-        to: '/dokumentasi/staff/pelanggaran/perbaikan',
-      },
-      {
-        name: 'Top Pelanggaran',
-        icon: 'ph:warning-bold',
-        to: '/dokumentasi/staff/pelanggaran/top-pelanggaran',
       },
     ],
   },

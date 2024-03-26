@@ -12,53 +12,28 @@ const toc: Toc[] = [
   { id: 'melihat-kehadiran-siswa', level: 2, label: 'Melihat Kehadiran Siswa' },
 ]
 
-const featuredVideos = [
+const tutorials = [
   {
     id: 1,
     title: 'Cara mengisi jurnal Guru',
     slug: 'mengisi-jurnal-guru',
-    url: 'https://tairo.cssninja.io/dashboards/soccer',
-    cover: '/img/dokumentasi/guru/Cara mengisi jurnal Guru.png',
-    uploaded: '2 hours ago',
-    category: 'Frontend',
-    author: {
-      name: 'Hermann Mayer',
-      avatar: '/img/avatars/16.svg',
-    },
+    url: 'https://youtu.be/rMB5WEo6LcQ?si=AH2Dh2etqF004svr',
+    cover: '/img/thumbnail/guru/Cara mengisi jurnal Guru.png',
   },
   {
-    id: 1,
+    id: 2,
     title: 'Cara melihat detail kehadiran siswa',
     slug: 'melihat-kehadiran-siswa',
-    url: 'https://tairo.cssninja.io/dashboards/soccer',
+    url: 'https://youtu.be/rMB5WEo6LcQ?si=jX5nuWbXQ9V6jWnW&t=69',
     cover:
-      '/img/dokumentasi/guru/Cara melihat detail data kehadiran siswa Jurnal.png',
-    uploaded: '2 hours ago',
-    category: 'Frontend',
-    author: {
-      name: 'Hermann Mayer',
-      avatar: '/img/avatars/16.svg',
-    },
-  },
-]
-const videos = [
-  {
-    id: 6,
-    title: 'How to think a mobile app landing page design',
-    slug: '',
-    cover: '/img/illustrations/dashboards/video/6.png',
-    uploaded: '7 hours ago',
-    category: 'Frontend',
-    author: {
-      name: 'Alan Skelli',
-      avatar: '/img/avatars/11.svg',
-    },
+      '/img/thumbnail/guru/Cara melihat detail data kehadiran siswa Jurnal.png',
   },
 ]
 </script>
 
 <template>
   <div class="w-full grid grid-cols-4">
+    <HeaderDocs class="col-span-4" />
     <div class="col-span-4 lg:col-span-3 grid grid-cols-2">
       <div class="col-span-2">
         <div
@@ -93,7 +68,7 @@ const videos = [
       <div class="mt-16 col-span-2 grid lg:grid-cols-2 gap-4" id="tutorial">
         <BaseCard
           class="p-4 grid grid-cols-1"
-          v-for="video in featuredVideos"
+          v-for="video in tutorials"
           :id="video.slug"
         >
           <BaseHeading tag="h1" class="opacity-90 col-span-2">

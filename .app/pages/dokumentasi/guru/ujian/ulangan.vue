@@ -93,6 +93,7 @@ const videos = [
 
 <template>
   <div class="w-full grid grid-cols-4">
+    <HeaderDocs class="col-span-4" />
     <div class="col-span-4 lg:col-span-3 grid grid-cols-2">
       <div class="col-span-2">
         <div

@@ -2,7 +2,7 @@
 import type { Toc } from '~/types'
 definePageMeta({
   title: 'Input Keagamaan',
-  description: 'Jelajahi Fitur fitur dan halaman halaman kami.',
+  description: 'Fitur input nilai keagamaan ini pada umumnya sama seperti fitur input nilai biasanya, namun ini lebih diperuntukkan untuk wali kelas dan mengisi nilai mata pelajaran agama.',
   layout: 'sidebar',
 })
 const toc: Toc[] = [
@@ -14,34 +14,15 @@ const featuredVideos = [
     id: 1,
     title: 'Input Nilai Keagamaan Rapor',
     slug: 'input-nilai-keagamaan',
-    url: 'https://tairo.cssninja.io/dashboards/soccer',
-    cover: '/img/dokumentasi/guru/Input Nilai Keagamaan Rapor.png',
-    uploaded: '2 hours ago',
-    category: 'Frontend',
-    author: {
-      name: 'Hermann Mayer',
-      avatar: '/img/avatars/16.svg',
-    },
-  },
-]
-const videos = [
-  {
-    id: 6,
-    title: 'How to think a mobile app landing page design',
-    slug: '',
-    cover: '/img/illustrations/dashboards/video/6.png',
-    uploaded: '7 hours ago',
-    category: 'Frontend',
-    author: {
-      name: 'Alan Skelli',
-      avatar: '/img/avatars/11.svg',
-    },
+    url: 'https://youtu.be/LYL3wv8--X8?si=sQkhWryL5KtoKq4M&t=192',
+    cover: '/img/thumbnail/guru/Input Nilai Keagamaan Rapor.png',
   },
 ]
 </script>
 
 <template>
   <div class="w-full grid grid-cols-4">
+    <HeaderDocs class="col-span-4" />
     <div class="col-span-4 lg:col-span-3 grid grid-cols-2">
       <div class="col-span-2">
         <div
@@ -61,12 +42,7 @@ const videos = [
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Input Keagamaan Mischool memungkinkan pengguna untuk
-                  membuat input keagamaan secara cepat dan disesuaikan dengan
-                  mudah di dalam platform. Dengan kemampuan untuk menyesuaikan
-                  desainnya, fitur ini sangat berguna untuk menciptakan header
-                  profesional yang dapat digunakan dalam mencetak rapor dan
-                  surat.
+                  Fitur input nilai keagamaan ini pada umumnya sama seperti fitur input nilai biasanya, namun ini lebih diperuntukkan untuk wali kelas dan mengisi nilai mata pelajaran agama.
                 </span>
               </BaseParagraph>
             </div>

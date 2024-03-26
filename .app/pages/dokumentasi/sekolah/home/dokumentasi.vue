@@ -78,29 +78,19 @@ const navigations = [
         to: '/dokumentasi/sekolah/kurikulum/mata-pelajaran',
       },
       {
-        name: 'Jam Pelajaran',
+        name: 'Jadwal Pelajaran',
         icon: 'ph:clock',
-        to: '/dokumentasi/sekolah/kurikulum/jam-pelajaran',
+        to: '/dokumentasi/sekolah/kurikulum/jadwal-pelajaran',
       },
       {
-        name: 'Bobot Nilai',
-        icon: 'tabler:weight',
-        to: '/dokumentasi/sekolah/kurikulum/bobot-nilai',
+        name: 'Rapor K13',
+        icon: 'ph:clipboard-text-duotone',
+        to: '/dokumentasi/sekolah/kurikulum/rapor-k13',
       },
       {
-        name: 'Kelompok Pelajaran',
-        icon: 'tabler:books',
-        to: '/dokumentasi/sekolah/kurikulum/kelompok-pelajaran',
-      },
-      {
-        name: 'Setting Deskripsi',
-        icon: 'tabler:settings',
-        to: '/dokumentasi/sekolah/kurikulum/setting-deskripsi',
-      },
-      {
-        name: 'Karakter',
-        icon: 'tabler:heart',
-        to: '/dokumentasi/sekolah/kurikulum/karakter',
+        name: 'Rapor Merdeka',
+        icon: 'ph:clipboard-text-duotone',
+        to: '/dokumentasi/sekolah/kurikulum/rapor-merdeka',
       },
       {
         name: 'Cetak Rapor',
@@ -211,6 +201,7 @@ const navigations = [
 
 <template>
   <div class="w-full grid grid-cols-4">
+    <HeaderDocs class="col-span-4" />
     <div class="col-span-4 lg:col-span-3 grid grid-cols-2">
       <div class="col-span-2">
         <div

@@ -15,17 +15,7 @@ const navigations = [
       {
         name: 'Pelanggaran',
         icon: 'tabler:barrier-block',
-        to: '/dokumentasi/siswa/pelanggaran',
-      },
-      {
-        name: 'History Pelanggaran',
-        icon: 'ic:sharp-history',
-        to: '/dokumentasi/siswa/pelanggaran/history-pelanggaran',
-      },
-      {
-        name: 'History Perbaikan',
-        icon: 'ic:sharp-manage-history',
-        to: '/dokumentasi/siswa/pelanggaran/history-perbaikan',
+        to: '/dokumentasi/siswa/pelanggaran/pelanggaran',
       },
     ],
   },
@@ -35,19 +25,9 @@ const navigations = [
     id: 'e-learning',
     items: [
       {
-        name: 'Dashboard',
-        icon: 'ph:grid-four',
-        to: '/dokumentasi/siswa/e-learning',
-      },
-      {
-        name: 'Kelas',
+        name: 'E-Learning',
         icon: 'ph:chalkboard-simple',
-        to: '/dokumentasi/siswa/e-learning/kelas',
-      },
-      {
-        name: 'Daftar Tugas',
-        icon: 'tabler:clipboard-list',
-        to: '/dokumentasi/siswa/e-learning/daftar-tugas',
+        to: '/dokumentasi/siswa/e-learning/e-learning',
       },
     ],
   },
@@ -57,13 +37,8 @@ const navigations = [
     items: [
       {
         name: 'Ujian',
-        icon: 'mdi:folder-cog',
-        to: '/dokumentasi/siswa/ujian',
-      },
-      {
-        name: 'Ulangan',
         icon: 'tabler:align-box-center-stretch',
-        to: '/dokumentasi/siswa/ujian/ulangan',
+        to: '/dokumentasi/siswa/ujian/ujian',
       },
     ],
   },
@@ -72,6 +47,7 @@ const navigations = [
 
 <template>
   <div class="w-full grid grid-cols-4">
+    <HeaderDocs class="col-span-4" />
     <div class="col-span-4 lg:col-span-3 grid grid-cols-2">
       <div class="col-span-2">
         <div

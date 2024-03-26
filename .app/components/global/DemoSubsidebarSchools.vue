@@ -72,29 +72,19 @@ const navigation = [
         to: '/dokumentasi/sekolah/kurikulum/mata-pelajaran',
       },
       {
-        name: 'Jam Pelajaran',
+        name: 'Jadwal Pelajaran',
         icon: 'ph:clock',
-        to: '/dokumentasi/sekolah/kurikulum/jam-pelajaran',
+        to: '/dokumentasi/sekolah/kurikulum/jadwal-pelajaran',
       },
       {
-        name: 'Bobot Nilai',
-        icon: 'tabler:weight',
-        to: '/dokumentasi/sekolah/kurikulum/bobot-nilai',
+        name: 'Rapor K13',
+        icon: 'ph:clipboard-text-duotone',
+        to: '/dokumentasi/sekolah/kurikulum/rapor-k13',
       },
       {
-        name: 'Kelompok Pelajaran',
-        icon: 'tabler:books',
-        to: '/dokumentasi/sekolah/kurikulum/kelompok-pelajaran',
-      },
-      {
-        name: 'Setting Deskripsi',
-        icon: 'tabler:settings',
-        to: '/dokumentasi/sekolah/kurikulum/setting-deskripsi',
-      },
-      {
-        name: 'Karakter',
-        icon: 'tabler:heart',
-        to: '/dokumentasi/sekolah/kurikulum/karakter',
+        name: 'Rapor Merdeka',
+        icon: 'ph:clipboard-text-duotone',
+        to: '/dokumentasi/sekolah/kurikulum/rapor-merdeka',
       },
       {
         name: 'Cetak Rapor',
@@ -122,7 +112,7 @@ const navigation = [
         to: '/dokumentasi/sekolah/absensi/kehadiran',
       },
       {
-        name: 'Jurnal',
+        name: 'Jurnal Mengajar',
         icon: 'tabler:align-box-right-stretch',
         to: '/dokumentasi/sekolah/absensi/jurnal',
       },
@@ -152,7 +142,7 @@ const navigation = [
     name: 'Ujian',
     children: [
       {
-        name: 'Setting',
+        name: 'Setting Ujian',
         icon: 'mdi:folder-cog',
         to: '/dokumentasi/sekolah/ujian/setting',
       },

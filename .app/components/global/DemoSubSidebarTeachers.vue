@@ -37,19 +37,14 @@ const navigation = [
     name: 'Ujian',
     children: [
       {
-        name: 'Dashboard',
-        icon: 'ph:grid-four',
-        to: '/dokumentasi/guru/ujian/dashboard',
-      },
-      {
         name: 'Ulangan',
         icon: 'tabler:align-box-center-stretch',
         to: '/dokumentasi/guru/ujian/ulangan',
       },
       {
-        name: 'Setting',
+        name: 'Koreksi Ujian',
         icon: 'mdi:folder-cog',
-        to: '/dokumentasi/guru/ujian/setting',
+        to: '/dokumentasi/guru/ujian/koreksi',
       },
       {
         name: 'Bank Soal',
@@ -62,19 +57,9 @@ const navigation = [
     name: 'E-Learning',
     children: [
       {
-        name: 'Dashboard',
-        icon: 'ph:grid-four',
-        to: '/dokumentasi/guru/e-learning/dashboard',
-      },
-      {
-        name: 'Kelas',
+        name: 'E-Learning',
         icon: 'ph:chalkboard-simple',
-        to: '/dokumentasi/guru/e-learning/kelas',
-      },
-      {
-        name: 'Daftar Tugas',
-        icon: 'tabler:clipboard-list',
-        to: '/dokumentasi/guru/e-learning/daftar-tugas',
+        to: '/dokumentasi/guru/e-learning/e-learning',
       },
     ],
   },

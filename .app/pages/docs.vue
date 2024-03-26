@@ -18,25 +18,26 @@ const roles = [
     name: 'Guru',
     icon: 'ph:house',
     background: '/img/illustrations/dashboards/hobbies/Guru.png',
-    to: '/dokumentasi/sekolah/home/dokumentasi',
+    to: '/dokumentasi/guru/docs',
   },
   {
     name: 'Siswa',
     icon: 'ph:house',
     background: '/img/illustrations/dashboards/hobbies/Siswa.png',
-    to: '/dokumentasi/sekolah/home/dokumentasi',
+    to: '/dokumentasi/siswa/docs',
   },
   {
     name: 'Staff',
     icon: 'ph:house',
     background: '/img/illustrations/dashboards/hobbies/Staff.png',
-    to: '/dokumentasi/sekolah/home/dokumentasi',
+    to: '/dokumentasi/staff/docs',
   },
 ]
 </script>
 
 <template>
   <div class="w-full grid grid-cols-4">
+    <HeaderDocs class="col-span-4" />
     <div class="col-span-4 lg:col-span-3 grid grid-cols-2">
       <div class="col-span-2">
         <div
@@ -90,7 +91,7 @@ const roles = [
           </BaseParagraph>
         </div>
         <NuxtLink
-          to="https://tairo.cssninja.io/dashboards/soccer"
+          to="https://www.youtube.com/watch?v=f86v_I8vt3c"
           target="_blank"
           class="col-span-2 md:col-span-1"
         >
@@ -99,7 +100,7 @@ const roles = [
               class="bg-muted-200 dark:bg-muted-800 group relative h-full w-full overflow-hidden rounded-2xl"
             >
               <img
-                :src="'/img/illustrations/dashboards/video/6.png'"
+                :src="'/img/thumbnail/apa-itu-mischool.png'"
                 :alt="'idh'"
                 class="w-full object-cover object-center"
               />
@@ -111,7 +112,7 @@ const roles = [
               >
                 <div class="ptablet:p-10 p-6">
                   <NuxtLink
-                    to="https://tairo.cssninja.io/dashboards/soccer"
+                    to="https://www.youtube.com/watch?v=f86v_I8vt3c"
                     target="_blank"
                     class="group-hover:border-primary-500 text-muted-300 group-hover:text-primary-500 shadow-muted-300/30 dark:shadow-muted-900/20 flex h-12 w-12 items-center justify-center rounded-full border-2 border-transparent bg-white shadow-xl transition-colors duration-300"
                   >
@@ -119,20 +120,15 @@ const roles = [
                   </NuxtLink>
                 </div>
                 <div class="ptablet:p-10 p-6">
-                  <NuxtLink
-                    to="https://tairo.cssninja.io/dashboards/soccer"
-                    target="_blank"
+                  <BaseHeading
+                    as="h6"
+                    size="lg"
+                    weight="bold"
+                    lead="tight"
+                    class="xs:text-xl hover:text-primary-300 mb-4 line-clamp-2 text-white transition-colors duration-300"
                   >
-                    <BaseHeading
-                      as="h6"
-                      size="lg"
-                      weight="bold"
-                      lead="tight"
-                      class="xs:text-xl hover:text-primary-300 mb-4 line-clamp-2 text-white transition-colors duration-300"
-                    >
-                      <span>Apa itu Mischool?</span>
-                    </BaseHeading>
-                  </NuxtLink>
+                    <span>Apa itu Mischool?</span>
+                  </BaseHeading>
                   <div class="flex gap-3">
                     <div class="ms-auto">
                       <BaseTag color="primary" shape="full" size="sm">

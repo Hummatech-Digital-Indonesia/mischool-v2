@@ -12,29 +12,9 @@ const navigations = [
     id: 'fitur-pelanggaran',
     items: [
       {
-        name: 'Dashboard',
-        icon: 'ph:grid-four',
-        to: '/dokumentasi/staff/pelanggaran/dashboard',
-      },
-      {
-        name: 'Siswa',
-        icon: 'ph:student',
-        to: '/dokumentasi/staff/pelanggaran/siswa',
-      },
-      {
         name: 'Pelanggaran',
         icon: 'tabler:barrier-block',
         to: '/dokumentasi/staff/pelanggaran/pelanggaran',
-      },
-      {
-        name: 'Perbaikan',
-        icon: 'ph:list-checks',
-        to: '/dokumentasi/staff/pelanggaran/perbaikan',
-      },
-      {
-        name: 'Top Pelanggaran',
-        icon: 'ph:warning-bold',
-        to: '/dokumentasi/staff/pelanggaran/top-pelanggaran',
       },
     ],
   },
@@ -55,6 +35,7 @@ const navigations = [
 
 <template>
   <div class="w-full grid grid-cols-4">
+    <HeaderDocs class="col-span-4" />
     <div class="col-span-4 lg:col-span-3 grid grid-cols-2">
       <div class="col-span-2">
         <div

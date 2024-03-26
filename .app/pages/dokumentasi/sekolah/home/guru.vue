@@ -1,50 +1,40 @@
 <script setup lang="ts">
+import type { Toc } from '~/types'
+
 definePageMeta({
   title: 'Guru',
-  description: 'Jelajahi Fitur fitur dan halaman halaman kami.',
+  description: 'Fitur Halaman Guru di Mischool memudahkan sekolah untuk mengelola data guru. Dengan menyediakan akses cepat untuk menambah dan melihat informasi mengenai pelajaran yang diajar guru.',
   layout: 'sidebar',
 })
-const featuredVideos = [
+
+const toc: Toc[] = [
+  { id: 'tutorial', level: 1, label: 'Tutorial' },
+  { id: 'guru', level: 2, label: 'Guru' },
+]
+
+const tutorials = [
   {
     id: 1,
-    title: 'Halaman Fitur Kop Surat',
-    slug: '',
-    cover: '/img/illustrations/dashboards/video/1.png',
-    uploaded: '2 hours ago',
-    category: 'Frontend',
-    author: {
-      name: 'Hermann Mayer',
-      avatar: '/img/avatars/16.svg',
-    },
-  },
-]
-const videos = [
-  {
-    id: 6,
-    title: 'How to think a mobile app landing page design',
-    slug: '',
-    cover: '/img/illustrations/dashboards/video/6.png',
-    uploaded: '7 hours ago',
-    category: 'Frontend',
-    author: {
-      name: 'Alan Skelli',
-      avatar: '/img/avatars/11.svg',
-    },
+    title: 'Tutorial Halaman Guru',
+    slug: 'kop-surat',
+    url: 'https://youtu.be/scyhJ3IcTHk?si=0VidNagAguXW0v9m',
+    cover: '/img/thumbnail/sekolah/guru.png',
   },
 ]
 </script>
 
 <template>
   <div class="w-full grid grid-cols-4">
-    <div class="col-span-4 lg:col-span-5 grid grid-cols-2">
+    <HeaderDocs class="col-span-4" />
+    <div class="col-span-4 lg:col-span-3 grid grid-cols-2">
       <div class="col-span-2">
         <div
           class="bg-primary-800 flex flex-col items-center rounded-2xl p-4 sm:flex-row"
         >
           <div class="relative h-[168px] w-[280px] shrink-0">
             <img
-              class="pointer-events-none absolute -start-6 -top-6 sm:-start-12"
-              src="/img/illustrations/placeholders/flat/chart-guy.svg"
+              class="pointer-events-none absolute -start-6 -top-3 sm:-start-12"
+              src="/img/illustrations/placeholders/flat/placeholder-projects.svg"
               alt="School Illustration"
             />
           </div>
@@ -55,34 +45,43 @@ const videos = [
               </BaseHeading>
               <BaseParagraph size="sm" class="text-white opacity-80">
                 <span>
-                  Fitur Kop Surat Mischool memungkinkan pengguna untuk membuat
-                  kop surat secara cepat dan disesuaikan dengan mudah di dalam
-                  platform. Dengan kemampuan untuk menyesuaikan desainnya, fitur
-                  ini sangat berguna untuk menciptakan header profesional yang
-                  dapat digunakan dalam mencetak rapor dan surat.
+                  Fitur Halaman Guru di Mischool memudahkan sekolah untuk
+                  mengelola data guru. Dengan menyediakan akses cepat
+                  untuk menambah dan melihat informasi mengenai pelajaran yang diajar guru.
                 </span>
               </BaseParagraph>
             </div>
           </div>
         </div>
       </div>
-      <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2" id="fitur">
-        <div class="col-span-2 md:col-span-1">
-          <BaseHeading tag="h1" id="apa-itu-Mischool" class="opacity-90">
-            <span>Fitur Halaman Guru</span>
+      <div class="mt-16 col-span-2 grid lg:grid-cols-2 gap-4" id="tutorial">
+        <BaseCard
+          class="p-4 grid grid-cols-1"
+          v-for="video in tutorials"
+          :id="video.slug"
+        >
+          <BaseHeading tag="h1" class="opacity-90 col-span-2">
+            <span>{{ video.title }}</span>
           </BaseHeading>
-          <BaseParagraph size="sm" class="opacity-80 mt-3">
+          <BaseParagraph size="sm" class="opacity-80 col-span-2">
             <span>
-              Penjelasan lebih detail mengenai penggunaan fitur guru dapat
-              dilihat pada video tutorial berikut
+              Penjelasan lebih detail mengenai
+              {{ video.title }} dapat dilihat pada video tutorial berikut
             </span>
           </BaseParagraph>
-        </div>
-        <TutorialVideo
-          url="https://tairo.cssninja.io/dashboards/soccer"
-          src="/img/illustrations/dashboards/video/6.png"
-        />
-      </BaseCard>
+          <TutorialVideo
+            class="mt-10"
+            :url="video.url"
+            :src="video.cover"
+            :title="video.title"
+          />
+        </BaseCard>
+      </div>
+    </div>
+    <div class="hidden lg:block lg:col-span-1">
+      <TairoToc :toc="toc" />
     </div>
   </div>
 </template>
+
+

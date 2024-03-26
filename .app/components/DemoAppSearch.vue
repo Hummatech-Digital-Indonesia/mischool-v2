@@ -14,43 +14,6 @@ onKeyStroke('k', (event) => {
   }
 })
 
-const { data: contentDocs } = useAsyncData(
-  () => {
-    if (!search.value) return Promise.resolve([] as any[])
-
-    // @ts-ignore This may be undefined if documentation is disabled
-    return queryContent()
-      .where({
-        $and: [
-          {
-            _type: 'markdown',
-            _draft: false,
-            _partial: false,
-          },
-          {
-            $or: [
-              {
-                components: { $icontains: search.value },
-              },
-              {
-                title: { $regex: `/${search.value.replaceAll(' ', '.*')}/i` },
-              },
-              {
-                _path: { $regex: `/${search.value.replaceAll(' ', '.*')}/i` },
-              },
-            ],
-          },
-        ],
-      })
-      .limit(6)
-      .find()
-      .catch(() => []) as Promise<any[]>
-  },
-  {
-    watch: [search],
-  },
-)
-
 const router = useRouter()
 const demoPages = computed(() => {
   if (!search.value) return []
@@ -66,13 +29,13 @@ const demoPages = computed(() => {
         // skip dynamic route
         continue
       } else if (
-        route.meta?.preview?.title &&
-        searchRe.test(route.meta?.preview?.title)
+        route.meta?.title &&
+        searchRe.test(route.meta?.title)
       ) {
         match.push(route)
       } else if (
-        route.meta?.preview?.description &&
-        searchRe.test(route.meta?.preview?.description)
+        route.meta?.description &&
+        searchRe.test(route.meta?.description)
       ) {
         match.push(route)
       }
@@ -84,17 +47,13 @@ const demoPages = computed(() => {
   return match.slice(0, 6)
 })
 
-const contentDocsResults = computed(() => {
-  const max = 6 - Math.min(demoPages.value.length, 3)
-  return contentDocs.value?.slice(0, max)
-})
 const demoPagesResults = computed(() => {
-  const max = 6 - Math.min(contentDocs.value?.length || 0, 3)
+  const max = 6 - Math.min(0, 3)
   return demoPages.value?.slice(0, max)
 })
 
 const hasResult = computed(() =>
-  Boolean(contentDocsResults.value?.length || demoPagesResults.value?.length),
+  Boolean(demoPagesResults.value?.length),
 )
 
 function onClick() {
@@ -139,35 +98,12 @@ const metaKey = useMetaKey()
             </template>
           </BaseInput>
         </div>
-
-        <div v-if="contentDocsResults?.length">
-          <div class="px-3 pt-2">
-            <span
-              class="nui-text-500 text-[0.65rem] font-medium uppercase tracking-wider"
-            >
-              Documentation Hub
-            </span>
-          </div>
-          <ul>
-            <li v-for="page in contentDocsResults" :key="page?._path" class="">
-              <DemoAppSearchResult
-                :to="page?._path"
-                :search="search"
-                :title="page?.title"
-                :subtitle="page?._path"
-                :icon="page?.icon?.src"
-                @click.passive="onClick"
-              />
-            </li>
-          </ul>
-        </div>
-
         <div v-if="demoPagesResults?.length">
           <div class="px-3 pt-2">
             <span
               class="nui-text-500 text-[0.65rem] font-medium uppercase tracking-wider"
             >
-              Demo Pages
+              Dokumentasi
             </span>
           </div>
           <ul>
@@ -177,8 +113,8 @@ const metaKey = useMetaKey()
                   name: page?.name as string,
                 }"
                 :search="search"
-                :title="page?.meta?.preview?.title"
-                :subtitle="page?.meta?.preview?.description"
+                :title="page?.meta?.title"
+                :subtitle="page?.meta?.description"
                 @click.passive="onClick"
               />
             </li>

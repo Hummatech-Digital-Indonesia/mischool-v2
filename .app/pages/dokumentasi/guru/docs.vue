@@ -1,5 +1,7 @@
 <script setup lang="ts">
+
 import type { Toc } from '../../../types'
+
 const toc: Toc[] = [
   { id: 'fitur', level: 1, label: 'Fitur Akun Guru' },
   { id: 'fitur-rapor', level: 2, label: 'Fitur Rapor' },
@@ -37,19 +39,9 @@ const navigations = [
     id: 'e-learning',
     items: [
       {
-        name: 'Dashboard',
-        icon: 'ph:grid-four',
-        to: '/dokumentasi/guru/e-learning/dashboard',
-      },
-      {
         name: 'Kelas',
         icon: 'ph:chalkboard-simple',
-        to: '/dokumentasi/guru/e-learning/kelas',
-      },
-      {
-        name: 'Daftar Tugas',
-        icon: 'tabler:clipboard-list',
-        to: '/dokumentasi/guru/e-learning/daftar-tugas',
+        to: '/dokumentasi/guru/e-learning/e-learning',
       },
     ],
   },
@@ -80,19 +72,14 @@ const navigations = [
     id: 'fitur-ujian',
     items: [
       {
-        name: 'Dashboard',
-        icon: 'ph:grid-four',
-        to: '/dokumentasi/guru/ujian/dashboard',
-      },
-      {
         name: 'Ulangan',
         icon: 'tabler:align-box-center-stretch',
         to: '/dokumentasi/guru/ujian/ulangan',
       },
       {
-        name: 'Ujian',
+        name: 'Koreksi Ujian',
         icon: 'mdi:folder-cog',
-        to: '/dokumentasi/guru/ujian/ujian',
+        to: '/dokumentasi/guru/ujian/koreksi',
       },
       {
         name: 'Bank Soal',
@@ -106,6 +93,7 @@ const navigations = [
 
 <template>
   <div class="w-full grid grid-cols-4">
+    <HeaderDocs class="col-span-4" />
     <div class="col-span-4 lg:col-span-3 grid grid-cols-2">
       <div class="col-span-2">
         <div
@@ -191,25 +179,6 @@ const navigations = [
             </BaseCard>
           </div>
         </div>
-      </BaseCard>
-      <BaseCard class="col-span-2 mt-16 p-4 grid grid-cols-2 gap-2">
-        <div class="col-span-2 md:col-span-1">
-          <BaseHeading tag="h1" id="apa-itu-Mischool" class="opacity-90">
-            <span>Dashboard Guru</span>
-          </BaseHeading>
-          <BaseParagraph size="sm" class="opacity-80 mt-3">
-            <span>
-              Penjelasan lebih detail mengenai dashboard guru dapat dilihat pada
-              video tutorial berikut
-            </span>
-          </BaseParagraph>
-        </div>
-        <TutorialVideo
-          class="w-10/12 m-auto"
-          url="https://tairo.cssninja.io/dashboards/soccer"
-          src="/img/dokumentasi/guru/Dashboard Guru.png"
-          title="Dashboard Guru"
-        />
       </BaseCard>
     </div>
     <div class="hidden lg:block lg:col-span-1">

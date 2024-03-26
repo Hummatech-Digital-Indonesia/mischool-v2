@@ -22,32 +22,15 @@ const navigation = [
         icon: 'tabler:barrier-block',
         to: '/dokumentasi/siswa/pelanggaran/pelanggaran',
       },
-      {
-        name: 'History Pelanggaran',
-        // icon: 'ph:list-bullets-thin',
-        icon: 'ic:sharp-history',
-        to: '/dokumentasi/siswa/pelanggaran/history-pelanggaran',
-      },
-      {
-        name: 'History Perbaikan',
-        icon: 'ic:sharp-manage-history',
-        // icon: 'tabler:browser-check',
-        to: '/dokumentasi/siswa/pelanggaran/history-perbaikan',
-      },
     ],
   },
   {
     name: 'Ujian',
     children: [
       {
-        name: 'Setting',
-        icon: 'mdi:folder-cog',
-        to: '/dokumentasi/siswa/ujian/setting',
-      },
-      {
-        name: 'Ulangan',
+        name: 'Ujian',
         icon: 'tabler:align-box-center-stretch',
-        to: '/dokumentasi/siswa/ujian/ulangan',
+        to: '/dokumentasi/siswa/ujian/ujian',
       },
     ],
   },
@@ -55,19 +38,9 @@ const navigation = [
     name: 'E-Learning',
     children: [
       {
-        name: 'Dashboard',
-        icon: 'ph:grid-four',
-        to: '/dokumentasi/siswa/e-learning/dashboard',
-      },
-      {
-        name: 'Kelas',
+        name: 'E-Learning',
         icon: 'ph:chalkboard-simple',
-        to: '/dokumentasi/siswa/e-learning/kelas',
-      },
-      {
-        name: 'Daftar Tugas',
-        icon: 'tabler:clipboard-list',
-        to: '/dokumentasi/siswa/e-learning/daftar-tugas',
+        to: '/dokumentasi/siswa/e-learning/e-learning',
       },
     ],
   },
