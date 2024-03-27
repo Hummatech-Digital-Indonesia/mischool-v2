@@ -17,7 +17,7 @@ const tutorials = [
     id: 1,
     title: 'Tutorial Halaman Siswa',
     slug: 'siswa',
-    url: 'https://youtu.be/scyhJ3IcTHk?si=0VidNagAguXW0v9m',
+    url: 'https://drive.google.com/file/d/1F3-MXtzC7C4Rbnn1z2QVFtYndMGPcBPT/view?usp=sharing',
     cover: '/img/thumbnail/sekolah/siswa.png',
   },
 ]
