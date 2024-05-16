@@ -325,8 +325,8 @@ export default defineEventHandler(async (event) => {
         },
       },
 
-       //report
-       {
+      //report
+      {
         name: 'report',
         preview: {
           title: 'Input Nilai Guru',
@@ -518,11 +518,128 @@ export default defineEventHandler(async (event) => {
           // params: { id: '2' },
         },
       },
-
-      
+      {
+        name: 'ujian1',
+        preview: {
+          title: 'Dashboard Ujian',
+          description: 'Halaman Dashboard Ujian',
+          categories: ['Ujian'],
+          isDashboard: 0,
+          src: '/img/screens/ujian/1.png',
+          // order: 2,
+          // params: { id: '2' },
+        },
+      },
+      {
+        name: 'ujian2',
+        preview: {
+          title: 'Tambah Soal Ulangan Harian',
+          description: 'Halaman Tambah Soal Ulangan Harian',
+          categories: ['Ujian'],
+          isDashboard: 0,
+          src: '/img/screens/ujian/2.png',
+          // order: 2,
+          // params: { id: '2' },
+        },
+      },
+      {
+        name: 'ujian3',
+        preview: {
+          title: 'Soal Ulangan Harian Essay',
+          description: 'Halaman Daftar Soal Ulangan Harian Essay',
+          categories: ['Ujian'],
+          isDashboard: 0,
+          src: '/img/screens/ujian/3.png',
+          // order: 2,
+          // params: { id: '2' },
+        },
+      },
+      {
+        name: 'ujian4',
+        preview: {
+          title: 'Soal Ulangan Harian Pilihan Ganda',
+          description: 'Halaman Daftar Soal Ulangan Harian Pilihan Ganda',
+          categories: ['Ujian'],
+          isDashboard: 0,
+          src: '/img/screens/ujian/4.png',
+          // order: 2,
+          // params: { id: '2' },
+        },
+      },
+      {
+        name: 'ujian5',
+        preview: {
+          title: 'Tambah Soal Ujian',
+          description: 'Halaman Daftar Tambah Soal Ujian',
+          categories: ['Ujian'],
+          isDashboard: 0,
+          src: '/img/screens/ujian/5.png',
+          // order: 2,
+          // params: { id: '2' },
+        },
+      },
+      {
+        name: 'ujian6',
+        preview: {
+          title: 'Semua Soal Ujian Pada Mapel Tertentu',
+          description: 'Halaman Semua Soal Ujian Pada Mapel Tertentu',
+          categories: ['Ujian'],
+          isDashboard: 0,
+          src: '/img/screens/ujian/6.png',
+          // order: 2,
+          // params: { id: '2' },
+        },
+      },
+      {
+        name: 'ujian7',
+        preview: {
+          title: 'Edit Soal Ujian',
+          description: 'Halaman Edit Soal Ujian',
+          categories: ['Ujian'],
+          isDashboard: 0,
+          src: '/img/screens/ujian/7.png',
+          // order: 2,
+          // params: { id: '2' },
+        },
+      },
+      {
+        name: 'ujian8',
+        preview: {
+          title: 'Korkesi Ujian',
+          description: 'Halaman Koreksi Ujian',
+          categories: ['Ujian'],
+          isDashboard: 0,
+          src: '/img/screens/ujian/8.png',
+          // order: 2,
+          // params: { id: '2' },
+        },
+      },
+      {
+        name: 'ujian9',
+        preview: {
+          title: 'Daftar Kelas Menampilkan Statistik Hasil Ujian',
+          description: 'Halaman Daftar Kelas Menampilkan Statistik Hasil Ujian',
+          categories: ['Ujian'],
+          isDashboard: 0,
+          src: '/img/screens/ujian/9.png',
+          // order: 2,
+          // params: { id: '2' },
+        },
+      },
+      {
+        name: 'ujian10',
+        preview: {
+          title: 'Detail Statistik Hasil Ujian',
+          description: 'Halaman Detail Statistik Hasil Ujian',
+          categories: ['Ujian'],
+          isDashboard: 0,
+          src: '/img/screens/ujian/10.png',
+          // order: 2,
+          // params: { id: '2' },
+        },
+      },
     ]
 
     return demoPages
   }
 })
-
