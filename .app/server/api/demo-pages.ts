@@ -770,6 +770,18 @@ export default defineEventHandler(async (event) => {
           // params: { id: '2' },
         },
       },
+      {
+        name: 'buku_tamu1',
+        preview: {
+          title: 'Dashboard Buku Tamu',
+          description: 'Dashboard Buku Tamu',
+          categories: ['Buku Tamu'],
+          isDashboard: 0,
+          src: '/img/screens/buku_tamu/1.png',
+          // order: 2,
+          // params: { id: '2' },
+        },
+      },
     ]
 
     return demoPages
