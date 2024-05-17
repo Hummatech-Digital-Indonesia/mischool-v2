@@ -24,15 +24,12 @@
             </div>
           </div>
           <div class="aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1 -mt-6">
-            <NuxtImg
+            <img
               class="ltablet:translate-y-20 block translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
               src="/img/illustrations/people.svg"
               alt="Mischool demo screenshot"
-              format="webp"
               width="568"
               height="532"
-              loading="lazy"
-              decoding="async"
             />
           </div>
         </div>
