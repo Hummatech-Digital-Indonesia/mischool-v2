@@ -205,7 +205,7 @@
             Made by
             <NuxtLink
               class="hover:text-primary-500 underline-offset-4 transition-colors duration-200 hover:underline"
-              to="https://cssninja.io"
+              to="https://hummatech.com/"
               >Hummatech</NuxtLink
             >
           </BaseParagraph>
