@@ -10,7 +10,7 @@
     }
   },
   "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "Wscats.vue",
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "explicit"
     }

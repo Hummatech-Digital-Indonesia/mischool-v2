@@ -73,7 +73,7 @@ const total = a + b;
     </div>
     <div class="flex justify-between">
       <p class="text-base">2023 Mischool All Rights Reseresed</p>
-      <p class="text-base text-[#5D87FF]">Copyright By Hummatech</p>
+      <p class="text-base text-[#5D87FF]"><NuxtLink to="syarat-dan-ketentuan"> Syarat & Ketentuan</NuxtLink> | Copyright By Hummatech</p>
     </div>
   </footer>
 </template>
