@@ -18,7 +18,7 @@ definePageMeta({
           <div
             class="container mx-auto px-3 pt-14 lg:max-w-[80%] xl:max-w-[73%] 2xl:max-w-[56%]"
           >
-            <h4 style="text-align: center">Kebijakan Data Pribadi</h4>
+            <h4 style="text-align: center">Kebijakan Privasi</h4>
 
             <p style="text-align: center">
               <strong>Mischool</strong>
