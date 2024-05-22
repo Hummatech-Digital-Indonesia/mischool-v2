@@ -28,7 +28,7 @@ const total = a + b;
         </div>
       </div>
       <div class="">
-        <BaseHeading>Alamat</BaseHeading>
+        <BaseHeading>Hubungi Kami</BaseHeading>
         <div class="alamat">
           <div class="">
             <div class="mt-2 flex">
@@ -37,7 +37,7 @@ const total = a + b;
                 name="material-symbols:location-on-rounded"
               />
               <p class="">
-                Perum Permata Regency 1 Blok 10 no 28 Ngijo Karangploso Malang
+Perum Permata Regency 1 Blok 10 No. 28, Ngijo, Kec. Karangploso, Kab. Malang, 65152
               </p>
             </div>
             <div class="mt-2 flex">
@@ -45,14 +45,14 @@ const total = a + b;
                 class="mr-1 mt-1 w-[45px] text-[#5D87FF]"
                 name="mdi:email-open"
               />
-              <p class="w-[31rem]">mischooldev@gmail.com</p>
+              <a href="mailto:mischool@hummatech.com" class="w-[31rem]">mischool@hummatech.com</a>
             </div>
             <div class="mt-2 flex">
               <Icon
                 class="mr-1 mt-1 w-[45px] text-[#5D87FF]"
                 name="mdi:phone"
               />
-              <p class="w-[31rem]">(+62)82132560566</p>
+              <a href="https://wa.me/6282132560566" class="w-[31rem]">(+62)82132560566</a>
             </div>
           </div>
         </div>
