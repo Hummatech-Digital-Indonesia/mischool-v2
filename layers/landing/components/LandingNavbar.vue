@@ -37,7 +37,7 @@ const { open } = usePanels()
           Dokumentasi
         </NuxtLink>
         <NuxtLink to="/contact" class="inline-flex items-center justify-center px-6">
-          Hubungi
+          Kontak
         </NuxtLink>
         <div class="px-6">
           <button type="button"
